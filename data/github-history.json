@@ -1,0 +1,314 @@
+{
+  "trending": {
+    "2026-03-24": [
+      {
+        "name": "codecrafters-io/build-your-own-x",
+        "stars": 482878,
+        "forks": 45449
+      },
+      {
+        "name": "sindresorhus/awesome",
+        "stars": 448359,
+        "forks": 33723
+      },
+      {
+        "name": "freeCodeCamp/freeCodeCamp",
+        "stars": 438763,
+        "forks": 43754
+      },
+      {
+        "name": "public-apis/public-apis",
+        "stars": 415343,
+        "forks": 45001
+      },
+      {
+        "name": "EbookFoundation/free-programming-books",
+        "stars": 384497,
+        "forks": 66051
+      },
+      {
+        "name": "kamranahmedse/developer-roadmap",
+        "stars": 351550,
+        "forks": 43843
+      },
+      {
+        "name": "donnemartin/system-design-primer",
+        "stars": 340006,
+        "forks": 55004
+      },
+      {
+        "name": "jwasham/coding-interview-university",
+        "stars": 338148,
+        "forks": 81617
+      },
+      {
+        "name": "openclaw/openclaw",
+        "stars": 333179,
+        "forks": 64944
+      },
+      {
+        "name": "vinta/awesome-python",
+        "stars": 288722,
+        "forks": 27471
+      },
+      {
+        "name": "awesome-selfhosted/awesome-selfhosted",
+        "stars": 281755,
+        "forks": 12968
+      },
+      {
+        "name": "996icu/996.ICU",
+        "stars": 275803,
+        "forks": 20931
+      },
+      {
+        "name": "practical-tutorials/project-based-learning",
+        "stars": 261548,
+        "forks": 34033
+      },
+      {
+        "name": "facebook/react",
+        "stars": 244145,
+        "forks": 50851
+      },
+      {
+        "name": "torvalds/linux",
+        "stars": 224775,
+        "forks": 61164
+      },
+      {
+        "name": "TheAlgorithms/Python",
+        "stars": 218988,
+        "forks": 50237
+      },
+      {
+        "name": "trimstray/the-book-of-secret-knowledge",
+        "stars": 211392,
+        "forks": 12655
+      },
+      {
+        "name": "vuejs/vue",
+        "stars": 209958,
+        "forks": 33848
+      },
+      {
+        "name": "ossu/computer-science",
+        "stars": 202698,
+        "forks": 25171
+      },
+      {
+        "name": "trekhleb/javascript-algorithms",
+        "stars": 195773,
+        "forks": 31095
+      }
+    ]
+  },
+  "most-forked": {
+    "2026-03-24": [
+      {
+        "name": "jtleek/datasharing",
+        "stars": 6711,
+        "forks": 242941
+      },
+      {
+        "name": "octocat/Spoon-Knife",
+        "stars": 13692,
+        "forks": 156731
+      },
+      {
+        "name": "rdpeng/ProgrammingAssignment2",
+        "stars": 883,
+        "forks": 143845
+      },
+      {
+        "name": "firstcontributions/first-contributions",
+        "stars": 53137,
+        "forks": 100057
+      },
+      {
+        "name": "TheOdinProject/css-exercises",
+        "stars": 2611,
+        "forks": 89518
+      },
+      {
+        "name": "SmartThingsCommunity/SmartThingsPublic",
+        "stars": 2636,
+        "forks": 87748
+      },
+      {
+        "name": "Pierian-Data/Complete-Python-3-Bootcamp",
+        "stars": 29461,
+        "forks": 87501
+      },
+      {
+        "name": "github/gitignore",
+        "stars": 173160,
+        "forks": 82739
+      },
+      {
+        "name": "jwasham/coding-interview-university",
+        "stars": 338148,
+        "forks": 81617
+      },
+      {
+        "name": "twbs/bootstrap",
+        "stars": 174106,
+        "forks": 79050
+      },
+      {
+        "name": "tensorflow/tensorflow",
+        "stars": 194312,
+        "forks": 75253
+      },
+      {
+        "name": "nightscout/cgm-remote-monitor",
+        "stars": 2713,
+        "forks": 73037
+      },
+      {
+        "name": "github/docs",
+        "stars": 19169,
+        "forks": 66471
+      },
+      {
+        "name": "EbookFoundation/free-programming-books",
+        "stars": 384497,
+        "forks": 66051
+      },
+      {
+        "name": "openclaw/openclaw",
+        "stars": 333180,
+        "forks": 64944
+      },
+      {
+        "name": "torvalds/linux",
+        "stars": 224775,
+        "forks": 61164
+      },
+      {
+        "name": "digitalinnovationone/dio-lab-open-source",
+        "stars": 8520,
+        "forks": 60333
+      },
+      {
+        "name": "ChatGPTNextWeb/NextChat",
+        "stars": 87572,
+        "forks": 60079
+      },
+      {
+        "name": "microsoft/generative-ai-for-beginners",
+        "stars": 108429,
+        "forks": 58134
+      },
+      {
+        "name": "opencv/opencv",
+        "stars": 86758,
+        "forks": 56560
+      }
+    ]
+  },
+  "new-this-month": {
+    "2026-03-24": [
+      {
+        "name": "karpathy/autoresearch",
+        "stars": 52883,
+        "forks": 7370
+      },
+      {
+        "name": "garrytan/gstack",
+        "stars": 43200,
+        "forks": 5397
+      },
+      {
+        "name": "paperclipai/paperclip",
+        "stars": 32335,
+        "forks": 4512
+      },
+      {
+        "name": "googleworkspace/cli",
+        "stars": 22290,
+        "forks": 1061
+      },
+      {
+        "name": "HKUDS/CLI-Anything",
+        "stars": 22171,
+        "forks": 1978
+      },
+      {
+        "name": "NVIDIA/NemoClaw",
+        "stars": 16043,
+        "forks": 1691
+      },
+      {
+        "name": "RightNow-AI/openfang",
+        "stars": 15379,
+        "forks": 1862
+      },
+      {
+        "name": "openai/symphony",
+        "stars": 13915,
+        "forks": 1120
+      },
+      {
+        "name": "agentscope-ai/CoPaw",
+        "stars": 13104,
+        "forks": 1661
+      },
+      {
+        "name": "cft0808/edict",
+        "stars": 12364,
+        "forks": 1209
+      },
+      {
+        "name": "THU-MAIC/OpenMAIC",
+        "stars": 11805,
+        "forks": 1768
+      },
+      {
+        "name": "tanweai/pua",
+        "stars": 10855,
+        "forks": 558
+      },
+      {
+        "name": "Panniantong/Agent-Reach",
+        "stars": 10584,
+        "forks": 769
+      },
+      {
+        "name": "nikopueringer/CorridorKey",
+        "stars": 8920,
+        "forks": 534
+      },
+      {
+        "name": "aiming-lab/AutoResearchClaw",
+        "stars": 8137,
+        "forks": 865
+      },
+      {
+        "name": "phuryn/pm-skills",
+        "stars": 8042,
+        "forks": 817
+      },
+      {
+        "name": "cloudflare/vinext",
+        "stars": 7093,
+        "forks": 262
+      },
+      {
+        "name": "anthropics/financial-services-plugins",
+        "stars": 6762,
+        "forks": 785
+      },
+      {
+        "name": "maderix/ANE",
+        "stars": 6456,
+        "forks": 916
+      },
+      {
+        "name": "calesthio/Crucix",
+        "stars": 6437,
+        "forks": 985
+      }
+    ]
+  }
+}

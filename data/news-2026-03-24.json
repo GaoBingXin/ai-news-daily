@@ -1,0 +1,447 @@
+{
+  "date": "2026-03-24",
+  "count": 55,
+  "sourceCount": 15,
+  "news": [
+    {
+      "title": "微信“开门”，AI入口战争终结？",
+      "link": "https://www.huxiu.com/article/4844501.html",
+      "source": "虎嗅",
+      "date": "2026-03-24T08:40:24.311Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "黄仁勋最新Lex3万字神级访谈：断言中国AI 进化速度世界第一，AGI已经来临，全球程序员将暴增至10亿，揭秘英伟达万亿商业版图",
+      "link": "https://www.huxiu.com/article/4844809.html",
+      "source": "虎嗅",
+      "date": "2026-03-24T08:40:24.311Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "黄仁勋GTC完整演讲：生成Token的成本与效率，决定科技企业的营收与生死",
+      "link": "https://www.huxiu.com/article/4842874.html",
+      "source": "虎嗅",
+      "date": "2026-03-24T08:40:24.311Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "当颜值可以批量生产，小红书为何突然反AI？",
+      "link": "https://www.huxiu.com/article/4841196.html",
+      "source": "虎嗅",
+      "date": "2026-03-24T08:40:24.311Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "封杀、追捧与3800亿估值：Anthropic2026奇幻漂流",
+      "link": "https://www.36kr.com/p/3736544269251077",
+      "source": "36Kr-AI",
+      "date": "2026-03-24T08:40:23.809Z",
+      "summary": "",
+      "category": "Anthropic"
+    },
+    {
+      "title": "Anthropic估值3800亿美元，年收入140亿，安全与商业博弈。",
+      "link": "https://www.36kr.com/p/3736544269251077",
+      "source": "36Kr-AI",
+      "date": "2026-03-24T08:40:23.809Z",
+      "summary": "",
+      "category": "Anthropic"
+    },
+    {
+      "title": "AI提高成绩，却未必提高学习：生成式AI进入课堂后的真实挑战",
+      "link": "https://www.36kr.com/p/3736601928057097",
+      "source": "36Kr-AI",
+      "date": "2026-03-24T08:40:23.809Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "OECD报告揭示生成式AI对教育体系的五个影响",
+      "link": "https://www.36kr.com/p/3736601928057097",
+      "source": "36Kr-AI",
+      "date": "2026-03-24T08:40:23.809Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "AI写真喷发，当专业内容唾手可得，用户还会为什么付费？",
+      "link": "https://www.36kr.com/p/3736531605959425",
+      "source": "36Kr-AI",
+      "date": "2026-03-24T08:40:23.809Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "暴瘦30磅险丧命，61岁硅谷极客用AI重读11页病历，揪出罕见血癌",
+      "link": "https://www.36kr.com/p/3736478745854214",
+      "source": "36Kr-AI",
+      "date": "2026-03-24T08:40:23.809Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "暴瘦30磅、误诊近一年、家园被焚……接踵而至的致命打击下，身患血癌的硅谷老极客Steve用AI跑赢死神，揭开医疗隐入烟尘的真相。",
+      "link": "https://www.36kr.com/p/3736478745854214",
+      "source": "36Kr-AI",
+      "date": "2026-03-24T08:40:23.809Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "Claude刚刚杀死了OpenClaw",
+      "link": "https://www.36kr.com/p/3736521034498311",
+      "source": "36Kr-AI",
+      "date": "2026-03-24T08:40:23.809Z",
+      "summary": "",
+      "category": "Anthropic"
+    },
+    {
+      "title": "时隔12年，亚马逊再闯手机战场，要用AI“重做”手机？",
+      "link": "https://www.36kr.com/p/3736502441685762",
+      "source": "36Kr-AI",
+      "date": "2026-03-24T08:40:23.809Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "AI热潮带火电工培训：千元学费，一周拿证",
+      "link": "https://www.36kr.com/p/3736478017601536",
+      "source": "36Kr-AI",
+      "date": "2026-03-24T08:40:23.809Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "LeCun的世界模型单GPU就能跑了",
+      "link": "https://www.qbitai.com/2026/03/391698.html",
+      "source": "量子位",
+      "date": "Tue, 24 Mar 2026 07:00:47 +0000",
+      "summary": "速度快到离谱，完整规划仅需1秒",
+      "category": "AI综合"
+    },
+    {
+      "title": "又一华为天才少年入局具身创业！用视频生成数据训家用机器人，首个模型登顶具身基模榜单",
+      "link": "https://www.qbitai.com/2026/03/391668.html",
+      "source": "量子位",
+      "date": "Tue, 24 Mar 2026 06:05:17 +0000",
+      "summary": "最新模型在Embodied Arena登顶",
+      "category": "AI综合"
+    },
+    {
+      "title": "Delve halts demos, Insight Partners scrubs investment post amid ‘fake compliance’ allegations",
+      "link": "https://techcrunch.com/2026/03/23/delve-halts-demos-insight-partners-scrubs-investment-post-amid-fake-compliance-allegations/",
+      "source": "TechCrunch",
+      "date": "Tue, 24 Mar 2026 05:26:20 +0000",
+      "summary": "After a whistleblower alleged that the startup fabricated audit evidence, its prominent Series A investor removed an article detailing why it led the deal.",
+      "category": "AI综合"
+    },
+    {
+      "title": "OpenClaw逼出Claude最强反击！GUI操控电脑和真人无差别，网友：这得花多少token？",
+      "link": "https://www.qbitai.com/2026/03/391567.html",
+      "source": "量子位",
+      "date": "Tue, 24 Mar 2026 02:20:26 +0000",
+      "summary": "和人类用电脑没有区别了",
+      "category": "Anthropic"
+    },
+    {
+      "title": "Telling an AI model that it’s an expert programmer makes it a worse programmer",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/24/ai_models_persona_prompting/",
+      "source": "The Register",
+      "date": "2026-03-24T00:20:29.000Z",
+      "summary": "",
+      "category": "模型"
+    },
+    {
+      "title": "Emil Michael, now a senior Pentagon official, says he’ll never forgive Uber investors who ousted him and Kalanick",
+      "link": "https://techcrunch.com/2026/03/23/emil-michael-now-a-senior-pentagon-official-says-hell-never-forgive-uber-investors-who-ousted-him-and-kalanick/",
+      "source": "TechCrunch",
+      "date": "Mon, 23 Mar 2026 23:49:10 +0000",
+      "summary": "When asked whether he was still \"salty\" about about being shown the door at Uber, alongside co-founder Travis Kalanick, Michael didn't equivocate. \"I'll never forget that, nor forgive,\" he said.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Bengaluru food delivery startup Swish raises $38M, its third round in 18 months",
+      "link": "https://techcrunch.com/2026/03/23/bengaluru-food-startup-swish-raises-38m-in-its-third-round-in-18-months/",
+      "source": "TechCrunch",
+      "date": "Mon, 23 Mar 2026 23:30:00 +0000",
+      "summary": "Swish has more than doubled its valuation in a year as its full-stack, hyperlocal model positions ultra-fast food delivery as a high-frequency habit.",
+      "category": "模型"
+    },
+    {
+      "title": "Claude attacks were 'Rorschach test' for infosec community, scaring former NSA boss",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/23/claude_attacks_rorschach_rsac_rob_joyce/",
+      "source": "The Register",
+      "date": "2026-03-23T22:50:21.000Z",
+      "summary": "",
+      "category": "Anthropic"
+    },
+    {
+      "title": "Air Street becomes one of the largest solo VCs in Europe with $232M fund",
+      "link": "https://techcrunch.com/2026/03/23/air-street-becomes-one-of-the-largest-solo-vcs-in-europe-with-232m-fund/",
+      "source": "TechCrunch",
+      "date": "Mon, 23 Mar 2026 22:36:39 +0000",
+      "summary": "London’s Air Street Capital has raised a large Fund III with eyes locked on backing early-stage European and North American AI companies.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Snowflake's ongoing pitch: bring AI to data rather than data to AI",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/23/snowflake_ai_data_project_snowwork/",
+      "source": "The Register",
+      "date": "2026-03-23T21:45:24.000Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "Nvidia CEO tries to explain why DLSS 5 isn’t just “AI slop”",
+      "link": "https://arstechnica.com/gaming/2026/03/nvidia-ceo-tries-to-explain-why-dlss-5-isnt-just-ai-slop/",
+      "source": "Ars Technica",
+      "date": "Mon, 23 Mar 2026 21:19:51 +0000",
+      "summary": "If game makers don’t like it, “they could decide not to use it, you know?\"",
+      "category": "AI综合"
+    },
+    {
+      "title": "The kid-friendly Fitbit Ace is $100, which matches its best price",
+      "link": "https://www.theverge.com/gadgets/899134/fitbit-ace-amazon-big-spring-sale-2026-deal",
+      "source": "The Verge",
+      "date": "2026-03-23T21:10:28.000Z",
+      "summary": "The Fitbit Ace LTE turns exercise into a game for kids, and it’s on sale at multiple retailers. | Image: Fitbit\t\n\nIf you’re trying to figure out how to keep your kids occupied this spring break, the F",
+      "category": "Google"
+    },
+    {
+      "title": "After hackers hit an Iowa company, cars around the country failed to start",
+      "link": "https://arstechnica.com/security/2026/03/after-hack-some-ignition-interlock-users-couldnt-start-their-own-cars/",
+      "source": "Ars Technica",
+      "date": "Mon, 23 Mar 2026 21:10:14 +0000",
+      "summary": "If you don't calibrate your interlock in time, your vehicle is dead.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Kalshi says it will block politicians and athletes from trading in markets they’re tied to",
+      "link": "https://www.theverge.com/tech/899097/kalshi-politicians-athletes-insider-trading-blocked",
+      "source": "The Verge",
+      "date": "2026-03-23T20:24:43.000Z",
+      "summary": "The prediction market platform Kalshi says it's rolling out new guardrails to \"preemptively block\" political candidates and athletes from trading in their own markets, as reported earlier by Axios. In",
+      "category": "AI综合"
+    },
+    {
+      "title": "Bernie Sanders’ AI ‘gotcha’ video flops, but the memes are great",
+      "link": "https://techcrunch.com/2026/03/23/bernie-sanders-ai-gotcha-video-flops-but-the-memes-are-great/",
+      "source": "TechCrunch",
+      "date": "Mon, 23 Mar 2026 20:15:59 +0000",
+      "summary": "Sen. Bernie Sanders thinks he's tricked Claude into revealing the AI industry's secrets, but he really just exposed how agreeable chatbots can become.",
+      "category": "Anthropic"
+    },
+    {
+      "title": "If you love your boss, imagine how much more you'll love their AI twin",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/23/ai_boss_bots_not_welcome/",
+      "source": "The Register",
+      "date": "2026-03-23T19:53:19.000Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "Google’s new Pixel 10 ads made me go ‘Wait, WHAT are they trying to sell?’",
+      "link": "https://www.theverge.com/tech/898992/google-pixel-10-ads-moving-on-stalker-lying-beach-view-100-zoom",
+      "source": "The Verge",
+      "date": "2026-03-23T19:49:11.000Z",
+      "summary": "Ever watch a TV ad and wonder, \"How did this get approved?\" Today, Google has not one but two new ad spots for its six-month-old Pixel 10 phones, and… let's just say they may not come across as intend",
+      "category": "Google"
+    },
+    {
+      "title": "A Billionaire-Backed Startup Wants to Grow 'Organ Sacks' to Replace Animal Testing",
+      "link": "https://www.wired.com/story/a-billionaire-backed-startup-wants-to-grow-organ-sacks-to-replace-animal-testing/",
+      "source": "Wired",
+      "date": "Mon, 23 Mar 2026 19:46:05 +0000",
+      "summary": "R3 Bio has a bold idea for replacing lab animals: genetically-engineered whole organ systems that lack a brain. The long-term goal, says a cofounder, is to make human versions.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Nvidia CEO Jensen Huang says &#8216;I think we&#8217;ve achieved AGI&#8217;",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/899086/jensen-huang-nvidia-agi",
+      "source": "The Verge",
+      "date": "2026-03-23T19:42:33.000Z",
+      "summary": "On a Monday episode of the Lex Fridman podcast, Nvidia CEO Jensen Huang made a hot-button statement: \"I think we've achieved AGI.\"\nAGI, or artificial general intelligence, is a vaguely defined term th",
+      "category": "AI综合"
+    },
+    {
+      "title": "Two of my favorite color e-book readers are the cheapest they’ve been in months",
+      "link": "https://www.theverge.com/gadgets/899019/kindle-colorsoft-kobo-libra-colour-ebook-reader-amazon-big-spring-sale-2026-deal",
+      "source": "The Verge",
+      "date": "2026-03-23T19:30:00.000Z",
+      "summary": "The Kobo Libra Colour features physical page turning buttons. | Image: Rakuten Kobo\t\n\nColor isn’t essential in an e-reader, but let’s be honest, it’s a nice perk that can bring digital books, magazine",
+      "category": "模型"
+    },
+    {
+      "title": "Russian authorities block paywall removal site Archive.today",
+      "link": "https://techcrunch.com/2026/03/23/russian-authorities-block-paywall-removal-site-archive-today/",
+      "source": "TechCrunch",
+      "date": "Mon, 23 Mar 2026 19:08:45 +0000",
+      "summary": "A notice on the popular paywall-bypass website Archive.today said that access is blocked \"by decision of [Russian] public authorities.\"",
+      "category": "AI综合"
+    },
+    {
+      "title": "langchain-openai==1.1.12",
+      "link": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.1.12",
+      "source": "LangChain",
+      "date": "2026-03-23T18:59:31Z",
+      "summary": "Changes since langchain-openai==1.1.11\n\nfix(openai): bump min core version (#36180)\nrelease(openai): 1.1.12 (#36178)\nfix(core,model-profiles): add missing `ModelProfile` fields, warn on schema drift (",
+      "category": "OpenAI"
+    },
+    {
+      "title": "A Mysterious Numbers Station Is Broadcasting Through the Iran War",
+      "link": "https://www.wired.com/story/a-mysterious-numbers-station-is-broadcasting-through-the-iran-war/",
+      "source": "Wired",
+      "date": "Mon, 23 Mar 2026 18:59:17 +0000",
+      "summary": "First heard as US and Israeli strikes on Iran began, the shortwave broadcast has since been traced to a US military base in Germany—but its purpose and its operator remain unclear.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Vibe-coding startup Lovable is on the hunt for acquisitions",
+      "link": "https://techcrunch.com/2026/03/23/vibe-coding-startup-lovable-is-on-the-hunt-for-acquisitions/",
+      "source": "TechCrunch",
+      "date": "Mon, 23 Mar 2026 18:22:04 +0000",
+      "summary": "Lovable's founder said the fast-growing vibe-coding startup is looking for startups and teams to join its company.",
+      "category": "AI综合"
+    },
+    {
+      "title": "langchain-core==1.2.21",
+      "link": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.2.21",
+      "source": "LangChain",
+      "date": "2026-03-23T18:01:16Z",
+      "summary": "Changes since langchain-core==1.2.20\n\nrelease(core): 1.2.21 (#36179)\nfix(core,model-profiles): add missing `ModelProfile` fields, warn on schema drift (#36129)\nchore(core): remove stale blockbuster al",
+      "category": "模型"
+    },
+    {
+      "title": "Apple sets June date for WWDC 2026, teasing ‘AI advancements’",
+      "link": "https://techcrunch.com/2026/03/23/apple-wwdc-june-8-12-ai-advancements-siri-developers-conference/",
+      "source": "TechCrunch",
+      "date": "Mon, 23 Mar 2026 18:00:45 +0000",
+      "summary": "Apple will host its next Worldwide Developers Conference the week of June 8. The company is expected to announce major updates to Siri with advanced AI capabilities.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Long fingernails vs. touchscreens: This nail polish could help",
+      "link": "https://arstechnica.com/science/2026/03/long-fingernails-vs-touchscreens-this-nail-polish-could-help/",
+      "source": "Ars Technica",
+      "date": "Mon, 23 Mar 2026 17:59:46 +0000",
+      "summary": "Undergraduate's prototype conductive nail polish could turn long fingernails into touchscreen styluses.",
+      "category": "AI综合"
+    },
+    {
+      "title": "AI agents are 'gullible' and easy to turn into your minions",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/23/pwning_everyones_ai_agents/",
+      "source": "The Register",
+      "date": "2026-03-23T17:50:06.000Z",
+      "summary": "",
+      "category": "AI Agent"
+    },
+    {
+      "title": "Our Favorite Budget Earbuds Are Literally $19",
+      "link": "https://www.wired.com/story/jlab-go-pop-deal-326/",
+      "source": "Wired",
+      "date": "Mon, 23 Mar 2026 17:49:57 +0000",
+      "summary": "Do you need a pair of cheap earbuds? These JLabs are the ones.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Donut Lab’s solid-state battery could barely hold a charge after getting damaged",
+      "link": "https://www.theverge.com/transportation/898881/donut-lab-solid-state-battery-damage-test",
+      "source": "The Verge",
+      "date": "2026-03-23T17:35:52.000Z",
+      "summary": "Donut Lab is on a mission to prove to the world its solid-state battery is real, one independent test at a time. We've seen speed charging tests, extreme heat tests, and not-a-supercapacitor tests. To",
+      "category": "研究"
+    },
+    {
+      "title": "SoftBank to build massive AI datacenter on former US nuclear weapons site",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/23/softbank_to_put_mega_server/",
+      "source": "The Register",
+      "date": "2026-03-23T17:29:23.000Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "Apple’s WWDC 2026 event starts June 8th",
+      "link": "https://www.theverge.com/news/898997/apple-wwdc-2026-june-8-ios-27-ai-siri",
+      "source": "The Verge",
+      "date": "2026-03-23T17:21:53.000Z",
+      "summary": "Apple has set a date for this year's Worldwide Developers Conference (WWDC), scheduling the keynote and Platforms State of the Union for June 8th through June 12th at Apple Park. As usual, we will be ",
+      "category": "AI综合"
+    },
+    {
+      "title": "As teens await sentencing for nudifying girls, parents aim to sue school",
+      "link": "https://arstechnica.com/tech-policy/2026/03/as-teens-await-sentencing-for-nudifying-girls-parents-aim-to-sue-school/",
+      "source": "Ars Technica",
+      "date": "Mon, 23 Mar 2026 17:19:49 +0000",
+      "summary": "Teens will be sentenced Wednesday after admitting to creating AI CSAM.",
+      "category": "AI综合"
+    },
+    {
+      "title": "PDP’s wireless guitar controller has returned to its best price to date",
+      "link": "https://www.theverge.com/gadgets/898962/pdp-riffmaster-guitar-controller-amazon-big-spring-sale-2026-deal",
+      "source": "The Verge",
+      "date": "2026-03-23T17:05:12.000Z",
+      "summary": "The early 2020s were kind of a dark time if you were a fan of Rock Band. PlayStation 5 and Xbox Series X owners didn’t get an improved, more feature-packed guitar controller until early 2024 when PDP ",
+      "category": "AI综合"
+    },
+    {
+      "title": "ICE Invades Airports Across the US",
+      "link": "https://www.wired.com/story/ice-invades-airports-across-the-us/",
+      "source": "Wired",
+      "date": "Mon, 23 Mar 2026 16:52:09 +0000",
+      "summary": "Agents from ICE are being deployed to over a dozen airports around the country, including New York, Atlanta, and Chicago.",
+      "category": "AI Agent"
+    },
+    {
+      "title": "Google unleashes Gemini AI agents on the dark web",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/23/google_dark_web_ai/",
+      "source": "The Register",
+      "date": "2026-03-23T15:05:09.000Z",
+      "summary": "",
+      "category": "Google"
+    },
+    {
+      "title": "AI is beginning to change the business of law",
+      "link": "https://arstechnica.com/ai/2026/03/ai-is-beginning-to-change-the-business-of-law/",
+      "source": "Ars Technica",
+      "date": "Mon, 23 Mar 2026 13:45:13 +0000",
+      "summary": "Attorneys are finding uses for AI apart from generating fake case quotations.",
+      "category": "AI综合"
+    },
+    {
+      "title": "7 Best Phones You Can’t Buy in the US (2026)",
+      "link": "https://www.wired.com/gallery/best-phones-you-cant-buy-in-the-united-states/",
+      "source": "Wired",
+      "date": "Mon, 23 Mar 2026 10:30:00 +0000",
+      "summary": "Wondering what you’re missing out on? Here are our favorite smartphones that aren’t officially sold stateside but are available in markets like the UK and Europe.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Hassan Took a Bike Ride. Now He's One of the Thousands Missing in Gaza",
+      "link": "https://www.wired.com/story/hassan-took-a-bike-ride-now-hes-one-of-the-thousands-missing-in-gaza/",
+      "source": "Wired",
+      "date": "Mon, 23 Mar 2026 10:00:00 +0000",
+      "summary": "In a place denied access to basic forensic technology—and where people disappear into Israeli detention—the fate of thousands remains unknown. One of them is an autistic teenager.",
+      "category": "AI综合"
+    },
+    {
+      "title": "What Happens When You Can’t Get a Death Certificate in Gaza",
+      "link": "https://www.wired.com/story/what-happens-when-you-cant-get-a-death-certificate-in-gaza/",
+      "source": "Wired",
+      "date": "Mon, 23 Mar 2026 10:00:00 +0000",
+      "summary": "For families of the missing, systemic obstacles to identifying remains and locating people in Israeli detention has created a kind of social and legal purgatory.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Momenta不选VLA选世界模型，大众首发！曹旭东：传感器重要性最后",
+      "link": "https://www.qbitai.com/2026/03/391474.html",
+      "source": "量子位",
+      "date": "Mon, 23 Mar 2026 08:47:07 +0000",
+      "summary": "\"VLA好钢没用在刀刃上\"",
+      "category": "AI综合"
+    }
+  ]
+}

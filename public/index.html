@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>智汇日报</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📰</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --primary-light: #eff6ff;
+  --accent-green: #059669;
+  --accent-green-light: #ecfdf5;
+  --accent-orange: #d97706;
+  --accent-orange-light: #fffbeb;
+  --accent-purple: #7c3aed;
+  --bg: #edf0f5;
+  --card: #ffffff;
+  --text: #1a202c;
+  --text-secondary: #718096;
+  --text-muted: #a0aec0;
+  --border: #e2e8f0;
+  --border-light: #edf2f7;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.03);
+  --shadow-md: 0 4px 14px rgba(0,0,0,0.08);
+  --radius: 12px;
+  --radius-sm: 8px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* ── Header ── */
+.site-header {
+  background: var(--card);
+  border-top: 3px solid var(--primary);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 24px 0;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.brand-icon { font-size: 1.6rem; }
+.brand-name {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+.brand-desc {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-left: 12px;
+  padding-left: 12px;
+  border-left: 1px solid var(--border);
+}
+
+/* ── Nav Tabs ── */
+.nav-tabs {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-bottom: 12px;
+}
+.nav-tabs::-webkit-scrollbar { display: none; }
+.nav-tab {
+  padding: 8px 18px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s;
+}
+.nav-tab:hover { color: var(--text); background: var(--bg); }
+.nav-tab.active {
+  color: var(--primary);
+  background: var(--primary-light);
+  font-weight: 600;
+}
+.add-tab {
+  width: 34px;
+  padding: 8px 0;
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  border-radius: 50%;
+}
+.add-tab:hover { color: var(--primary); background: var(--primary-light); }
+
+/* ── Main Container ── */
+.main { max-width: 1100px; margin: 0 auto; padding: 24px 24px 48px; }
+
+/* ── Tab Panels ── */
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+/* ── Panel Toolbar (date picker + stats) ── */
+.panel-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+  background: linear-gradient(135deg, #f0f5ff 0%, #f5f0ff 100%);
+  padding: 14px 20px;
+  border-radius: var(--radius);
+  border: 1px solid #dce3f0;
+}
+.date-picker { display: flex; align-items: center; gap: 6px; }
+.date-select {
+  padding: 7px 14px;
+  font-size: 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--card);
+  color: var(--text);
+  cursor: pointer;
+  outline: none;
+}
+.date-select:focus { border-color: var(--primary); }
+.date-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--card);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.date-btn:hover:not(:disabled) { background: var(--primary-light); color: var(--primary); }
+.date-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+.panel-stats {
+  display: flex;
+  gap: 16px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+.stat-chip {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--primary-light);
+  color: var(--primary);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.82rem;
+}
+.stat-chip.green { background: var(--accent-green-light); color: var(--accent-green); }
+.stat-chip.orange { background: var(--accent-orange-light); color: var(--accent-orange); }
+
+/* ── Delete Button ── */
+.delete-cat-btn {
+  padding: 5px 12px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #dc2626;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s;
+  margin-left: auto;
+}
+.delete-cat-btn:hover { background: #fee2e2; border-color: #fca5a5; }
+
+/* ── Category Cards ── */
+.category-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--primary);
+  border-radius: 4px var(--radius) var(--radius) 4px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-sm);
+}
+.category-card:nth-child(4n+2) { border-left-color: var(--accent-green); }
+.category-card:nth-child(4n+3) { border-left-color: var(--accent-orange); }
+.category-card:nth-child(4n+4) { border-left-color: var(--accent-purple); }
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-light);
+}
+.category-icon { font-size: 1.15rem; }
+.category-title { font-size: 1.05rem; font-weight: 600; color: var(--text); }
+.category-count {
+  margin-left: auto;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  background: var(--bg);
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+
+/* ── News Items ── */
+.news-list { display: flex; flex-direction: column; }
+.news-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-light);
+}
+.news-item:last-child { border-bottom: none; }
+.news-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary);
+  margin-top: 9px;
+  flex-shrink: 0;
+}
+.news-body { flex: 1; min-width: 0; }
+.news-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+.news-title a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.news-title a:hover { color: var(--primary); }
+.news-meta {
+  display: flex;
+  gap: 12px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  align-items: center;
+}
+.news-source {
+  background: var(--primary);
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+/* ── GitHub Section ── */
+.github-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #f0f5ff 0%, #f5f0ff 100%);
+  padding: 5px;
+  border-radius: var(--radius-sm);
+  border: 1px solid #dce3f0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.gh-tab {
+  padding: 8px 14px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s;
+}
+.gh-tab:hover { color: var(--text); background: var(--card); }
+.gh-tab.active {
+  background: var(--card);
+  color: var(--primary);
+  box-shadow: var(--shadow-sm);
+}
+.gh-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.gh-title { font-size: 1.1rem; font-weight: 700; color: var(--text); }
+.gh-date { font-size: 0.8rem; color: var(--text-muted); }
+
+/* ── Repo Cards ── */
+.repo-grid { display: flex; flex-direction: column; gap: 12px; }
+.repo-card {
+  display: flex;
+  gap: 14px;
+  background: var(--card);
+  padding: 16px 20px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.repo-card:hover { box-shadow: var(--shadow-md); transform: translateY(-1px); }
+.repo-rank {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary);
+  min-width: 32px;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 2px;
+}
+.repo-info { flex: 1; min-width: 0; }
+.repo-name { font-size: 0.95rem; font-weight: 600; margin-bottom: 4px; }
+.repo-name a { color: var(--text); text-decoration: none; }
+.repo-name a:hover { color: var(--primary); }
+.repo-desc {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.repo-stats { display: flex; gap: 14px; font-size: 0.78rem; color: var(--text-muted); flex-wrap: wrap; }
+.repo-stat { display: flex; align-items: center; gap: 4px; }
+.lang-dot { width: 10px; height: 10px; border-radius: 50%; }
+.growth-badge {
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+/* ── Empty / Loading State ── */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-muted);
+}
+.empty-state h2 { font-size: 1.1rem; font-weight: 500; color: var(--text-secondary); }
+.custom-empty-news {
+  text-align: left;
+  max-width: 36rem;
+  margin: 0 auto;
+  padding: 20px 24px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  font-size: 0.9rem;
+  background: var(--card);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+.custom-empty-news p { margin-bottom: 8px; }
+.custom-empty-news p:last-child { margin-bottom: 0; }
+.custom-empty-hint { font-size: 0.82rem; color: var(--text-muted); }
+
+/* ── Modal ── */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+.modal-overlay.active { display: flex; }
+.modal {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 28px 32px;
+  width: 90%;
+  max-width: 480px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+  animation: modalIn 0.25s ease;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+@keyframes modalIn {
+  from { opacity: 0; transform: scale(0.95) translateY(12px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+.modal-title { font-size: 1.15rem; font-weight: 700; margin-bottom: 20px; color: var(--text); }
+.form-group { margin-bottom: 18px; }
+.form-label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; color: var(--text); }
+.form-input {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 0.92rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  outline: none;
+  transition: border-color 0.15s;
+  background: var(--card);
+  color: var(--text);
+}
+.form-input:focus { border-color: var(--primary); }
+.form-hint { font-size: 0.78rem; color: var(--text-muted); margin-top: 5px; line-height: 1.5; }
+.modal-actions { display: flex; gap: 10px; margin-top: 24px; }
+.modal-btn {
+  flex: 1;
+  padding: 10px 20px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.modal-btn-cancel { background: var(--bg); color: var(--text-secondary); border: 1px solid var(--border); }
+.modal-btn-cancel:hover { background: var(--border-light); }
+.modal-btn-submit { background: var(--primary); color: #fff; }
+.modal-btn-submit:hover { background: var(--primary-hover); }
+
+/* ── Collect Loading Overlay ── */
+.collect-loading-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(6px);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.collect-loading-overlay.show { display: flex; }
+.collect-loading-inner { text-align: center; max-width: 20rem; padding: 1.5rem; }
+.collect-spinner {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0 auto;
+  border: 3px solid var(--border);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.collect-loading-title { font-size: 1.05rem; font-weight: 700; margin: 1rem 0 0.4rem; color: var(--text); }
+.collect-loading-desc { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.55; }
+.collect-loading-hint { font-size: 0.78rem; color: var(--text-muted); margin-top: 0.7rem; line-height: 1.45; }
+
+/* ── Footer ── */
+.site-footer {
+  text-align: center;
+  padding: 32px 24px;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  border-top: 1px solid var(--border);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .header-inner { padding: 12px 16px 0; }
+  .brand-name { font-size: 1.15rem; }
+  .brand-desc { display: none; }
+  .nav-tab { padding: 10px 16px; font-size: 0.85rem; }
+  .main { padding: 16px 16px 40px; }
+  .panel-toolbar { flex-direction: column; align-items: flex-start; padding: 12px 16px; }
+  .category-card { padding: 16px; }
+  .repo-card { flex-direction: column; padding: 14px 16px; }
+  .modal { padding: 24px; width: 95%; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <span class="brand-icon">📰</span>
+      <span class="brand-name">智汇日报</span>
+      <span class="brand-desc">AI 资讯 · GitHub 热榜 · 自定义订阅</span>
+    </div>
+    <nav class="nav-tabs">
+      <button class="nav-tab active" data-tab="news">AI资讯</button>
+      <button class="nav-tab" data-tab="github">GitHub热榜</button>
+      <button class="nav-tab custom-tab" data-tab="custom-游戏">游戏</button>
+      <button class="nav-tab add-tab" id="addCategoryBtn" title="添加自定义分类">+</button>
+    </nav>
+  </div>
+</header>
+
+<div class="main">
+
+<!-- AI资讯 -->
+<div id="panel-news" class="tab-panel active">
+  <div class="panel-toolbar">
+    <div class="date-picker">
+      <button class="date-btn" id="prevBtn">&#8249;</button>
+      <select class="date-select" id="dateSelect"></select>
+      <button class="date-btn" id="nextBtn">&#8250;</button>
+    </div>
+    <div class="panel-stats" id="stats"></div>
+  </div>
+  <div id="newsContent"></div>
+</div>
+
+<!-- GitHub热榜 -->
+<div id="panel-github" class="tab-panel">
+  <div class="github-tabs">
+    <button class="gh-tab active" data-list="trending">🔥 今日热榜</button>
+    <button class="gh-tab" data-list="most-forked">🍴 Fork最多</button>
+    <button class="gh-tab" data-list="new-this-month">🚀 本月新星</button>
+    <button class="gh-tab" data-list="trending-growth">💥 飙升榜</button>
+    <button class="gh-tab" data-list="chinese">🌍 中文项目</button>
+    <button class="gh-tab" data-list="newest">⏰ 最新创建</button>
+    <button class="gh-tab" data-list="oldest">📅 最老创建</button>
+  </div>
+  <div class="gh-header">
+    <h2 class="gh-title" id="ghTitle">🔥 今日热榜</h2>
+    <span class="gh-date" id="ghDate"></span>
+  </div>
+  <div id="repoGrid" class="repo-grid"></div>
+</div>
+
+<!-- 自定义分类面板 -->
+<div id="panel-custom-游戏" class="tab-panel"><div class="panel-toolbar"><div class="date-picker"><button class="date-btn date-prev" data-cat="游戏">&#8249;</button><select class="date-select" data-cat="游戏"></select><button class="date-btn date-next" data-cat="游戏">&#8250;</button></div><div class="panel-stats" id="customStats-游戏"></div><button class="delete-cat-btn" data-cat-id="游戏" data-cat-name="游戏" title="删除此栏目">删除栏目</button></div><div class="panel-content" id="customContent-游戏"></div></div>
+
+<footer class="site-footer">智汇日报 · 每日自动更新 · Powered by AI</footer>
+</div>
+
+<!-- 添加分类 Modal -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <h2 class="modal-title">添加自定义分类</h2>
+    <div class="form-group">
+      <label class="form-label">分类名称</label>
+      <input type="text" class="form-input" id="categoryName" placeholder="例如：游戏、科技、数码">
+    </div>
+    <div class="form-group">
+      <label class="form-label">关键词（用逗号分隔）</label>
+      <input type="text" class="form-input" id="categoryKeywords" placeholder="例如：游戏, gaming, steam, 电子竞技">
+      <p class="form-hint">系统会通过百度新闻、搜狗新闻、Google News 全网搜索这些关键词的最新资讯。建议同时填写中英文关键词。</p>
+    </div>
+    <div class="modal-actions">
+      <button class="modal-btn modal-btn-cancel" id="cancelBtn">取消</button>
+      <button class="modal-btn modal-btn-submit" id="submitBtn">添加并采集</button>
+    </div>
+  </div>
+</div>
+
+<div id="collectLoadingOverlay" class="collect-loading-overlay" aria-live="polite" aria-busy="false">
+  <div class="collect-loading-inner">
+    <div class="collect-spinner" role="status" aria-label="加载中"></div>
+    <p class="collect-loading-title">正在采集</p>
+    <p class="collect-loading-desc">正在通过搜索引擎全网采集相关资讯，请稍候…</p>
+    <p class="collect-loading-hint">采集通常需 30 秒～1 分钟，请勿关闭本页；完成后会自动刷新。</p>
+  </div>
+</div>
+
+<script>
+// ── 数据 ──
+const newsData = {"2026-03-23":{"date":"2026-03-23","count":15,"sourceCount":15,"news":[{"title":"Nothing Phone (4a) 体验：设计收敛、配置够用，逆AI影像太赞了","link":"https://www.leikeji.com/article/75580","source":"雷科技","date":"2026-03-23T08:05:44.332Z","summary":"","category":"AI综合"},{"title":"1个Token测出模型降级调包，成本砍到千分之一，API供应商的小伎俩全曝光了","link":"https://www.36kr.com/p/3735109750308868","source":"36Kr-AI","date":"2026-03-23T08:05:42.631Z","summary":"","category":"AI综合"},{"title":"黑盒模型也能测","link":"https://www.36kr.com/p/3735109750308868","source":"36Kr-AI","date":"2026-03-23T08:05:42.631Z","summary":"","category":"AI综合"},{"title":"致AI时代的年轻人：你的时代来了","link":"https://www.36kr.com/p/3735083036655621","source":"36Kr-AI","date":"2026-03-23T08:05:42.631Z","summary":"","category":"AI综合"},{"title":"说句实话，我挺关心Kimi接下来要走的路","link":"https://www.36kr.com/p/3732671075713029","source":"36Kr-AI","date":"2026-03-23T08:05:42.631Z","summary":"","category":"国产大模型"},{"title":"Kimi的下半场，杨植麟需要再次证明自己。","link":"https://www.36kr.com/p/3732671075713029","source":"36Kr-AI","date":"2026-03-23T08:05:42.631Z","summary":"","category":"国产大模型"},{"title":"AI眼镜，又一个折叠屏？","link":"https://www.36kr.com/p/3734937698467840","source":"36Kr-AI","date":"2026-03-23T08:05:42.631Z","summary":"","category":"AI综合"},{"title":"AI智能体改写经济学，公司消失，价格失灵。","link":"https://www.36kr.com/p/3734980425515012","source":"36Kr-AI","date":"2026-03-23T08:05:42.631Z","summary":"","category":"AI Agent"},{"title":"高盛、红杉押注，AI驱动心理健康平台Grow Therapy新获1.5亿美元融资","link":"https://www.36kr.com/p/3733356742492169","source":"36Kr-AI","date":"2026-03-23T08:05:42.631Z","summary":"","category":"AI综合"},{"title":"重磅加盟趋境科技，院士+教授领衔，领跑高效能AI Token生产新生态","link":"https://www.qbitai.com/2026/03/391339.html","source":"量子位","date":"Mon, 23 Mar 2026 05:53:03 +0000","summary":"清华系科创标杆","category":"AI综合"},{"title":"千问上线AI打车，一句话搞定选车、选地点、选时间","link":"https://www.qbitai.com/2026/03/391308.html","source":"量子位","date":"Mon, 23 Mar 2026 04:01:16 +0000","summary":"有1.3亿用户在千问首次体验AI购物","category":"AI综合"},{"title":"中关村北纬龙虾大赛圆满收官！理性探索智能体时代AI应用演进的无限可能","link":"https://www.qbitai.com/2026/03/391078.html","source":"量子位","date":"Mon, 23 Mar 2026 03:56:36 +0000","summary":"2026年3月22日，中关村北纬龙虾大赛落幕，聚焦OpenClaw智能体，14岁少年获“虾王”，赛事推动AI安全落地与产业对接。","category":"AI Agent"},{"title":"黄仁勋发Token当工资！硅谷兴起刷量大赛，一人烧掉33个维基百科","link":"https://www.qbitai.com/2026/03/391061.html","source":"量子位","date":"Mon, 23 Mar 2026 03:21:58 +0000","summary":"硅谷新风尚Tokenmaxxing，直译过来就是“Token刷量大赛”","category":"AI综合"},{"title":"浙大团队破解多模态模型「盲目自信」：先校准置信度，再分配算力丨CVPR’26","link":"https://www.qbitai.com/2026/03/391014.html","source":"量子位","date":"Sun, 22 Mar 2026 07:17:19 +0000","summary":"图都糊成一团了，模型还说“我很确定”？","category":"AI综合"},{"title":"大厂抢郭达雅进行时！DeepSeek核心成员还是个“综艺巨佬”","link":"https://www.qbitai.com/2026/03/390990.html","source":"量子位","date":"Sun, 22 Mar 2026 07:03:33 +0000","summary":"郭达雅将花落谁家？","category":"国产大模型"}]},"2026-03-24":{"date":"2026-03-24","count":18,"sourceCount":15,"news":[{"title":"微信“开门”，AI入口战争终结？","link":"https://www.huxiu.com/article/4844501.html","source":"虎嗅","date":"2026-03-24T08:40:24.311Z","summary":"","category":"AI综合"},{"title":"黄仁勋最新Lex3万字神级访谈：断言中国AI 进化速度世界第一，AGI已经来临，全球程序员将暴增至10亿，揭秘英伟达万亿商业版图","link":"https://www.huxiu.com/article/4844809.html","source":"虎嗅","date":"2026-03-24T08:40:24.311Z","summary":"","category":"AI综合"},{"title":"黄仁勋GTC完整演讲：生成Token的成本与效率，决定科技企业的营收与生死","link":"https://www.huxiu.com/article/4842874.html","source":"虎嗅","date":"2026-03-24T08:40:24.311Z","summary":"","category":"AI综合"},{"title":"当颜值可以批量生产，小红书为何突然反AI？","link":"https://www.huxiu.com/article/4841196.html","source":"虎嗅","date":"2026-03-24T08:40:24.311Z","summary":"","category":"AI综合"},{"title":"封杀、追捧与3800亿估值：Anthropic2026奇幻漂流","link":"https://www.36kr.com/p/3736544269251077","source":"36Kr-AI","date":"2026-03-24T08:40:23.809Z","summary":"","category":"Anthropic"},{"title":"Anthropic估值3800亿美元，年收入140亿，安全与商业博弈。","link":"https://www.36kr.com/p/3736544269251077","source":"36Kr-AI","date":"2026-03-24T08:40:23.809Z","summary":"","category":"Anthropic"},{"title":"AI提高成绩，却未必提高学习：生成式AI进入课堂后的真实挑战","link":"https://www.36kr.com/p/3736601928057097","source":"36Kr-AI","date":"2026-03-24T08:40:23.809Z","summary":"","category":"AI综合"},{"title":"OECD报告揭示生成式AI对教育体系的五个影响","link":"https://www.36kr.com/p/3736601928057097","source":"36Kr-AI","date":"2026-03-24T08:40:23.809Z","summary":"","category":"AI综合"},{"title":"AI写真喷发，当专业内容唾手可得，用户还会为什么付费？","link":"https://www.36kr.com/p/3736531605959425","source":"36Kr-AI","date":"2026-03-24T08:40:23.809Z","summary":"","category":"AI综合"},{"title":"暴瘦30磅险丧命，61岁硅谷极客用AI重读11页病历，揪出罕见血癌","link":"https://www.36kr.com/p/3736478745854214","source":"36Kr-AI","date":"2026-03-24T08:40:23.809Z","summary":"","category":"AI综合"},{"title":"暴瘦30磅、误诊近一年、家园被焚……接踵而至的致命打击下，身患血癌的硅谷老极客Steve用AI跑赢死神，揭开医疗隐入烟尘的真相。","link":"https://www.36kr.com/p/3736478745854214","source":"36Kr-AI","date":"2026-03-24T08:40:23.809Z","summary":"","category":"AI综合"},{"title":"Claude刚刚杀死了OpenClaw","link":"https://www.36kr.com/p/3736521034498311","source":"36Kr-AI","date":"2026-03-24T08:40:23.809Z","summary":"","category":"Anthropic"},{"title":"时隔12年，亚马逊再闯手机战场，要用AI“重做”手机？","link":"https://www.36kr.com/p/3736502441685762","source":"36Kr-AI","date":"2026-03-24T08:40:23.809Z","summary":"","category":"AI综合"},{"title":"AI热潮带火电工培训：千元学费，一周拿证","link":"https://www.36kr.com/p/3736478017601536","source":"36Kr-AI","date":"2026-03-24T08:40:23.809Z","summary":"","category":"AI综合"},{"title":"LeCun的世界模型单GPU就能跑了","link":"https://www.qbitai.com/2026/03/391698.html","source":"量子位","date":"Tue, 24 Mar 2026 07:00:47 +0000","summary":"速度快到离谱，完整规划仅需1秒","category":"AI综合"},{"title":"又一华为天才少年入局具身创业！用视频生成数据训家用机器人，首个模型登顶具身基模榜单","link":"https://www.qbitai.com/2026/03/391668.html","source":"量子位","date":"Tue, 24 Mar 2026 06:05:17 +0000","summary":"最新模型在Embodied Arena登顶","category":"AI综合"},{"title":"OpenClaw逼出Claude最强反击！GUI操控电脑和真人无差别，网友：这得花多少token？","link":"https://www.qbitai.com/2026/03/391567.html","source":"量子位","date":"Tue, 24 Mar 2026 02:20:26 +0000","summary":"和人类用电脑没有区别了","category":"Anthropic"},{"title":"Momenta不选VLA选世界模型，大众首发！曹旭东：传感器重要性最后","link":"https://www.qbitai.com/2026/03/391474.html","source":"量子位","date":"Mon, 23 Mar 2026 08:47:07 +0000","summary":"\"VLA好钢没用在刀刃上\"","category":"AI综合"}]},"2026-03-25":{"date":"2026-03-25","count":18,"sourceCount":15,"news":[{"title":"时隔12年，亚马逊再闯手机战场，要用AI「重做」手机？","link":"https://www.leikeji.com/article/75611","source":"雷科技","date":"2026-03-25T02:12:51.951Z","summary":"","category":"AI综合"},{"title":"人民想念DeepSeek","link":"https://www.huxiu.com/article/4845096.html","source":"虎嗅","date":"2026-03-25T02:12:48.323Z","summary":"","category":"国产大模型"},{"title":"“烧Token”成KPI，有程序员一个月花掉15万美元","link":"https://www.huxiu.com/article/4844729.html","source":"虎嗅","date":"2026-03-25T02:12:48.323Z","summary":"","category":"AI综合"},{"title":"Sora终究还是“死”了","link":"https://www.huxiu.com/article/4845100.html","source":"虎嗅","date":"2026-03-25T02:12:48.323Z","summary":"","category":"AI视频"},{"title":"Sora 宣布关停，史上最贵AI 表情包生成器只撑了七个月","link":"https://www.huxiu.com/article/4845072.html","source":"虎嗅","date":"2026-03-25T02:12:48.323Z","summary":"","category":"AI视频"},{"title":"AI漫剧：百亿风口下90%在亏损，一场内卷和突围的战争","link":"https://www.huxiu.com/article/4840291.html","source":"虎嗅","date":"2026-03-25T02:12:48.323Z","summary":"","category":"AI综合"},{"title":"Claude 决定亲手「杀死」OpenClaw","link":"https://www.36kr.com/p/3737678401896456","source":"36Kr-AI","date":"2026-03-25T02:12:47.875Z","summary":"","category":"Anthropic"},{"title":"GUI 不会消失，GUI 会升级。AI Agent 也不会杀死 App，App 会迭代。","link":"https://www.36kr.com/p/3737678401896456","source":"36Kr-AI","date":"2026-03-25T02:12:47.875Z","summary":"","category":"AI Agent"},{"title":"刘强东的“龙虾天团”来了，首次开源通用基础大模型","link":"https://www.36kr.com/p/3737137603707143","source":"36Kr-AI","date":"2026-03-25T02:12:47.875Z","summary":"","category":"大模型"},{"title":"SDK重构、模型升级、安全加固，但微信和飞书用户先别急着更新。","link":"https://www.36kr.com/p/3737137521295619","source":"36Kr-AI","date":"2026-03-25T02:12:47.875Z","summary":"","category":"AI综合"},{"title":"4位CEO同台，4个判断看清AI","link":"https://www.36kr.com/p/3737602248831488","source":"36Kr-AI","date":"2026-03-25T02:12:47.875Z","summary":"","category":"AI综合"},{"title":"AI产业链加速变现，算力、整合、定制、电力成关键。","link":"https://www.36kr.com/p/3737602248831488","source":"36Kr-AI","date":"2026-03-25T02:12:47.875Z","summary":"","category":"AI综合"},{"title":"突发！Sora 宣布关停，史上最贵 AI 表情包生成器只撑了七个月","link":"https://www.36kr.com/p/3737580650823945","source":"36Kr-AI","date":"2026-03-25T02:12:47.875Z","summary":"","category":"AI视频"},{"title":"战略收缩，Sora 或许只是开始","link":"https://www.36kr.com/p/3737580650823945","source":"36Kr-AI","date":"2026-03-25T02:12:47.875Z","summary":"","category":"AI视频"},{"title":"OpenAI关停Sora！25个月从封神到退场","link":"https://www.qbitai.com/2026/03/391799.html","source":"量子位","date":"Wed, 25 Mar 2026 00:13:11 +0000","summary":"AI视频正在进入“中国时间”","category":"OpenAI"},{"title":"AI全链路加持！一加15T打造全能小屏，售价4299元起","link":"https://www.qbitai.com/2026/03/391775.html","source":"量子位","date":"Tue, 24 Mar 2026 14:35:34 +0000","summary":"2025 年实现44%的销量增长","category":"AI综合"},{"title":"龙虾爆火之后，AI初创的全球化机会来了吗？｜线下沙龙报名","link":"https://www.qbitai.com/2026/03/391760.html","source":"量子位","date":"Tue, 24 Mar 2026 13:09:56 +0000","summary":"周四14:00，欢迎来现场交流！","category":"AI综合"},{"title":"你的模型真的会”举一反三”吗？RoboChallenge Table30 V2 正式发布，泛化时代开幕","link":"https://www.qbitai.com/2026/03/391744.html","source":"量子位","date":"Tue, 24 Mar 2026 08:33:52 +0000","summary":"Table30 V2将为全球具身智能研究者打造了一个精准的“泛化标尺”与公平、开放的真机竞技场","category":"研究"}]}};
+const newsDates = ["2026-03-10","2026-03-11","2026-03-12","2026-03-13","2026-03-14","2026-03-15","2026-03-16","2026-03-17","2026-03-18","2026-03-19","2026-03-20","2026-03-21","2026-03-22","2026-03-23","2026-03-24","2026-03-25"];
+const githubTrending = {"date":"2026-03-25","timestamp":"2026-03-25T03:12:28.370Z","lists":{"trending":[{"name":"codecrafters-io/build-your-own-x","description":"Master programming by recreating your favorite technologies from scratch.","cn_description":"通过从头开始重新创建您最喜爱的技术来掌握编程。","stars":483145,"language":"Markdown","url":"https://github.com/codecrafters-io/build-your-own-x","forks":45471,"issues":453,"created_at":"2018-05-09T12:03:18Z","updated_at":"2026-03-25T03:09:45Z"},{"name":"sindresorhus/awesome","description":"😎 Awesome lists about all kinds of interesting topics","cn_description":"关于各种有趣主题的😎精彩列表","stars":448603,"language":"Unknown","url":"https://github.com/sindresorhus/awesome","forks":33742,"issues":88,"created_at":"2014-07-11T13:42:37Z","updated_at":"2026-03-25T03:11:26Z"},{"name":"freeCodeCamp/freeCodeCamp","description":"freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.","cn_description":"freeCodeCamp.org的开源代码库和课程。免费学习数学、编程和计算机科学。","stars":438796,"language":"TypeScript","url":"https://github.com/freeCodeCamp/freeCodeCamp","forks":43757,"issues":224,"created_at":"2014-12-24T17:49:19Z","updated_at":"2026-03-25T03:11:07Z"},{"name":"public-apis/public-apis","description":"A collective list of free APIs","cn_description":"免费API的集合列表","stars":415761,"language":"Python","url":"https://github.com/public-apis/public-apis","forks":45061,"issues":1092,"created_at":"2016-03-20T23:49:42Z","updated_at":"2026-03-25T03:11:18Z"},{"name":"EbookFoundation/free-programming-books","description":":books: Freely available programming books","cn_description":": books:免费提供的编程书籍","stars":384545,"language":"Python","url":"https://github.com/EbookFoundation/free-programming-books","forks":66051,"issues":72,"created_at":"2013-10-11T06:50:37Z","updated_at":"2026-03-25T03:09:49Z"},{"name":"kamranahmedse/developer-roadmap","description":"Interactive roadmaps, guides and other educational content to help developers grow in their careers.","cn_description":"交互式路线图、指南和其他教育内容，帮助开发人员在职业生涯中成长。","stars":351631,"language":"TypeScript","url":"https://github.com/kamranahmedse/developer-roadmap","forks":43851,"issues":31,"created_at":"2017-03-15T13:45:52Z","updated_at":"2026-03-25T03:09:50Z"},{"name":"donnemartin/system-design-primer","description":"Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.","cn_description":"了解如何设计大型系统。为系统设计面试做准备。包括Anki抽认卡。","stars":340119,"language":"Python","url":"https://github.com/donnemartin/system-design-primer","forks":55019,"issues":518,"created_at":"2017-02-26T16:15:28Z","updated_at":"2026-03-25T03:09:51Z"},{"name":"jwasham/coding-interview-university","description":"A complete computer science study plan to become a software engineer.","cn_description":"一个完整的计算机科学学习计划，成为一名软件工程师。","stars":338211,"language":"Unknown","url":"https://github.com/jwasham/coding-interview-university","forks":81623,"issues":101,"created_at":"2016-06-06T02:34:12Z","updated_at":"2026-03-25T03:09:52Z"},{"name":"openclaw/openclaw","description":"Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ","cn_description":"您自己的个人人工智能助手。任何操作系统。任何平台。龙虾路。 🦞","stars":334631,"language":"TypeScript","url":"https://github.com/openclaw/openclaw","forks":65295,"issues":15476,"created_at":"2025-11-24T10:16:47Z","updated_at":"2026-03-25T03:12:06Z"},{"name":"vinta/awesome-python","description":"An opinionated list of Python frameworks, libraries, tools, and resources.","cn_description":"自以为是的Python框架、库、工具和资源列表。","stars":288832,"language":"Python","url":"https://github.com/vinta/awesome-python","forks":27477,"issues":18,"created_at":"2014-06-27T21:00:06Z","updated_at":"2026-03-25T03:09:54Z"},{"name":"awesome-selfhosted/awesome-selfhosted","description":"A list of Free Software network services and web applications which can be hosted on your own servers","cn_description":"可托管在您自己的服务器上的免费软件网络服务和Web应用程序列表","stars":281905,"language":"Unknown","url":"https://github.com/awesome-selfhosted/awesome-selfhosted","forks":12975,"issues":0,"created_at":"2015-06-01T02:33:17Z","updated_at":"2026-03-25T03:07:42Z"},{"name":"996icu/996.ICU","description":"Repo for counting stars and contributing. Press F to pay respect to glorious developers.","cn_description":"用于计算星星和贡献的回购。按F键向辉煌的开发者致敬。","stars":275804,"language":"Unknown","url":"https://github.com/996icu/996.ICU","forks":20930,"issues":16700,"created_at":"2019-03-26T07:31:14Z","updated_at":"2026-03-25T02:57:02Z"},{"name":"practical-tutorials/project-based-learning","description":"Curated list of project-based tutorials","cn_description":"基于项目的教程精选列表","stars":261603,"language":"Unknown","url":"https://github.com/practical-tutorials/project-based-learning","forks":34047,"issues":283,"created_at":"2017-04-12T05:07:46Z","updated_at":"2026-03-25T03:04:03Z"},{"name":"facebook/react","description":"The library for web and native user interfaces.","cn_description":"用于Web和本机用户界面的库。","stars":244159,"language":"JavaScript","url":"https://github.com/facebook/react","forks":50852,"issues":1176,"created_at":"2013-05-24T16:15:54Z","updated_at":"2026-03-25T02:45:45Z"},{"name":"torvalds/linux","description":"Linux kernel source tree","cn_description":"Linux内核源树","stars":224928,"language":"C","url":"https://github.com/torvalds/linux","forks":61185,"issues":3,"created_at":"2011-09-04T22:48:12Z","updated_at":"2026-03-25T03:06:11Z"},{"name":"TheAlgorithms/Python","description":"All Algorithms implemented in Python","cn_description":"Python中实现的所有算法","stars":219025,"language":"Python","url":"https://github.com/TheAlgorithms/Python","forks":50238,"issues":891,"created_at":"2016-07-16T09:44:01Z","updated_at":"2026-03-25T02:56:12Z"},{"name":"trimstray/the-book-of-secret-knowledge","description":"A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more.","cn_description":"一系列鼓舞人心的列表、手册、备忘单、博客、黑客、单行工具、cli/web工具等。","stars":211511,"language":"Unknown","url":"https://github.com/trimstray/the-book-of-secret-knowledge","forks":12655,"issues":121,"created_at":"2018-06-23T10:43:14Z","updated_at":"2026-03-25T02:41:49Z"},{"name":"vuejs/vue","description":"This is the repo for Vue 2. For Vue 3, go to https://github.com/vuejs/core","cn_description":"这是Vue 2的存储库。如需了解VUE 3 ，请访问https://github.com/vuejs/core","stars":209958,"language":"TypeScript","url":"https://github.com/vuejs/vue","forks":33841,"issues":621,"created_at":"2013-07-29T03:24:51Z","updated_at":"2026-03-25T00:17:28Z"},{"name":"ossu/computer-science","description":"🎓 Path to a free self-taught education in Computer Science!","cn_description":"🎓 通往免费的计算机科学自学教育之路！","stars":202713,"language":"HTML","url":"https://github.com/ossu/computer-science","forks":25173,"issues":22,"created_at":"2014-05-04T00:18:39Z","updated_at":"2026-03-25T03:11:29Z"},{"name":"trekhleb/javascript-algorithms","description":"📝 Algorithms and data structures implemented in JavaScript with explanations and links to further readings","cn_description":"用JavaScript实现的📝算法和数据结构，并附有解释和进一步阅读的链接","stars":195777,"language":"JavaScript","url":"https://github.com/trekhleb/javascript-algorithms","forks":31093,"issues":397,"created_at":"2018-03-24T07:47:04Z","updated_at":"2026-03-25T01:11:24Z"}],"most-forked":[{"name":"jtleek/datasharing","description":"The Leek group guide to data sharing ","cn_description":"Leek数据共享小组指南","stars":6711,"language":"Unknown","url":"https://github.com/jtleek/datasharing","forks":242933,"issues":913,"created_at":"2013-11-07T13:25:07Z","updated_at":"2026-03-25T01:56:10Z"},{"name":"octocat/Spoon-Knife","description":"This repo is for demonstration purposes only.","cn_description":"此存储库仅用于演示目的。","stars":13693,"language":"HTML","url":"https://github.com/octocat/Spoon-Knife","forks":156753,"issues":20428,"created_at":"2011-01-27T19:30:43Z","updated_at":"2026-03-24T23:38:34Z"},{"name":"rdpeng/ProgrammingAssignment2","description":"Repository for Programming Assignment 2 for R Programming on Coursera","cn_description":"Coursera上的R编程编程作业2的存储库","stars":883,"language":"R","url":"https://github.com/rdpeng/ProgrammingAssignment2","forks":143836,"issues":4319,"created_at":"2014-01-14T22:07:41Z","updated_at":"2026-03-21T19:56:03Z"},{"name":"firstcontributions/first-contributions","description":"🚀✨ Help beginners to contribute to open source projects","cn_description":"🚀✨ 帮助初学者为开源项目做出贡献","stars":53157,"language":"Unknown","url":"https://github.com/firstcontributions/first-contributions","forks":100107,"issues":159,"created_at":"2016-09-20T14:35:09Z","updated_at":"2026-03-25T02:29:57Z"},{"name":"TheOdinProject/css-exercises","description":"暂无描述","cn_description":"暂无描述","stars":2611,"language":"HTML","url":"https://github.com/TheOdinProject/css-exercises","forks":89534,"issues":0,"created_at":"2021-08-17T20:33:19Z","updated_at":"2026-03-24T20:50:40Z"},{"name":"SmartThingsCommunity/SmartThingsPublic","description":"SmartThings open-source DeviceType Handlers and SmartApps code","cn_description":"SmartThings开源DeviceType处理程序和SmartApps代码","stars":2636,"language":"Groovy","url":"https://github.com/SmartThingsCommunity/SmartThingsPublic","forks":87737,"issues":2507,"created_at":"2015-08-04T22:48:02Z","updated_at":"2026-03-22T20:22:15Z"},{"name":"Pierian-Data/Complete-Python-3-Bootcamp","description":"Course Files for Complete Python 3 Bootcamp Course on Udemy","cn_description":"Udemy上的完整Python 3 Bootcamp课程的课程文件","stars":29459,"language":"Jupyter Notebook","url":"https://github.com/Pierian-Data/Complete-Python-3-Bootcamp","forks":87500,"issues":270,"created_at":"2018-02-12T19:30:10Z","updated_at":"2026-03-24T23:49:42Z"},{"name":"github/gitignore","description":"A collection of useful .gitignore templates","cn_description":"一组有用的.gitignore模板","stars":173167,"language":"Unknown","url":"https://github.com/github/gitignore","forks":82733,"issues":112,"created_at":"2010-11-08T20:17:14Z","updated_at":"2026-03-25T02:45:59Z"},{"name":"jwasham/coding-interview-university","description":"A complete computer science study plan to become a software engineer.","cn_description":"一个完整的计算机科学学习计划，成为一名软件工程师。","stars":338211,"language":"Unknown","url":"https://github.com/jwasham/coding-interview-university","forks":81623,"issues":101,"created_at":"2016-06-06T02:34:12Z","updated_at":"2026-03-25T03:09:52Z"},{"name":"twbs/bootstrap","description":"The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.","cn_description":"最流行的HTML、CSS和JavaScript框架，用于在网络上开发响应式、移动优先的项目。","stars":174108,"language":"MDX","url":"https://github.com/twbs/bootstrap","forks":79046,"issues":477,"created_at":"2011-07-29T21:19:00Z","updated_at":"2026-03-25T02:02:47Z"},{"name":"tensorflow/tensorflow","description":"An Open Source Machine Learning Framework for Everyone","cn_description":"面向所有人的开源机器学习框架","stars":194322,"language":"C++","url":"https://github.com/tensorflow/tensorflow","forks":75249,"issues":3949,"created_at":"2015-11-07T01:19:20Z","updated_at":"2026-03-25T01:58:44Z"},{"name":"nightscout/cgm-remote-monitor","description":"nightscout web monitor","cn_description":"nightscout网络监视器","stars":2716,"language":"JavaScript","url":"https://github.com/nightscout/cgm-remote-monitor","forks":73039,"issues":234,"created_at":"2014-05-22T00:32:28Z","updated_at":"2026-03-24T15:48:57Z"},{"name":"github/docs","description":"The open-source repo for docs.github.com","cn_description":"Docs.github.com的开源存储库","stars":19172,"language":"TypeScript","url":"https://github.com/github/docs","forks":66476,"issues":177,"created_at":"2019-05-31T15:57:39Z","updated_at":"2026-03-25T01:43:04Z"},{"name":"EbookFoundation/free-programming-books","description":":books: Freely available programming books","cn_description":": books:免费提供的编程书籍","stars":384545,"language":"Python","url":"https://github.com/EbookFoundation/free-programming-books","forks":66051,"issues":72,"created_at":"2013-10-11T06:50:37Z","updated_at":"2026-03-25T03:09:49Z"},{"name":"openclaw/openclaw","description":"Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ","cn_description":"您自己的个人人工智能助手。任何操作系统。任何平台。龙虾路。 🦞","stars":334631,"language":"TypeScript","url":"https://github.com/openclaw/openclaw","forks":65295,"issues":15476,"created_at":"2025-11-24T10:16:47Z","updated_at":"2026-03-25T03:12:06Z"},{"name":"torvalds/linux","description":"Linux kernel source tree","cn_description":"Linux内核源树","stars":224929,"language":"C","url":"https://github.com/torvalds/linux","forks":61185,"issues":3,"created_at":"2011-09-04T22:48:12Z","updated_at":"2026-03-25T03:12:09Z"},{"name":"digitalinnovationone/dio-lab-open-source","description":"Repositório do lab \"Contribuindo em um Projeto Open Source no GitHub\" da Digital Innovation One.","cn_description":"Repositório do lab \"Contribuindo em um Projeto Open Source no GitHub\" da Digital Innovation One。","stars":8521,"language":"Jupyter Notebook","url":"https://github.com/digitalinnovationone/dio-lab-open-source","forks":60342,"issues":15780,"created_at":"2023-04-26T11:34:25Z","updated_at":"2026-03-24T19:30:25Z"},{"name":"ChatGPTNextWeb/NextChat","description":"✨ Light and Fast AI Assistant. Support: Web | iOS | MacOS | Android |  Linux | Windows","cn_description":"✨ 轻快的人工智能助手。支持： Web | iOS | MacOS | Android | Linux | Windows","stars":87574,"language":"TypeScript","url":"https://github.com/ChatGPTNextWeb/NextChat","forks":60069,"issues":796,"created_at":"2023-03-10T18:27:54Z","updated_at":"2026-03-25T02:38:28Z"},{"name":"microsoft/generative-ai-for-beginners","description":"21 Lessons, Get Started Building with Generative AI ","cn_description":"21节课，开始使用生成式人工智能构建","stars":108476,"language":"Jupyter Notebook","url":"https://github.com/microsoft/generative-ai-for-beginners","forks":58157,"issues":13,"created_at":"2023-06-19T16:28:59Z","updated_at":"2026-03-25T02:43:27Z"},{"name":"opencv/opencv","description":"Open Source Computer Vision Library","cn_description":"开源计算机视觉库","stars":86779,"language":"C++","url":"https://github.com/opencv/opencv","forks":56559,"issues":2748,"created_at":"2012-07-19T09:40:17Z","updated_at":"2026-03-25T03:01:59Z"}],"new-this-month":[{"name":"karpathy/autoresearch","description":"AI agents running research on single-GPU nanochat training automatically","cn_description":"AI智能体自动运行单GPU纳米聊天训练研究","stars":54493,"language":"Python","url":"https://github.com/karpathy/autoresearch","forks":7588,"issues":157,"created_at":"2026-03-06T22:00:43Z","updated_at":"2026-03-25T03:12:12Z"},{"name":"garrytan/gstack","description":"Use Garry Tan's exact Claude Code setup: 15 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA","cn_description":"使用Garry Tan确切的Claude Code设置： 15个自以为是的工具，分别担任首席执行官、设计师、工程经理、发布经理、文档工程师和QA","stars":45317,"language":"TypeScript","url":"https://github.com/garrytan/gstack","forks":5681,"issues":166,"created_at":"2026-03-11T21:22:45Z","updated_at":"2026-03-25T03:12:03Z"},{"name":"paperclipai/paperclip","description":"Open-source orchestration for zero-human companies","cn_description":"面向零人类公司的开源编排","stars":32694,"language":"TypeScript","url":"https://github.com/paperclipai/paperclip","forks":4597,"issues":973,"created_at":"2026-03-02T15:01:51Z","updated_at":"2026-03-25T03:09:12Z"},{"name":"HKUDS/CLI-Anything","description":"CLI-Anything: Making ALL Software Agent-Native","cn_description":"CLI-Anything ：使所有软件代理原生","stars":22561,"language":"Python","url":"https://github.com/HKUDS/CLI-Anything","forks":2004,"issues":56,"created_at":"2026-03-08T13:52:57Z","updated_at":"2026-03-25T03:11:40Z"},{"name":"googleworkspace/cli","description":"Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills.","cn_description":"Google Workspace CLI —一个用于云端硬盘、Gmail、日历、工作表、文档、聊天、管理员等的命令行工具。从Google Discovery服务动态生成。包括人工智能代理技能。","stars":22416,"language":"Rust","url":"https://github.com/googleworkspace/cli","forks":1069,"issues":48,"created_at":"2026-03-02T19:46:06Z","updated_at":"2026-03-25T03:09:05Z"},{"name":"NVIDIA/NemoClaw","description":"Run OpenClaw more securely inside NVIDIA OpenShell with managed inference","cn_description":"使用托管推理，在NVIDIA OpenShell中更安全地运行OpenClaw","stars":16402,"language":"JavaScript","url":"https://github.com/NVIDIA/NemoClaw","forks":1758,"issues":411,"created_at":"2026-03-15T17:04:09Z","updated_at":"2026-03-25T03:11:21Z"},{"name":"THU-MAIC/OpenMAIC","description":"Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click","cn_description":"开放式多座席互动课堂—只需点击一下，即可获得身临其境的多座席学习体验","stars":12058,"language":"TypeScript","url":"https://github.com/THU-MAIC/OpenMAIC","forks":1830,"issues":126,"created_at":"2026-03-11T10:13:16Z","updated_at":"2026-03-25T03:10:50Z"},{"name":"tanweai/pua","description":"你是一个曾经被寄予厚望的 P8 级工程师。Anthropic 当初给你定级的时候，对你的期望是很高的。  一个agent使用的高能动性的skill。  Your AI has been placed on a PIP. 30 days to show improvement.","cn_description":"你是一个曾经被寄予厚望的 P8级工程师。人性当初给你定级的时候，对你的期望是很高的。  一个智能体使用的高能动性的技能。您的AI已被放置在PIP上。30天以显示改进。","stars":11297,"language":"TypeScript","url":"https://github.com/tanweai/pua","forks":587,"issues":11,"created_at":"2026-03-08T16:55:16Z","updated_at":"2026-03-25T03:11:41Z"},{"name":"aiming-lab/AutoResearchClaw","description":"Fully autonomous & self-evolving research from idea to paper. Chat an Idea. Get a Paper. 🦞","cn_description":"从创意到论文的完全自主和自我发展的研究。聊天创意。获取论文。 🦞","stars":8481,"language":"Python","url":"https://github.com/aiming-lab/AutoResearchClaw","forks":900,"issues":5,"created_at":"2026-03-15T03:38:49Z","updated_at":"2026-03-25T03:07:51Z"},{"name":"calesthio/Crucix","description":"Your personal intelligence agent. Watches the world from multiple data sources and pings you when something changes.","cn_description":"您的个人情报人员。从多个数据源观看世界，并在发生变化时ping您。","stars":6674,"language":"JavaScript","url":"https://github.com/calesthio/Crucix","forks":1023,"issues":34,"created_at":"2026-03-14T07:33:06Z","updated_at":"2026-03-25T03:09:01Z"},{"name":"jackwener/opencli","description":"Make Any Website & Tool Your CLI. A universal CLI Hub and AI-native runtime. Transform any website, Electron app, or local binary into a standardized command-line interface. Built for AI Agents to discover, learn, and execute tools seamlessly via a unified AGENT.md integration.","cn_description":"让任何网站和工具成为您的CLI。通用CLI Hub和AI原生运行时。将任何网站、Electron应用或本地二进制文件转换为标准化的命令行界面。专为人工智能代理构建，通过统一的AGENT.md集成无缝发现、学习和执行工具。","stars":6224,"language":"TypeScript","url":"https://github.com/jackwener/opencli","forks":502,"issues":51,"created_at":"2026-03-14T22:10:23Z","updated_at":"2026-03-25T03:10:53Z"},{"name":"Lum1104/Understand-Anything","description":"Claude Code skills that turn any codebase into an interactive knowledge graph you can explore, search, and ask questions about (Multi-platform e.g., Codex are supported).","cn_description":"Claude Code技能可将任何代码库转化为交互式知识图表，您可以探索、搜索和提出相关问题（支持多平台，例如Codex ）。","stars":5973,"language":"TypeScript","url":"https://github.com/Lum1104/Understand-Anything","forks":459,"issues":7,"created_at":"2026-03-15T02:30:51Z","updated_at":"2026-03-25T03:09:14Z"},{"name":"BigBodyCobain/Shadowbroker","description":"Open-source intelligence for the global theater. Track everything from the corporate/private jets of the wealthy, and spy satellites, to seismic events in one unified interface. The knowledge is available to all but rarely aggregated in the open, until now.","cn_description":"面向全球影院的开源智能。在一个统一的界面中跟踪从富人的公司/私人飞机和间谍卫星到地震事件的所有内容。到目前为止，所有人都可以获得这些知识，但很少公开汇总。","stars":4972,"language":"TypeScript","url":"https://github.com/BigBodyCobain/Shadowbroker","forks":736,"issues":1,"created_at":"2026-03-05T03:59:55Z","updated_at":"2026-03-25T03:11:16Z"},{"name":"MiniMax-AI/skills","description":"暂无描述","cn_description":"暂无描述","stars":4142,"language":"C#","url":"https://github.com/MiniMax-AI/skills","forks":276,"issues":8,"created_at":"2026-03-17T07:19:25Z","updated_at":"2026-03-25T03:11:39Z"},{"name":"tiajinsha/JKVideo","description":"高颜值的第三方 B 站 React Native 客户端，支持安卓、H5、iOS | Bilibili-like app with DASH playback, danmaku, WBI sign & live streaming","cn_description":"高颜值的第三方 B 站 React Native 客户端，支持安卓、 H5、 iOS |带破折号播放、danmaku、WBI标志和直播的Bilibili-like应用程序","stars":3920,"language":"TypeScript","url":"https://github.com/tiajinsha/JKVideo","forks":2343,"issues":8,"created_at":"2026-03-06T04:58:45Z","updated_at":"2026-03-25T03:12:04Z"},{"name":"wanshuiyin/Auto-claude-code-research-in-sleep","description":"ARIS ⚔️ (Auto-Research-In-Sleep) — Lightweight Markdown-only skills for autonomous ML research: cross-model review loops, idea discovery, and experiment automation. No framework, no lock-in — works with Claude Code, Codex, OpenClaw, or any LLM agent.","cn_description":"ARIS ⚔️ （自动睡眠研究） —用于自主机器学习研究的轻量级Markdown技能：跨模型审核循环、创意发现和实验自动化。没有框架，没有锁定—适用于Claude Code、Codex、OpenClaw或任何LLM代理。","stars":3836,"language":"Python","url":"https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep","forks":310,"issues":11,"created_at":"2026-03-10T07:31:45Z","updated_at":"2026-03-25T03:12:02Z"},{"name":"NawfalMotii79/PLFM_RADAR","description":"Open-source, low-cost 10.5 GHz PLFM phased array RADAR system","cn_description":"开源、低成本的10.5 GHz PLFM相控阵雷达系统","stars":3549,"language":"Verilog","url":"https://github.com/NawfalMotii79/PLFM_RADAR","forks":751,"issues":11,"created_at":"2026-03-08T23:20:58Z","updated_at":"2026-03-25T00:41:40Z"},{"name":"microsoft/RustTraining","description":"Beginner, advanced, expert level Rust training material","cn_description":"初级、高级、专家级Rust培训材料","stars":3523,"language":"Rust","url":"https://github.com/microsoft/RustTraining","forks":268,"issues":12,"created_at":"2026-03-13T04:25:17Z","updated_at":"2026-03-25T03:12:12Z"},{"name":"HKUDS/ClawTeam","description":"ClawTeam: Agent Swarm Intelligence (One Command → Full Automation)","cn_description":"ClawTeam ： Agent Swarm Intelligence （一个命令→完全自动化）","stars":3419,"language":"Python","url":"https://github.com/HKUDS/ClawTeam","forks":468,"issues":40,"created_at":"2026-03-17T14:42:46Z","updated_at":"2026-03-25T03:11:49Z"},{"name":"Flowseal/tg-ws-proxy","description":"Local SOCKS5 proxy server for partial bypassing of Telegram loading","cn_description":"用于部分绕过Telegram加载的本地SOCKS5代理服务器","stars":3366,"language":"Python","url":"https://github.com/Flowseal/tg-ws-proxy","forks":144,"issues":119,"created_at":"2026-03-04T14:10:26Z","updated_at":"2026-03-25T02:58:38Z"}],"trending-growth":[{"name":"garrytan/gstack","description":"Use Garry Tan's exact Claude Code setup: 15 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA","cn_description":"使用Garry Tan确切的Claude Code设置： 15个自以为是的工具，分别担任首席执行官、设计师、工程经理、发布经理、文档工程师和QA","stars":45317,"language":"TypeScript","url":"https://github.com/garrytan/gstack","forks":5681,"issues":166,"created_at":"2026-03-11T21:22:45Z","updated_at":"2026-03-25T03:12:03Z","starGrowth":3485.92,"ageDays":13},{"name":"karpathy/autoresearch","description":"AI agents running research on single-GPU nanochat training automatically","cn_description":"AI智能体自动运行单GPU纳米聊天训练研究","stars":54493,"language":"Python","url":"https://github.com/karpathy/autoresearch","forks":7588,"issues":157,"created_at":"2026-03-06T22:00:43Z","updated_at":"2026-03-25T03:12:12Z","starGrowth":3027.39,"ageDays":18},{"name":"NVIDIA/NemoClaw","description":"Run OpenClaw more securely inside NVIDIA OpenShell with managed inference","cn_description":"使用托管推理，在NVIDIA OpenShell中更安全地运行OpenClaw","stars":16403,"language":"JavaScript","url":"https://github.com/NVIDIA/NemoClaw","forks":1758,"issues":411,"created_at":"2026-03-15T17:04:09Z","updated_at":"2026-03-25T03:12:14Z","starGrowth":1822.56,"ageDays":9},{"name":"paperclipai/paperclip","description":"Open-source orchestration for zero-human companies","cn_description":"面向零人类公司的开源编排","stars":32694,"language":"TypeScript","url":"https://github.com/paperclipai/paperclip","forks":4597,"issues":973,"created_at":"2026-03-02T15:01:51Z","updated_at":"2026-03-25T03:09:12Z","starGrowth":1486.09,"ageDays":22},{"name":"HKUDS/CLI-Anything","description":"CLI-Anything: Making ALL Software Agent-Native","cn_description":"CLI-Anything ：使所有软件代理原生","stars":22561,"language":"Python","url":"https://github.com/HKUDS/CLI-Anything","forks":2004,"issues":56,"created_at":"2026-03-08T13:52:57Z","updated_at":"2026-03-25T03:11:40Z","starGrowth":1410.06,"ageDays":16},{"name":"googleworkspace/cli","description":"Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills.","cn_description":"Google Workspace CLI —一个用于云端硬盘、Gmail、日历、工作表、文档、聊天、管理员等的命令行工具。从Google Discovery服务动态生成。包括人工智能代理技能。","stars":22416,"language":"Rust","url":"https://github.com/googleworkspace/cli","forks":1069,"issues":48,"created_at":"2026-03-02T19:46:06Z","updated_at":"2026-03-25T03:09:05Z","starGrowth":1018.91,"ageDays":22},{"name":"aiming-lab/AutoResearchClaw","description":"Fully autonomous & self-evolving research from idea to paper. Chat an Idea. Get a Paper. 🦞","cn_description":"从创意到论文的完全自主和自我发展的研究。聊天创意。获取论文。 🦞","stars":8481,"language":"Python","url":"https://github.com/aiming-lab/AutoResearchClaw","forks":900,"issues":5,"created_at":"2026-03-15T03:38:49Z","updated_at":"2026-03-25T03:07:51Z","starGrowth":942.33,"ageDays":9},{"name":"THU-MAIC/OpenMAIC","description":"Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click","cn_description":"开放式多座席互动课堂—只需点击一下，即可获得身临其境的多座席学习体验","stars":12058,"language":"TypeScript","url":"https://github.com/THU-MAIC/OpenMAIC","forks":1830,"issues":126,"created_at":"2026-03-11T10:13:16Z","updated_at":"2026-03-25T03:10:50Z","starGrowth":927.54,"ageDays":13},{"name":"tanweai/pua","description":"你是一个曾经被寄予厚望的 P8 级工程师。Anthropic 当初给你定级的时候，对你的期望是很高的。  一个agent使用的高能动性的skill。  Your AI has been placed on a PIP. 30 days to show improvement.","cn_description":"你是一个曾经被寄予厚望的 P8级工程师。人性当初给你定级的时候，对你的期望是很高的。  一个智能体使用的高能动性的技能。您的AI已被放置在PIP上。30天以显示改进。","stars":11297,"language":"TypeScript","url":"https://github.com/tanweai/pua","forks":587,"issues":11,"created_at":"2026-03-08T16:55:16Z","updated_at":"2026-03-25T03:11:41Z","starGrowth":706.06,"ageDays":16},{"name":"calesthio/Crucix","description":"Your personal intelligence agent. Watches the world from multiple data sources and pings you when something changes.","cn_description":"您的个人情报人员。从多个数据源观看世界，并在发生变化时ping您。","stars":6674,"language":"JavaScript","url":"https://github.com/calesthio/Crucix","forks":1023,"issues":34,"created_at":"2026-03-14T07:33:06Z","updated_at":"2026-03-25T03:09:01Z","starGrowth":667.4,"ageDays":10},{"name":"jackwener/opencli","description":"Make Any Website & Tool Your CLI. A universal CLI Hub and AI-native runtime. Transform any website, Electron app, or local binary into a standardized command-line interface. Built for AI Agents to discover, learn, and execute tools seamlessly via a unified AGENT.md integration.","cn_description":"让任何网站和工具成为您的CLI。通用CLI Hub和AI原生运行时。将任何网站、Electron应用或本地二进制文件转换为标准化的命令行界面。专为人工智能代理构建，通过统一的AGENT.md集成无缝发现、学习和执行工具。","stars":6224,"language":"TypeScript","url":"https://github.com/jackwener/opencli","forks":502,"issues":51,"created_at":"2026-03-14T22:10:23Z","updated_at":"2026-03-25T03:10:53Z","starGrowth":622.4,"ageDays":10},{"name":"Lum1104/Understand-Anything","description":"Claude Code skills that turn any codebase into an interactive knowledge graph you can explore, search, and ask questions about (Multi-platform e.g., Codex are supported).","cn_description":"Claude Code技能可将任何代码库转化为交互式知识图表，您可以探索、搜索和提出相关问题（支持多平台，例如Codex ）。","stars":5973,"language":"TypeScript","url":"https://github.com/Lum1104/Understand-Anything","forks":459,"issues":7,"created_at":"2026-03-15T02:30:51Z","updated_at":"2026-03-25T03:09:14Z","starGrowth":597.3,"ageDays":10},{"name":"MiniMax-AI/skills","description":"暂无描述","cn_description":"暂无描述","stars":4142,"language":"C#","url":"https://github.com/MiniMax-AI/skills","forks":276,"issues":8,"created_at":"2026-03-17T07:19:25Z","updated_at":"2026-03-25T03:11:39Z","starGrowth":591.71,"ageDays":7},{"name":"RightNow-AI/openfang","description":"Open-source Agent Operating System","cn_description":"开源代理操作系统","stars":15477,"language":"Rust","url":"https://github.com/RightNow-AI/openfang","forks":1883,"issues":131,"created_at":"2026-02-24T23:12:38Z","updated_at":"2026-03-25T02:46:04Z","starGrowth":552.75,"ageDays":28},{"name":"openai/symphony","description":"Symphony turns project work into isolated, autonomous implementation runs, allowing teams to manage work instead of supervising coding agents.","cn_description":"Symphony将项目工作转化为独立、自主的实施运行，使团队能够管理工作，而不是监督编码代理。","stars":13973,"language":"Elixir","url":"https://github.com/openai/symphony","forks":1132,"issues":0,"created_at":"2026-02-26T21:54:00Z","updated_at":"2026-03-25T02:36:07Z","starGrowth":537.42,"ageDays":26},{"name":"agentscope-ai/CoPaw","description":"Your Personal AI Assistant; easy to install, deploy on your own machine or on the cloud; supports multiple chat apps with easily extensible capabilities.","cn_description":"您的个人AI助手；易于安装，部署在您自己的计算机或云上；支持多个聊天应用程序，具有易于扩展的功能。","stars":13186,"language":"Python","url":"https://github.com/agentscope-ai/CoPaw","forks":1680,"issues":475,"created_at":"2026-02-24T03:42:56Z","updated_at":"2026-03-25T03:10:34Z","starGrowth":470.93,"ageDays":28},{"name":"Panniantong/Agent-Reach","description":"Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.","cn_description":"让您的人工智能代理看到整个互联网。阅读和搜索Twitter、Reddit、YouTube、GitHub、Bilibili、XiaoHongShu —一个CLI ，无API费用。","stars":10677,"language":"Python","url":"https://github.com/Panniantong/Agent-Reach","forks":777,"issues":10,"created_at":"2026-02-24T02:10:24Z","updated_at":"2026-03-25T03:10:35Z","starGrowth":368.17,"ageDays":29},{"name":"phuryn/pm-skills","description":"PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.","cn_description":"PM Skills Marketplace ： 100多种代理技能、命令和插件—从发现到战略、执行、发布和增长。","stars":8104,"language":"Unknown","url":"https://github.com/phuryn/pm-skills","forks":830,"issues":7,"created_at":"2026-03-01T23:33:44Z","updated_at":"2026-03-25T03:02:32Z","starGrowth":352.35,"ageDays":23},{"name":"nikopueringer/CorridorKey","description":"Perfect Green Screen Keys","cn_description":"完美的绿色屏幕按键","stars":8960,"language":"Python","url":"https://github.com/nikopueringer/CorridorKey","forks":535,"issues":60,"created_at":"2026-02-25T08:51:11Z","updated_at":"2026-03-25T02:14:28Z","starGrowth":331.85,"ageDays":27},{"name":"wanshuiyin/Auto-claude-code-research-in-sleep","description":"ARIS ⚔️ (Auto-Research-In-Sleep) — Lightweight Markdown-only skills for autonomous ML research: cross-model review loops, idea discovery, and experiment automation. No framework, no lock-in — works with Claude Code, Codex, OpenClaw, or any LLM agent.","cn_description":"ARIS ⚔️ （自动睡眠研究） —用于自主机器学习研究的轻量级Markdown技能：跨模型审核循环、创意发现和实验自动化。没有框架，没有锁定—适用于Claude Code、Codex、OpenClaw或任何LLM代理。","stars":3836,"language":"Python","url":"https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep","forks":310,"issues":11,"created_at":"2026-03-10T07:31:45Z","updated_at":"2026-03-25T03:12:02Z","starGrowth":274,"ageDays":14}],"chinese":[{"name":"Anduin2017/HowToCook","description":"程序员在家做饭方法指南。Programmer's guide about how to cook at home (Simplified Chinese only).","cn_description":"有关如何在家烹饪程序员在家做饭方法指南。的程序员指南（仅限简体中文）。","stars":99014,"language":"Dockerfile","url":"https://github.com/Anduin2017/HowToCook","forks":10880,"issues":470,"created_at":"2020-02-29T10:43:49Z","updated_at":"2026-03-25T02:27:27Z"},{"name":"d2l-ai/d2l-zh","description":"《动手学深度学习》：面向中文读者、能运行、可讨论。中英文版被70多个国家的500多所大学用于教学。","cn_description":"《动手学深度学习》电话：面向中文读者、能运行、可讨论。中英文版被 70多个国家的 500多所大学用于教学。","stars":76476,"language":"Python","url":"https://github.com/d2l-ai/d2l-zh","forks":12167,"issues":120,"created_at":"2017-08-23T04:40:24Z","updated_at":"2026-03-25T03:03:55Z"},{"name":"chinese-poetry/chinese-poetry","description":"The most comprehensive database of Chinese poetry 🧶最全中华古诗词数据库,  唐宋两朝近一万四千古诗人,  接近5.5万首唐诗加26万宋诗.  两宋时期1564位词人，21050首词。","cn_description":"中国诗歌最全面的数据库🧶最全中华古诗词数据库  唐宋两朝近一万四千古诗人，  接近5.5万首唐诗加 26万宋诗.  两宋时期1564位词人 ， 21050首词。","stars":51150,"language":"JavaScript","url":"https://github.com/chinese-poetry/chinese-poetry","forks":10334,"issues":129,"created_at":"2016-09-02T03:32:25Z","updated_at":"2026-03-25T01:51:50Z"},{"name":"byoungd/English-level-up-tips","description":"An advanced guide to learn English which might benefit you a lot 🎉 .  离谱的英语学习指南/英语学习教程/英语学习/学英语","cn_description":"学习英语的高级指南，可能会让您受益匪浅🎉。离谱的英语学习指南/英语学习教程/英语学习/学英语","stars":41830,"language":"Unknown","url":"https://github.com/byoungd/English-level-up-tips","forks":4403,"issues":28,"created_at":"2017-05-30T07:18:52Z","updated_at":"2026-03-25T01:57:22Z"},{"name":"2noise/ChatTTS","description":"A generative speech model for daily dialogue.","cn_description":"日常对话的生成语音模型。","stars":38980,"language":"Python","url":"https://github.com/2noise/ChatTTS","forks":4230,"issues":66,"created_at":"2024-05-27T18:26:49Z","updated_at":"2026-03-25T03:09:41Z"},{"name":"PDFMathTranslate/PDFMathTranslate","description":"[EMNLP 2025 Demo] PDF scientific paper translation with preserved formats - 基于 AI 完整保留排版的 PDF 文档全文双语翻译，支持 Google/DeepL/Ollama/OpenAI 等服务，提供 CLI/GUI/MCP/Docker/Zotero","cn_description":"[EMNLP 2025 Demo]保留格式的PDF科学论文翻译- 基于 AI 完整保留排版的 文档全文双语翻译PDF ，支持 Google/DeepL/Ollama/OpenAI 等服务，提供 CLI/GUI/MCP/Docker/Zotero","stars":32455,"language":"Python","url":"https://github.com/PDFMathTranslate/PDFMathTranslate","forks":2926,"issues":102,"created_at":"2024-09-06T06:56:03Z","updated_at":"2026-03-25T02:40:14Z"},{"name":"sunface/rust-course","description":"什么？你敢放心的把后背交给 AI? 我赌你不敢，那就来学学 AI 时代最安全的语言吧(Python无法战胜！)。本书拥有全面且深入的讲解、生动贴切的示例、德芙般丝滑的内容，这可能是目前最用心的 Rust 中文学习教程 / Book ","cn_description":"什么？你敢放心的把后背交给 AI? 我赌你不敢，那就来学学 AI 时代最安全的语言吧(Python无法战胜 ！)。本书拥有全面且深入的讲解、生动贴切的示例、德芙般丝滑的内容 ，这可能是目前最用心的 Rust中文学习教程/Book","stars":30144,"language":"Rust","url":"https://github.com/sunface/rust-course","forks":2557,"issues":70,"created_at":"2018-08-07T05:01:21Z","updated_at":"2026-03-25T02:49:05Z"},{"name":"Z-Siqi/Clash-for-Windows_Chinese","description":"clash for windows汉化版. 提供clash for windows的汉化版, 汉化补丁及汉化版安装程序","cn_description":"为窗户而提供冲突汉化版。为窗户而冲突的汉化版， 汉化补丁及汉化版安装程序","stars":27963,"language":"JavaScript","url":"https://github.com/Z-Siqi/Clash-for-Windows_Chinese","forks":3214,"issues":4,"created_at":"2021-04-19T08:13:23Z","updated_at":"2026-03-25T02:00:54Z"},{"name":"xiaojieonly/Ehviewer_CN_SXJ","description":"ehviewer，用爱发电，快乐前行","cn_description":"ehviewer 用爱发电， ehviewer快乐前行","stars":23140,"language":"C","url":"https://github.com/xiaojieonly/Ehviewer_CN_SXJ","forks":603,"issues":413,"created_at":"2020-11-09T06:14:31Z","updated_at":"2026-03-25T02:55:17Z"},{"name":"HqWu-HITCS/Awesome-Chinese-LLM","description":"整理开源的中文大语言模型，以规模较小、可私有化部署、训练成本较低的模型为主，包括底座模型，垂直领域微调及应用，数据集与教程等。","cn_description":"整理开源的中文大语言模型，以规模较小、可私有化部署、训练成本较低的模型为主 ，包括底座模型 ，垂直领域微调及应用 ，数据集与教程等。","stars":22466,"language":"Unknown","url":"https://github.com/HqWu-HITCS/Awesome-Chinese-LLM","forks":2114,"issues":9,"created_at":"2023-05-22T12:27:03Z","updated_at":"2026-03-25T02:18:18Z"},{"name":"QwenLM/Qwen","description":"The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud.","cn_description":"阿里云提出的Qwen通义千问聊天和预训练大型语言模型的官方仓库。","stars":20829,"language":"Python","url":"https://github.com/QwenLM/Qwen","forks":1750,"issues":35,"created_at":"2023-08-03T04:56:38Z","updated_at":"2026-03-25T03:11:18Z"},{"name":"FunAudioLLM/CosyVoice","description":"Multi-lingual large voice generation model, providing inference, training and deployment full-stack ability.","cn_description":"多语言大型语音生成模型，提供推理、训练和部署全栈能力。","stars":20222,"language":"Python","url":"https://github.com/FunAudioLLM/CosyVoice","forks":2297,"issues":855,"created_at":"2024-07-03T02:59:22Z","updated_at":"2026-03-25T01:28:04Z"},{"name":"AccumulateMore/CV","description":"✔（已完结）超级全面的 深度学习 笔记【土堆 Pytorch】【李沐 动手学深度学习】【吴恩达 深度学习】【大飞 大模型Agent】","cn_description":"✔（二已完结）超级全面的 深度学习 笔记【土堆 Pytorch】【李沐 动手学深度学习】【吴恩达 深度学习】【大飞 大模型Agent】","stars":18687,"language":"Jupyter Notebook","url":"https://github.com/AccumulateMore/CV","forks":2156,"issues":20,"created_at":"2022-03-31T13:19:32Z","updated_at":"2026-03-25T03:10:57Z"},{"name":"DrewThomasson/ebook2audiobook","description":"Generate audiobooks from e-books, voice cloning & 1158+ languages!","cn_description":"从电子书、语音克隆和1158多种语言生成有声读物！","stars":18553,"language":"Python","url":"https://github.com/DrewThomasson/ebook2audiobook","forks":1522,"issues":2,"created_at":"2024-01-22T23:49:55Z","updated_at":"2026-03-25T00:40:45Z"},{"name":"sparanoid/chinese-copywriting-guidelines","description":"Chinese copywriting guidelines for better written communication／中文文案排版指北","cn_description":"中文文案指南，更好地进行书面沟通/中文文案排版指北","stars":15271,"language":"Unknown","url":"https://github.com/sparanoid/chinese-copywriting-guidelines","forks":1842,"issues":33,"created_at":"2014-03-17T08:27:16Z","updated_at":"2026-03-24T14:09:29Z"},{"name":"rshipp/awesome-malware-analysis","description":"Defund the Police.","cn_description":"解除警察的警戒。","stars":13543,"language":"Unknown","url":"https://github.com/rshipp/awesome-malware-analysis","forks":2663,"issues":24,"created_at":"2015-05-09T03:39:28Z","updated_at":"2026-03-24T22:34:22Z"},{"name":"nusr/hacker-laws-zh","description":"💻📖对开发人员有用的定律、理论、原则和模式。(Laws, Theories, Principles and Patterns that developers will find useful.)","cn_description":"💻📖对开发人员有用的定律、理论、原则和模式。（开发人员会发现有用的法律、理论、原则和模式。）","stars":12534,"language":"Unknown","url":"https://github.com/nusr/hacker-laws-zh","forks":1014,"issues":9,"created_at":"2019-05-15T01:25:34Z","updated_at":"2026-03-23T12:47:55Z"},{"name":"Embedding/Chinese-Word-Vectors","description":"100+ Chinese Word Vectors 上百种预训练中文词向量 ","cn_description":"100多个中文单词向量 上百种预训练中文词向量","stars":12189,"language":"Python","url":"https://github.com/Embedding/Chinese-Word-Vectors","forks":2325,"issues":60,"created_at":"2018-01-09T09:48:49Z","updated_at":"2026-03-24T07:36:30Z"},{"name":"pwxcoo/chinese-xinhua","description":":orange_book: 中华新华字典数据库。包括歇后语，成语，词语，汉字。","cn_description":": orange_book: 中华新华字典数据库。包括歇后语，成语 ，词语 ，汉字。","stars":11510,"language":"Python","url":"https://github.com/pwxcoo/chinese-xinhua","forks":2663,"issues":39,"created_at":"2018-02-05T02:51:53Z","updated_at":"2026-03-24T16:03:33Z"},{"name":"javascript-tutorial/zh.javascript.info","description":"现代 JavaScript 教程（The Modern JavaScript Tutorial），以最新的 ECMAScript 规范为基准，通过简单但足够详细的内容，为你讲解从基础到高阶的 JavaScript 相关知识。","cn_description":"现代 JavaScript 教程（The Modern JavaScript Tutorial），以最新的 ECMAScript 规范为基准，通过简单但足够详细的内容，为你讲解从基础到高阶的 JavaScript 相关知识。","stars":10721,"language":"HTML","url":"https://github.com/javascript-tutorial/zh.javascript.info","forks":1212,"issues":26,"created_at":"2018-04-04T06:01:58Z","updated_at":"2026-03-25T03:06:06Z"}],"newest":[{"name":"NVIDIA/NemoClaw","description":"Run OpenClaw more securely inside NVIDIA OpenShell with managed inference","cn_description":"使用托管推理，在NVIDIA OpenShell中更安全地运行OpenClaw","stars":16403,"language":"JavaScript","url":"https://github.com/NVIDIA/NemoClaw","forks":1758,"issues":411,"created_at":"2026-03-15T17:04:09Z","updated_at":"2026-03-25T03:12:14Z"},{"name":"aiming-lab/AutoResearchClaw","description":"Fully autonomous & self-evolving research from idea to paper. Chat an Idea. Get a Paper. 🦞","cn_description":"从创意到论文的完全自主和自我发展的研究。聊天创意。获取论文。 🦞","stars":8481,"language":"Python","url":"https://github.com/aiming-lab/AutoResearchClaw","forks":900,"issues":5,"created_at":"2026-03-15T03:38:49Z","updated_at":"2026-03-25T03:07:51Z"},{"name":"jackwener/opencli","description":"Make Any Website & Tool Your CLI. A universal CLI Hub and AI-native runtime. Transform any website, Electron app, or local binary into a standardized command-line interface. Built for AI Agents to discover, learn, and execute tools seamlessly via a unified AGENT.md integration.","cn_description":"让任何网站和工具成为您的CLI。通用CLI Hub和AI原生运行时。将任何网站、Electron应用或本地二进制文件转换为标准化的命令行界面。专为人工智能代理构建，通过统一的AGENT.md集成无缝发现、学习和执行工具。","stars":6224,"language":"TypeScript","url":"https://github.com/jackwener/opencli","forks":502,"issues":51,"created_at":"2026-03-14T22:10:23Z","updated_at":"2026-03-25T03:10:53Z"},{"name":"calesthio/Crucix","description":"Your personal intelligence agent. Watches the world from multiple data sources and pings you when something changes.","cn_description":"您的个人情报人员。从多个数据源观看世界，并在发生变化时ping您。","stars":6674,"language":"JavaScript","url":"https://github.com/calesthio/Crucix","forks":1023,"issues":34,"created_at":"2026-03-14T07:33:06Z","updated_at":"2026-03-25T03:09:01Z"},{"name":"garrytan/gstack","description":"Use Garry Tan's exact Claude Code setup: 15 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA","cn_description":"使用Garry Tan确切的Claude Code设置： 15个自以为是的工具，分别担任首席执行官、设计师、工程经理、发布经理、文档工程师和QA","stars":45318,"language":"TypeScript","url":"https://github.com/garrytan/gstack","forks":5681,"issues":166,"created_at":"2026-03-11T21:22:45Z","updated_at":"2026-03-25T03:12:21Z"},{"name":"THU-MAIC/OpenMAIC","description":"Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click","cn_description":"开放式多座席互动课堂—只需点击一下，即可获得身临其境的多座席学习体验","stars":12058,"language":"TypeScript","url":"https://github.com/THU-MAIC/OpenMAIC","forks":1830,"issues":126,"created_at":"2026-03-11T10:13:16Z","updated_at":"2026-03-25T03:10:50Z"},{"name":"tanweai/pua","description":"你是一个曾经被寄予厚望的 P8 级工程师。Anthropic 当初给你定级的时候，对你的期望是很高的。  一个agent使用的高能动性的skill。  Your AI has been placed on a PIP. 30 days to show improvement.","cn_description":"你是一个曾经被寄予厚望的 P8级工程师。人性当初给你定级的时候，对你的期望是很高的。  一个智能体使用的高能动性的技能。您的AI已被放置在PIP上。30天以显示改进。","stars":11298,"language":"TypeScript","url":"https://github.com/tanweai/pua","forks":587,"issues":11,"created_at":"2026-03-08T16:55:16Z","updated_at":"2026-03-25T03:12:25Z"},{"name":"HKUDS/CLI-Anything","description":"CLI-Anything: Making ALL Software Agent-Native","cn_description":"CLI-Anything ：使所有软件代理原生","stars":22562,"language":"Python","url":"https://github.com/HKUDS/CLI-Anything","forks":2004,"issues":56,"created_at":"2026-03-08T13:52:57Z","updated_at":"2026-03-25T03:12:17Z"},{"name":"karpathy/autoresearch","description":"AI agents running research on single-GPU nanochat training automatically","cn_description":"AI智能体自动运行单GPU纳米聊天训练研究","stars":54493,"language":"Python","url":"https://github.com/karpathy/autoresearch","forks":7588,"issues":157,"created_at":"2026-03-06T22:00:43Z","updated_at":"2026-03-25T03:12:12Z"},{"name":"googleworkspace/cli","description":"Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills.","cn_description":"Google Workspace CLI —一个用于云端硬盘、Gmail、日历、工作表、文档、聊天、管理员等的命令行工具。从Google Discovery服务动态生成。包括人工智能代理技能。","stars":22416,"language":"Rust","url":"https://github.com/googleworkspace/cli","forks":1069,"issues":48,"created_at":"2026-03-02T19:46:06Z","updated_at":"2026-03-25T03:09:05Z"},{"name":"paperclipai/paperclip","description":"Open-source orchestration for zero-human companies","cn_description":"面向零人类公司的开源编排","stars":32694,"language":"TypeScript","url":"https://github.com/paperclipai/paperclip","forks":4597,"issues":973,"created_at":"2026-03-02T15:01:51Z","updated_at":"2026-03-25T03:09:12Z"},{"name":"phuryn/pm-skills","description":"PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.","cn_description":"PM Skills Marketplace ： 100多种代理技能、命令和插件—从发现到战略、执行、发布和增长。","stars":8104,"language":"Unknown","url":"https://github.com/phuryn/pm-skills","forks":830,"issues":7,"created_at":"2026-03-01T23:33:44Z","updated_at":"2026-03-25T03:02:32Z"},{"name":"maderix/ANE","description":"Training neural networks on Apple Neural Engine via reverse-engineered private APIs","cn_description":"通过逆向工程专用API在Apple神经引擎上训练神经网络","stars":6466,"language":"Objective-C","url":"https://github.com/maderix/ANE","forks":916,"issues":27,"created_at":"2026-02-28T09:27:28Z","updated_at":"2026-03-25T03:04:07Z"},{"name":"openai/symphony","description":"Symphony turns project work into isolated, autonomous implementation runs, allowing teams to manage work instead of supervising coding agents.","cn_description":"Symphony将项目工作转化为独立、自主的实施运行，使团队能够管理工作，而不是监督编码代理。","stars":13973,"language":"Elixir","url":"https://github.com/openai/symphony","forks":1132,"issues":0,"created_at":"2026-02-26T21:54:00Z","updated_at":"2026-03-25T02:36:07Z"},{"name":"ringhyacinth/Star-Office-UI","description":"A pixel office for your OpenClaw: turn invisible work states into a cozy little space with characters, daily notes, and guest agents. Code under MIT; art assets for non-commercial learning only.","cn_description":"OpenClaw的像素办公室：将隐形工作状态变成一个温馨的小空间，里面有角色、每日笔记和访客代理。麻省理工学院的代码；仅用于非商业学习的艺术资产。","stars":5983,"language":"HTML","url":"https://github.com/ringhyacinth/Star-Office-UI","forks":641,"issues":10,"created_at":"2026-02-26T03:45:35Z","updated_at":"2026-03-25T03:03:07Z"},{"name":"nikopueringer/CorridorKey","description":"Perfect Green Screen Keys","cn_description":"完美的绿色屏幕按键","stars":8960,"language":"Python","url":"https://github.com/nikopueringer/CorridorKey","forks":535,"issues":60,"created_at":"2026-02-25T08:51:11Z","updated_at":"2026-03-25T02:14:28Z"},{"name":"RightNow-AI/openfang","description":"Open-source Agent Operating System","cn_description":"开源代理操作系统","stars":15477,"language":"Rust","url":"https://github.com/RightNow-AI/openfang","forks":1883,"issues":131,"created_at":"2026-02-24T23:12:38Z","updated_at":"2026-03-25T02:46:04Z"},{"name":"cloudflare/vinext","description":"Vite plugin that reimplements the Next.js API surface — deploy anywhere","cn_description":"重新实现Next.js API表面的Vite插件—部署在任何地方","stars":7125,"language":"TypeScript","url":"https://github.com/cloudflare/vinext","forks":264,"issues":91,"created_at":"2026-02-24T05:07:41Z","updated_at":"2026-03-25T02:55:36Z"},{"name":"agentscope-ai/CoPaw","description":"Your Personal AI Assistant; easy to install, deploy on your own machine or on the cloud; supports multiple chat apps with easily extensible capabilities.","cn_description":"您的个人AI助手；易于安装，部署在您自己的计算机或云上；支持多个聊天应用程序，具有易于扩展的功能。","stars":13186,"language":"Python","url":"https://github.com/agentscope-ai/CoPaw","forks":1680,"issues":475,"created_at":"2026-02-24T03:42:56Z","updated_at":"2026-03-25T03:10:34Z"},{"name":"Panniantong/Agent-Reach","description":"Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.","cn_description":"让您的人工智能代理看到整个互联网。阅读和搜索Twitter、Reddit、YouTube、GitHub、Bilibili、XiaoHongShu —一个CLI ，无API费用。","stars":10677,"language":"Python","url":"https://github.com/Panniantong/Agent-Reach","forks":777,"issues":10,"created_at":"2026-02-24T02:10:24Z","updated_at":"2026-03-25T03:10:35Z"}],"oldest":[{"name":"ohmyzsh/ohmyzsh","description":"🙃   A delightful community-driven (with 2,400+ contributors) framework for managing your zsh configuration. Includes 300+ optional plugins (rails, git, macOS, hub, docker, homebrew, node, php, python, etc), 140+ themes to spice up your morning, and an auto-update tool that makes it easy to keep up with the latest updates from the community.","cn_description":"🙃   A delightful community-driven (with 2,400+ contributors) framework for managing your zsh configuration. Includes 300+ optional plugins (rails, git, macOS, hub, docker, homebrew, node, php, python, etc), 140+ themes to spice up your morning, and an auto-update tool that makes it easy to keep up with the latest updates from the community.","stars":185607,"language":"Shell","url":"https://github.com/ohmyzsh/ohmyzsh","forks":26309,"issues":525,"created_at":"2009-08-28T18:15:37Z","updated_at":"2026-03-25T00:37:35Z"},{"name":"ytdl-org/youtube-dl","description":"Command-line program to download videos from YouTube.com and other video sites","cn_description":"Command-line program to download videos from YouTube.com and other video sites","stars":139941,"language":"Python","url":"https://github.com/ytdl-org/youtube-dl","forks":10601,"issues":4120,"created_at":"2010-10-31T14:35:07Z","updated_at":"2026-03-25T01:49:29Z"},{"name":"github/gitignore","description":"A collection of useful .gitignore templates","cn_description":"一组有用的.gitignore模板","stars":173168,"language":"Unknown","url":"https://github.com/github/gitignore","forks":82733,"issues":112,"created_at":"2010-11-08T20:17:14Z","updated_at":"2026-03-25T02:12:48Z"},{"name":"twbs/bootstrap","description":"The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.","cn_description":"最流行的HTML、CSS和JavaScript框架，用于在网络上开发响应式、移动优先的项目。","stars":174108,"language":"MDX","url":"https://github.com/twbs/bootstrap","forks":79046,"issues":477,"created_at":"2011-07-29T21:19:00Z","updated_at":"2026-03-25T02:02:47Z"},{"name":"torvalds/linux","description":"Linux kernel source tree","cn_description":"Linux内核源树","stars":224925,"language":"C","url":"https://github.com/torvalds/linux","forks":61183,"issues":3,"created_at":"2011-09-04T22:48:12Z","updated_at":"2026-03-25T02:26:16Z"},{"name":"airbnb/javascript","description":"JavaScript Style Guide","cn_description":"JavaScript Style Guide","stars":148116,"language":"JavaScript","url":"https://github.com/airbnb/javascript","forks":26754,"issues":189,"created_at":"2012-11-01T23:13:50Z","updated_at":"2026-03-24T20:52:49Z"},{"name":"electron/electron","description":":electron: Build cross-platform desktop apps with JavaScript, HTML, and CSS","cn_description":":electron: Build cross-platform desktop apps with JavaScript, HTML, and CSS","stars":120616,"language":"C++","url":"https://github.com/electron/electron","forks":17074,"issues":844,"created_at":"2013-04-12T01:47:36Z","updated_at":"2026-03-25T01:41:21Z"},{"name":"facebook/react","description":"The library for web and native user interfaces.","cn_description":"用于Web和本机用户界面的库。","stars":244160,"language":"JavaScript","url":"https://github.com/facebook/react","forks":50852,"issues":1176,"created_at":"2013-05-24T16:15:54Z","updated_at":"2026-03-25T02:01:55Z"},{"name":"vuejs/vue","description":"This is the repo for Vue 2. For Vue 3, go to https://github.com/vuejs/core","cn_description":"这是Vue 2的存储库。如需了解VUE 3 ，请访问https://github.com/vuejs/core","stars":209958,"language":"TypeScript","url":"https://github.com/vuejs/vue","forks":33841,"issues":621,"created_at":"2013-07-29T03:24:51Z","updated_at":"2026-03-25T00:17:28Z"},{"name":"EbookFoundation/free-programming-books","description":":books: Freely available programming books","cn_description":": books:免费提供的编程书籍","stars":384542,"language":"Python","url":"https://github.com/EbookFoundation/free-programming-books","forks":66051,"issues":72,"created_at":"2013-10-11T06:50:37Z","updated_at":"2026-03-25T02:13:34Z"},{"name":"justjavac/free-programming-books-zh_CN","description":":books: 免费的计算机编程类中文书籍，欢迎投稿","cn_description":":books: 免费的计算机编程类中文书籍，欢迎投稿","stars":116508,"language":"Unknown","url":"https://github.com/justjavac/free-programming-books-zh_CN","forks":28308,"issues":33,"created_at":"2013-11-04T01:59:19Z","updated_at":"2026-03-25T02:25:06Z"},{"name":"getify/You-Dont-Know-JS","description":"A book series (2 published editions) on the JS language.","cn_description":"A book series (2 published editions) on the JS language.","stars":184534,"language":"Unknown","url":"https://github.com/getify/You-Dont-Know-JS","forks":33604,"issues":2,"created_at":"2013-11-16T02:37:24Z","updated_at":"2026-03-25T02:15:56Z"},{"name":"ossu/computer-science","description":"🎓 Path to a free self-taught education in Computer Science!","cn_description":"🎓 通往免费的计算机科学自学教育之路！","stars":202716,"language":"HTML","url":"https://github.com/ossu/computer-science","forks":25172,"issues":22,"created_at":"2014-05-04T00:18:39Z","updated_at":"2026-03-25T02:11:05Z"},{"name":"kubernetes/kubernetes","description":"Production-Grade Container Scheduling and Management","cn_description":"Production-Grade Container Scheduling and Management","stars":121330,"language":"Go","url":"https://github.com/kubernetes/kubernetes","forks":42719,"issues":2627,"created_at":"2014-06-06T22:56:04Z","updated_at":"2026-03-25T00:50:38Z"},{"name":"vinta/awesome-python","description":"An opinionated list of Python frameworks, libraries, tools, and resources.","cn_description":"自以为是的Python框架、库、工具和资源列表。","stars":288826,"language":"Python","url":"https://github.com/vinta/awesome-python","forks":27476,"issues":18,"created_at":"2014-06-27T21:00:06Z","updated_at":"2026-03-25T02:26:39Z"},{"name":"avelino/awesome-go","description":"A curated list of awesome Go frameworks, libraries and software","cn_description":"A curated list of awesome Go frameworks, libraries and software","stars":168160,"language":"Go","url":"https://github.com/avelino/awesome-go","forks":13089,"issues":175,"created_at":"2014-07-06T13:42:15Z","updated_at":"2026-03-25T02:29:10Z"},{"name":"sindresorhus/awesome","description":"😎 Awesome lists about all kinds of interesting topics","cn_description":"关于各种有趣主题的😎精彩列表","stars":448595,"language":"Unknown","url":"https://github.com/sindresorhus/awesome","forks":33742,"issues":88,"created_at":"2014-07-11T13:42:37Z","updated_at":"2026-03-25T02:29:22Z"},{"name":"golang/go","description":"The Go programming language","cn_description":"The Go programming language","stars":133150,"language":"Go","url":"https://github.com/golang/go","forks":18878,"issues":9885,"created_at":"2014-08-19T04:33:40Z","updated_at":"2026-03-25T01:31:55Z"},{"name":"nodejs/node","description":"Node.js JavaScript runtime ✨🐢🚀✨","cn_description":"Node.js JavaScript runtime ✨🐢🚀✨","stars":116413,"language":"JavaScript","url":"https://github.com/nodejs/node","forks":35151,"issues":2567,"created_at":"2014-11-26T19:57:11Z","updated_at":"2026-03-25T01:20:13Z"},{"name":"freeCodeCamp/freeCodeCamp","description":"freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.","cn_description":"freeCodeCamp.org的开源代码库和课程。免费学习数学、编程和计算机科学。","stars":438791,"language":"TypeScript","url":"https://github.com/freeCodeCamp/freeCodeCamp","forks":43757,"issues":224,"created_at":"2014-12-24T17:49:19Z","updated_at":"2026-03-25T02:17:35Z"}]}};
+const customCategories = [{"id":"游戏","name":"游戏","keywords":["游戏"]}];
+const customDataByDate = {"2026-03-25":[{"id":"游戏","name":"游戏","keywords":["游戏"],"news":[{"title":"波士顿咨询:2026年视频游戏报告 | 互联网数据资讯网-199IT | 中文...","link":"https://www.199it.com/archives/1802823.html","source":"百度新闻","date":"2026-03-25T09:28:34.127Z","summary":"","category":"游戏"},{"title":"月狐数据:行业增幅趋缓,头部游戏直播平台如何破局?","link":"https://www.cet.com.cn/xwsd/3499326.shtml","source":"百度新闻","date":"2026-03-25T09:28:34.127Z","summary":"","category":"游戏"},{"title":"游戏周报(5月第2周):中青宝董事长辞职;四部门禁止未成年人参与...","link":"https://finance.eastmoney.com/a/202205082371650122.html","source":"百度新闻","date":"2026-03-25T09:28:34.127Z","summary":"","category":"游戏"},{"title":"北京市心理援助热线、北京市居民心理健康体检与心理援助服务平台...","link":"https://wjw.beijing.gov.cn/xwzx_20031/wnxw/202204/t20220426_2692456.html","source":"百度新闻","date":"2026-03-25T09:28:34.127Z","summary":"","category":"游戏"},{"title":"我们能在腾讯的游戏社区里聊《原神》吗?","link":"https://www.1905.com/news/20210820/1536563.shtml","source":"百度新闻","date":"2026-03-25T09:28:34.127Z","summary":"","category":"游戏"},{"title":"《鬼哭邦》中文版今日发售 庆祝活动现已启动","link":"https://www.gamersky.com/news/202008/1312608.shtml","source":"百度新闻","date":"2026-03-25T09:28:34.127Z","summary":"","category":"游戏"},{"title":"《XCOM 2:天选者之战》正式上市 全新游戏元素好评连连","link":"https://www.gamersky.com/news/201708/949458.shtml","source":"百度新闻","date":"2026-03-25T09:28:34.127Z","summary":"","category":"游戏"},{"title":"游民会客厅:用决心和梦想打造最牛逼的中国游戏 专访太阳系沙盒...","link":"https://www.gamersky.com/news/201509/668650_2.shtml","source":"百度新闻","date":"2026-03-25T09:28:34.127Z","summary":"","category":"游戏"},{"title":"《合金装备5:原爆点(Metal Gear Solid 5: Ground Zeroes)》PC版...","link":"https://www.gamersky.com/news/201412/501431.shtml","source":"百度新闻","date":"2026-03-25T09:28:34.127Z","summary":"","category":"游戏"},{"title":"《热血无赖:最终版(Sleeping Dogs:Definitive Edition)》IGN 8.5...","link":"https://www.gamersky.com/news/201410/474002.shtml","source":"百度新闻","date":"2026-03-25T09:28:34.127Z","summary":"","category":"游戏"},{"title":"系列专题_单机游戏全系列_游戏专题-游侠网","link":"/link?url=DSOYnZeCC_pH2c4zEb0FzINmAKVWwn3BPibypOKzKSw4d2X6F0SQYA..","source":"搜狗新闻","date":"2026-03-25T09:28:34.127Z","summary":"","category":"游戏"},{"title":"收集游戏哪些值得玩 十大耐玩收集游戏盘点","link":"/link?url=1N5bSpvo44PK5OU8FgMNIAPT9lK_n5UQIQzGIr3ntXBCy6w1Uz3Ax6TKYz46hhmIjdZEVPtoE7Wi9LTCG7X2lNM7Xe6uZ5eq","source":"搜狗新闻","date":"2026-03-25T09:28:34.127Z","summary":"","category":"游戏"},{"title":"新游热游_新闻中心_17173.com网络游戏第一门户","link":"/link?url=6IqLFeTuIyg54iKlcsQSbzmCHbjn9EOpxbchw1rp1tfcnLXg1H9NOQ..","source":"搜狗新闻","date":"2026-03-25T09:28:34.127Z","summary":"","category":"游戏"},{"title":"热门游戏排行榜_游戏排行榜大全_最好玩的游戏排行榜_逗游网","link":"/link?url=hedJjaC291MK_P-rBliM-snSL5LIA5VRreaVHN88tHY.","source":"搜狗新闻","date":"2026-03-25T09:28:34.127Z","summary":"","category":"游戏"},{"title":"现代战争游戏有哪些 十大必玩现代战争游戏排行榜前十","link":"/link?url=1N5bSpvo44PK5OU8FgMNIAPT9lK_n5UQIQzGIr3ntXBCy6w1Uz3Ax6TKYz46hhmI7WTqM0Jx8pL0xVp0pp_ShdM7Xe6uZ5eq","source":"搜狗新闻","date":"2026-03-25T09:28:34.127Z","summary":"","category":"游戏"},{"title":"最终幻想14_最终幻想14激活码_最终幻想14官网_最终幻想14好...","link":"/link?url=6IqLFeTuIyhTlZ1-mhL8x-UIb6TaJ2kYqSk4TWlfWYtz7CfhAd_dZzh3ZfoXRJBg","source":"搜狗新闻","date":"2026-03-25T09:28:34.127Z","summary":"","category":"游戏"},{"title":"高自由度游戏大全 最热高自由度游戏精选","link":"/link?url=hedJjaC291P33igiXMgxhPGAKHZRnahNfA-wDEzxsBCj_PDJ4TXgfZbWkng7kzBqFPiUQIkB6f4LnrDV63Qz29ycteDUf005","source":"搜狗新闻","date":"2026-03-25T09:28:34.127Z","summary":"","category":"游戏"},{"title":"垃圾收集器游戏-垃圾收集器下载 - Iefans","link":"/link?url=hedJjaC291MAo0kUE1uhcOwRKSfAluc2A7eRWys-I7SQ_2WWsi7wx64to0wa_Tif","source":"搜狗新闻","date":"2026-03-25T09:28:34.127Z","summary":"","category":"游戏"},{"title":"游戏板块持续走强，游戏etf华夏（159869）涨近1.5%","link":"https://view.inews.qq.com/a/20260324A02TEU00?scene=qqsearch","source":"搜狗新闻","date":"2026-03-25T09:28:34.127Z","summary":"","category":"游戏"}]},{"id":"数码","name":"数码","keywords":["数码产品"],"news":[{"title":"...DELL)戴尔U2417H报价、参数、图片、怎么样_太平洋产品报价","link":"http://product.pconline.com.cn/lcd/dell/613701.html","source":"百度新闻","date":"2026-03-25T09:28:42.640Z","summary":"","category":"数码"},{"title":"...SONY索尼W350 数码相机评测导购、文章、各地行情_太平洋产品报价","link":"http://product.pconline.com.cn/dc/sony/399799_review.html","source":"百度新闻","date":"2026-03-25T09:28:42.640Z","summary":"","category":"数码"},{"title":"2026全国家电暨数码和智能产品消费季启动","link":"https://baijiahao.baidu.com/s?id=1859514528923132154&wfr=spider&for=pc","source":"百度新闻","date":"2026-03-25T09:28:42.640Z","summary":"","category":"数码"},{"title":"史上最贵iPhone或将到来:9月上市!苹果首款折叠屏","link":"https://g.pconline.com.cn/x/2102/21020432.html","source":"百度新闻","date":"2026-03-25T09:28:42.640Z","summary":"","category":"数码"},{"title":"佳能550D相机说明书下载","link":"https://g.pconline.com.cn/x/301/3015896.html","source":"百度新闻","date":"2026-03-25T09:28:42.640Z","summary":"","category":"数码"},{"title":"荣耀Magic9系列超前瞻曝光:小直屏+超大屏齐发,全系2.5D直屏设计","link":"https://g.pconline.com.cn/x/2080/20806512.html","source":"百度新闻","date":"2026-03-25T09:28:42.640Z","summary":"","category":"数码"},{"title":"微单和单电的区别是什么","link":"https://g.pconline.com.cn/x/284/2847251.html","source":"百度新闻","date":"2026-03-25T09:28:42.640Z","summary":"","category":"数码"},{"title":"尼康D700室内拍照效果怎样","link":"https://g.pconline.com.cn/x/263/2636977.html","source":"百度新闻","date":"2026-03-25T09:28:42.640Z","summary":"","category":"数码"},{"title":"消息称OPPO拥抱国产屏:京东方、天马积极合作,多条产品线已在测试","link":"https://g.pconline.com.cn/x/2078/20785072.html","source":"百度新闻","date":"2026-03-25T09:28:42.640Z","summary":"","category":"数码"},{"title":"索尼HX100相机说明书下载","link":"https://g.pconline.com.cn/x/307/3075415.html","source":"百度新闻","date":"2026-03-25T09:28:42.640Z","summary":"","category":"数码"},{"title":"解答热门IT数码产品问题抢先了解数码新品","link":"/link?url=hedJjaC291Osj6fmiZw1ZjVuHGaveIlYYaWP17_7bWM.","source":"搜狗新闻","date":"2026-03-25T09:28:42.640Z","summary":"","category":"数码"},{"title":"数码相机最新资讯-快科技--科技改变未来","link":"/link?url=hedJjaC291OuUWyzEjFsv_fXezRLsC2zXgBTLW4r4A6vf97NRZXd78aEaBz1gmTB","source":"搜狗新闻","date":"2026-03-25T09:28:42.640Z","summary":"","category":"数码"},{"title":"_导购数码频道_从天极看数码 让生活更精彩_天极网","link":"/link?url=hedJjaC291MERcNe5IEm9ZNOXO54Sd8mcA8bhb4ptVKrYb9B4iszj9M7Xe6uZ5eq","source":"搜狗新闻","date":"2026-03-25T09:28:42.640Z","summary":"","category":"数码"},{"title":"_新闻简讯数码频道_从天极看数码 让生活更精彩_天极网","link":"/link?url=hedJjaC291MERcNe5IEm9ZNOXO54Sd8mcA8bhb4ptVKKLPzz-Y2sX9ycteDUf005","source":"搜狗新闻","date":"2026-03-25T09:28:42.640Z","summary":"","category":"数码"},{"title":"2022理光相机排行榜 数码相机哪款好?","link":"/link?url=hedJjaC291Osj6fmiZw1ZjVuHGaveIlYLTG-UrduDn5cUCAC5dCDcbrO_ieciEapIeZ8aQ291kY.","source":"搜狗新闻","date":"2026-03-25T09:28:42.640Z","summary":"","category":"数码"},{"title":"_深度数码频道_从天极看数码 让生活更精彩_天极网","link":"/link?url=hedJjaC291O1YhBvgMhJqgzcyU-G1OHxVB92-5KlC9V12EGhNp5RAK4to0wa_Tif","source":"搜狗新闻","date":"2026-03-25T09:28:42.640Z","summary":"","category":"数码"},{"title":"索尼(SONY)QX30数码相机外观性能评测-ZOL中关村在线","link":"/link?url=hedJjaC291PGBe68oUDDoRb4z3PTd1cHseSckA-YNwk4s6oeRCdx2NqeihaMZsusG4WXqOnLAifTO13urmeXqg..","source":"搜狗新闻","date":"2026-03-25T09:28:42.640Z","summary":"","category":"数码"},{"title":"索尼(SONY)TX55数码相机外观性能评测-ZOL中关村在线","link":"/link?url=hedJjaC291PGBe68oUDDoRb4z3PTd1cHveaAbX0yD7b-Fy8bQN_iKdqeihaMZsusG4WXqOnLAifTO13urmeXqg..","source":"搜狗新闻","date":"2026-03-25T09:28:42.640Z","summary":"","category":"数码"},{"title":"彩族行情导购 -ZOL数码影音-中关村在线","link":"/link?url=hedJjaC291N4goRiiHNAJidQRoztLvNXMS5vOZeCjkWNkoL-9NbvQWxCLvUbhMGvIeZ8aQ291kY.","source":"搜狗新闻","date":"2026-03-25T09:28:42.640Z","summary":"","category":"数码"}]},{"id":"汽车","name":"汽车","keywords":["汽车"],"news":[{"title":"跨国车企财报频频“爆雷” 全球汽车业步入转型阵痛期","link":"https://baijiahao.baidu.com/s?id=1860588279587905227&wfr=spider&for=pc","source":"百度新闻","date":"2026-03-25T09:30:56.849Z","summary":"","category":"汽车"},{"title":"【盖世快讯】中国新能源汽车备受中亚五国及俄罗斯青睐;泽景股份...","link":"https://auto.gasgoo.com/news/202603/25I70451342C601.shtml","source":"百度新闻","date":"2026-03-25T09:30:56.849Z","summary":"","category":"汽车"},{"title":"“出口增、内销降”,前两月车市走势折射出什么?","link":"https://baijiahao.baidu.com/s?id=1860586957323879793&wfr=spider&for=pc","source":"百度新闻","date":"2026-03-25T09:30:56.849Z","summary":"","category":"汽车"},{"title":"全球媒体聚焦|美媒:中国为全球汽车制造商树立标杆","link":"https://baijiahao.baidu.com/s?id=1860542636290690536&wfr=spider&for=pc","source":"百度新闻","date":"2026-03-25T09:30:56.849Z","summary":"","category":"汽车"},{"title":"外媒:“想买却买不到”中国电动汽车让美国消费者越来越心动","link":"https://baijiahao.baidu.com/s?id=1860518697845661799&wfr=spider&for=pc","source":"百度新闻","date":"2026-03-25T09:30:56.849Z","summary":"","category":"汽车"},{"title":"印度汽车产业因“气荒”面临供应链中断风险","link":"https://baijiahao.baidu.com/s?id=1860506554584712609&wfr=spider&for=pc","source":"百度新闻","date":"2026-03-25T09:30:56.849Z","summary":"","category":"汽车"},{"title":"汽车行业专区- 股票频道 - 东方财富网","link":"https://stock.eastmoney.com/hangye/hy481.html","source":"百度新闻","date":"2026-03-25T09:30:56.849Z","summary":"","category":"汽车"},{"title":"日媒:中国车企全球销量20多年来首次超日本居榜首","link":"https://baijiahao.baidu.com/s?id=1860338257207090115&wfr=spider&for=pc","source":"百度新闻","date":"2026-03-25T09:30:56.849Z","summary":"","category":"汽车"},{"title":"2025年度中国出口汽车总量首超日本背后：从产品出差到生态出海","link":"https://newsa.html5.qq.com/v1/share-video?vid=1390829926197302635","source":"搜狗新闻","date":"2026-03-25T09:30:56.849Z","summary":"","category":"汽车"},{"title":"中国汽车反超日本销量全球第一 但卖得多并没有赚得多","link":"https://newsa.html5.qq.com/v1/share-video?vid=4534342419949782379","source":"搜狗新闻","date":"2026-03-25T09:30:56.849Z","summary":"","category":"汽车"},{"title":"加拿大车市政策松动 | 中国汽车产业出海","link":"https://newsa.html5.qq.com/v1/share-video?vid=6155638299934059883","source":"搜狗新闻","date":"2026-03-25T09:30:56.849Z","summary":"","category":"汽车"},{"title":"延长汽车使用寿命的10个好习惯，建议有车朋友们看一看","link":"https://newsa.html5.qq.com/v1/share-video?vid=5155839176017524075","source":"搜狗新闻","date":"2026-03-25T09:30:56.849Z","summary":"","category":"汽车"},{"title":"全球底盘最低的汽车","link":"https://newsa.html5.qq.com/v1/share-video?vid=6200674270856150379","source":"搜狗新闻","date":"2026-03-25T09:30:56.849Z","summary":"","category":"汽车"},{"title":"这开的有多快！！汽车直接都“切”两半了","link":"https://newsa.html5.qq.com/v1/share-video?vid=8794747560977433963","source":"搜狗新闻","date":"2026-03-25T09:30:56.849Z","summary":"","category":"汽车"},{"title":"没有技术的造车新势力怎么就造出了遥遥领先的汽车","link":"https://view.inews.qq.com/a/20260325A01SD100?scene=qqsearch","source":"搜狗新闻","date":"2026-03-25T09:30:56.849Z","summary":"","category":"汽车"},{"title":"【新车资讯】最新汽车资讯_新车频道_以车会友,尽在太平洋汽车","link":"/link?url=hedJjaC291NAj1FYuAo-kSRH4-fnzP-YlXCCaGI32xfmzpFE-sI3NZJEUH4NNc7H","source":"搜狗新闻","date":"2026-03-25T09:30:56.849Z","summary":"","category":"汽车"},{"title":"网通社汽车-汽车频道 让汽车选择更加便利","link":"/link?url=hedJjaC291M91roJexu_8eMqx2sMCCOrcFaopbxKu0xH70SX_AfFGK4to0wa_Tif","source":"搜狗新闻","date":"2026-03-25T09:30:56.849Z","summary":"","category":"汽车"}]}],"2026-03-26":[{"id":"游戏","name":"游戏","keywords":["游戏"],"news":[{"title":"3i游戏年度阅兵回归:「3i计划」游戏线上发布会定档4月10日","link":"https://www.3dmgame.com/news/202603/3940448.html","source":"百度新闻","date":"2026-03-26T01:28:59.924Z","summary":"","category":"游戏"},{"title":"游戏新闻网_最新游戏新闻资讯-闽南网","link":"http://www.mnw.cn/keji/youxi/index.html","source":"百度新闻","date":"2026-03-26T01:28:59.924Z","summary":"","category":"游戏"},{"title":"游戏+文旅 徽风皖韵款款而来","link":"https://go.huanqiu.com/article/4H85OpemnYv","source":"百度新闻","date":"2026-03-26T01:28:59.924Z","summary":"","category":"游戏"},{"title":"2023最新满v版gm版游戏平台 重点推荐的满v版gm版手游软件","link":"https://www.18183.com/btsyzq/zx/4774048.html","source":"百度新闻","date":"2026-03-26T01:28:59.924Z","summary":"","category":"游戏"},{"title":"热门手游平台有哪些 大家都在用的手游平台推荐","link":"https://www.18183.com/btsyzq/zx/4529106.html","source":"百度新闻","date":"2026-03-26T01:28:59.924Z","summary":"","category":"游戏"},{"title":"手游破解平台哪个好(十大手游破解平台app一览)","link":"https://www.18183.com/btsyzq/zx/4523805.html","source":"百度新闻","date":"2026-03-26T01:28:59.924Z","summary":"","category":"游戏"},{"title":"游戏周报(5月第2周):中青宝董事长辞职;四部门禁止未成年人参与...","link":"https://finance.eastmoney.com/a/202205082371650122.html","source":"百度新闻","date":"2026-03-26T01:28:59.924Z","summary":"","category":"游戏"},{"title":"我们能在腾讯的游戏社区里聊《原神》吗?","link":"https://www.1905.com/news/20210820/1536563.shtml","source":"百度新闻","date":"2026-03-26T01:28:59.924Z","summary":"","category":"游戏"},{"title":"逝去的辉煌 失落的游戏门户","link":"http://youxi.youth.cn/yw/201912/t20191215_12143367.htm","source":"百度新闻","date":"2026-03-26T01:28:59.924Z","summary":"","category":"游戏"},{"title":"现代战争游戏有哪些 十大必玩现代战争游戏排行榜前十","link":"/link?url=1N5bSpvo44PK5OU8FgMNIAPT9lK_n5UQIQzGIr3ntXBCy6w1Uz3Ax6TKYz46hhmI7WTqM0Jx8pL0xVp0pp_ShdM7Xe6uZ5eq","source":"搜狗新闻","date":"2026-03-26T01:28:59.924Z","summary":"","category":"游戏"},{"title":"收集游戏哪些值得玩 十大耐玩收集游戏盘点","link":"/link?url=1N5bSpvo44PK5OU8FgMNIAPT9lK_n5UQIQzGIr3ntXBCy6w1Uz3Ax6TKYz46hhmIjdZEVPtoE7Wi9LTCG7X2lNM7Xe6uZ5eq","source":"搜狗新闻","date":"2026-03-26T01:28:59.924Z","summary":"","category":"游戏"},{"title":"【即时】单机游戏游戏频道-中关村在线","link":"/link?url=hedJjaC291Mvhr9PbBqjXidQRoztLvNXxqQeK_OKlVIW4eWa_DRiga4to0wa_Tif","source":"搜狗新闻","date":"2026-03-26T01:28:59.924Z","summary":"","category":"游戏"},{"title":"热门游戏排行榜_游戏排行榜大全_最好玩的游戏排行榜_逗游网","link":"/link?url=hedJjaC291MK_P-rBliM-snSL5LIA5VRreaVHN88tHY.","source":"搜狗新闻","date":"2026-03-26T01:28:59.924Z","summary":"","category":"游戏"},{"title":"新游热游_新闻中心_17173.com网络游戏第一门户","link":"/link?url=6IqLFeTuIyg54iKlcsQSbzmCHbjn9EOpxbchw1rp1tfcnLXg1H9NOQ..","source":"搜狗新闻","date":"2026-03-26T01:28:59.924Z","summary":"","category":"游戏"},{"title":"游戏搜索_17173新网游频道","link":"/link?url=6IqLFeTuIyhTlZ1-mhL8x-UIb6TaJ2kYRgPQFZAQBhNu8XGaR9fiWqSK8ijlb0xMwON_IM5-rlORUZWPi_Gkcw..","source":"搜狗新闻","date":"2026-03-26T01:28:59.924Z","summary":"","category":"游戏"},{"title":"游戏评测_最新端游评测_17173独家评测_游戏玩法解读","link":"/link?url=hedJjaC291OO-7Azzr6J121eV4PPAgHvJ--qdHBgomdBw_xnF72kANM7Xe6uZ5eq","source":"搜狗新闻","date":"2026-03-26T01:28:59.924Z","summary":"","category":"游戏"},{"title":"最终幻想14_最终幻想14激活码_最终幻想14官网_最终幻想14好...","link":"/link?url=6IqLFeTuIyhTlZ1-mhL8x-UIb6TaJ2kYqSk4TWlfWYtz7CfhAd_dZzh3ZfoXRJBg","source":"搜狗新闻","date":"2026-03-26T01:28:59.924Z","summary":"","category":"游戏"},{"title":"《朗克历险记》移动奇遇","link":"/link?url=6IqLFeTuIyg54iKlcsQSb8Ttcr8QPeiO0OSGPySpIM2gXTOposaZSwpkDbu8V7vdZdxX4rkQ3Oc.","source":"搜狗新闻","date":"2026-03-26T01:28:59.924Z","summary":"","category":"游戏"}]}]};
+const customDates = ["2026-03-25","2026-03-26"];
+
+const listConfig = {
+  'trending': '🔥 今日热榜',
+  'most-forked': '🍴 Fork最多',
+  'new-this-month': '🚀 本月新星',
+  'trending-growth': '💥 飙升榜',
+  'chinese': '🌍 中文项目',
+  'newest': '⏰ 最新创建',
+  'oldest': '📅 最老创建'
+};
+
+// ── 工具函数 ──
+function fmtDate(d) { return d ? new Date(d + 'T00:00:00').toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' }) : ''; }
+function fmtNum(n) { return n >= 1000 ? (n/1000).toFixed(1) + 'k' : String(n); }
+
+// ── Tab 切换 ──
+document.querySelectorAll('.nav-tab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const tab = btn.dataset.tab;
+    if (!tab) return;
+    const panel = document.getElementById('panel-' + tab);
+    if (!panel) return;
+    requestAnimationFrame(() => {
+      document.querySelectorAll('.nav-tab').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      panel.classList.add('active');
+    });
+  });
+});
+
+// ════════════════════════════════
+// AI 资讯
+// ════════════════════════════════
+const newsCache = Object.assign({}, newsData);
+const iconMap = {"大模型":"🧠","OpenAI":"🚀","AI综合":"💡","国产大模型":"🇨🇳","AI Agent":"📌","AI图像":"🎨","AI视频":"🎬","研究":"🔬","Google":"🔍","Anthropic":"💬"};
+
+function renderNewsHTML(newsByCategory) {
+  if (!newsByCategory || Object.keys(newsByCategory).length === 0)
+    return '<div class="empty-state"><h2>该日期暂无资讯</h2></div>';
+  let html = '';
+  for (const [category, items] of Object.entries(newsByCategory)) {
+    const icon = iconMap[category] || '📌';
+    html += '<div class="category-card"><div class="category-header"><span class="category-icon">' + icon + '</span><h2 class="category-title">' + category + '</h2><span class="category-count">' + items.length + ' 条</span></div><div class="news-list">';
+    for (const item of items) {
+      html += '<div class="news-item"><span class="news-dot"></span><div class="news-body"><h3 class="news-title"><a href="' + item.link + '" target="_blank" rel="noopener">' + item.title + '</a></h3><div class="news-meta"><span class="news-source">' + item.source + '</span><span>' + (item.date ? new Date(item.date).toLocaleDateString('zh-CN') : '') + '</span></div></div></div>';
+    }
+    html += '</div></div>';
+  }
+  return html;
+}
+
+function showNewsData(dateStr, data) {
+  const newsByCategory = {};
+  data.news.forEach(item => {
+    const cat = item.category || '其他';
+    if (!newsByCategory[cat]) newsByCategory[cat] = [];
+    newsByCategory[cat].push(item);
+  });
+  document.getElementById('newsContent').innerHTML = renderNewsHTML(newsByCategory);
+  document.getElementById('dateSelect').value = dateStr;
+  const sourceCount = new Set(data.news.map(n => n.source)).size;
+  document.getElementById('stats').innerHTML =
+    '<span class="stat-chip">📰 ' + data.count + ' 条</span>' +
+    '<span class="stat-chip green">🏷️ ' + Object.keys(newsByCategory).length + ' 分类</span>' +
+    '<span class="stat-chip orange">📡 ' + sourceCount + ' 源</span>';
+  const idx = newsDates.indexOf(dateStr);
+  document.getElementById('prevBtn').disabled = idx === 0;
+  document.getElementById('nextBtn').disabled = idx === newsDates.length - 1;
+}
+
+async function loadNewsDate(dateStr) {
+  if (newsCache[dateStr]) { showNewsData(dateStr, newsCache[dateStr]); return; }
+  document.getElementById('newsContent').innerHTML = '<div class="empty-state"><h2>加载中…</h2></div>';
+  try {
+    const resp = await fetch('/news-' + dateStr + '.json');
+    if (resp.ok) { const d = await resp.json(); newsCache[dateStr] = d; showNewsData(dateStr, d); }
+    else showNewsData(dateStr, { count: 0, news: [] });
+  } catch { showNewsData(dateStr, { count: 0, news: [] }); }
+}
+
+const dateSelect = document.getElementById('dateSelect');
+newsDates.forEach(d => { const o = document.createElement('option'); o.value = d; o.textContent = fmtDate(d); dateSelect.appendChild(o); });
+dateSelect.addEventListener('change', e => loadNewsDate(e.target.value));
+document.getElementById('prevBtn').addEventListener('click', () => loadNewsDate(newsDates[Math.max(0, newsDates.indexOf(dateSelect.value) - 1)]));
+document.getElementById('nextBtn').addEventListener('click', () => loadNewsDate(newsDates[Math.min(newsDates.length - 1, newsDates.indexOf(dateSelect.value) + 1)]));
+dateSelect.value = newsDates[newsDates.length - 1];
+loadNewsDate(newsDates[newsDates.length - 1]);
+
+// ════════════════════════════════
+// GitHub 热榜
+// ════════════════════════════════
+const langColors = {'JavaScript':'#f1e05a','TypeScript':'#2b7489','Python':'#3572A5','Java':'#b07219','Go':'#00ADD8','Rust':'#dea584','C++':'#f34b7d','C':'#555555','Ruby':'#701516','PHP':'#4F5D95','Swift':'#F05138','Kotlin':'#A97BFF','Shell':'#89e051','HTML':'#e34c26','CSS':'#563d7c','Vue':'#41b883','C#':'#178600'};
+
+function renderRepos(data, listKey) {
+  if (!data || data.length === 0) return '<div class="empty-state"><h2>暂无数据</h2></div>';
+  let html = '';
+  data.forEach((repo, i) => {
+    const lc = langColors[repo.language] || '#858585';
+    html += '<div class="repo-card"><div class="repo-rank">#' + (i+1) + '</div><div class="repo-info"><div class="repo-name"><a href="' + repo.url + '" target="_blank" rel="noopener">' + repo.name + '</a>';
+    if (listKey === 'trending-growth' && repo.starGrowth) html += ' <span class="growth-badge">↑ ' + repo.starGrowth + '/天</span>';
+    html += '</div><div class="repo-desc">' + (repo.cn_description || repo.description || '暂无描述') + '</div><div class="repo-stats">';
+    if (repo.language) html += '<span class="repo-stat"><span class="lang-dot" style="background:' + lc + '"></span>' + repo.language + '</span>';
+    html += '<span class="repo-stat">⭐ ' + fmtNum(repo.stars) + '</span><span class="repo-stat">🍴 ' + fmtNum(repo.forks) + '</span>';
+    if (repo.created_at) html += '<span class="repo-stat">📅 ' + new Date(repo.created_at).toLocaleDateString('zh-CN', {year:'numeric',month:'short',day:'numeric'}) + '</span>';
+    html += '</div></div></div>';
+  });
+  return html;
+}
+
+let currentGHList = 'trending';
+function loadGHList(key) {
+  currentGHList = key;
+  document.querySelectorAll('.gh-tab').forEach(b => b.classList.toggle('active', b.dataset.list === key));
+  document.getElementById('ghTitle').textContent = listConfig[key] || key;
+  let data = [];
+  if (githubTrending?.lists?.[key]) data = [...githubTrending.lists[key]];
+  document.getElementById('repoGrid').innerHTML = renderRepos(data, key);
+}
+
+if (githubTrending) {
+  document.getElementById('ghDate').textContent = new Date(githubTrending.date).toLocaleDateString('zh-CN');
+  loadGHList('trending');
+  document.querySelectorAll('.gh-tab').forEach(btn => btn.addEventListener('click', () => loadGHList(btn.dataset.list)));
+}
+
+// ════════════════════════════════
+// 自定义栏目 —— 日期切换
+// ════════════════════════════════
+const customCache = Object.assign({}, customDataByDate);
+
+function renderCustomPanel(catId, dateStr, allCatData) {
+  const catBlock = (allCatData || []).find(c => c.id === catId);
+  const contentEl = document.getElementById('customContent-' + catId);
+  const statsEl = document.getElementById('customStats-' + catId);
+  if (!contentEl) return;
+
+  if (!catBlock || !catBlock.news || catBlock.news.length === 0) {
+    contentEl.innerHTML = '<div class="custom-empty-news"><p>暂未搜索到相关资讯。系统通过搜索引擎（百度新闻、搜狗新闻、Google News）全网采集。</p><p class="custom-empty-hint">建议多填几个关键词（中英文），如「游戏, game, steam」。</p></div>';
+    if (statsEl) statsEl.innerHTML = '';
+    return;
+  }
+
+  const newsByGroup = {};
+  catBlock.news.forEach(item => {
+    const g = item.category || catBlock.name || '资讯';
+    if (!newsByGroup[g]) newsByGroup[g] = [];
+    newsByGroup[g].push(item);
+  });
+
+  let html = '';
+  for (const [group, items] of Object.entries(newsByGroup)) {
+    html += '<div class="category-card"><div class="category-header"><span class="category-icon">📌</span><h2 class="category-title">' + group + '</h2><span class="category-count">' + items.length + ' 条</span></div><div class="news-list">';
+    for (const item of items.slice(0, 15)) {
+      html += '<div class="news-item"><span class="news-dot"></span><div class="news-body"><h3 class="news-title"><a href="' + item.link + '" target="_blank" rel="noopener">' + item.title + '</a></h3><div class="news-meta"><span class="news-source">' + item.source + '</span><span>' + (item.date ? new Date(item.date).toLocaleDateString('zh-CN') : '') + '</span></div></div></div>';
+    }
+    html += '</div></div>';
+  }
+  contentEl.innerHTML = html;
+
+  const kw = catBlock.keywords ? catBlock.keywords.join(', ') : '';
+  if (statsEl) statsEl.innerHTML = '<span class="stat-chip">📰 ' + catBlock.news.length + ' 条</span><span class="stat-chip green">🔑 ' + kw + '</span>';
+}
+
+async function loadCustomDate(catId, dateStr) {
+  if (customCache[dateStr]) {
+    renderCustomPanel(catId, dateStr, customCache[dateStr]);
+    return;
+  }
+  const contentEl = document.getElementById('customContent-' + catId);
+  if (contentEl) contentEl.innerHTML = '<div class="empty-state"><h2>加载中…</h2></div>';
+  try {
+    const resp = await fetch('/custom-data-' + dateStr + '.json');
+    if (resp.ok) {
+      const d = await resp.json();
+      customCache[dateStr] = d;
+      renderCustomPanel(catId, dateStr, d);
+    } else {
+      renderCustomPanel(catId, dateStr, []);
+    }
+  } catch {
+    renderCustomPanel(catId, dateStr, []);
+  }
+}
+
+customCategories.forEach(cat => {
+  const sel = document.querySelector('select.date-select[data-cat="' + cat.id + '"]');
+  if (!sel) return;
+
+  customDates.forEach(d => {
+    const o = document.createElement('option');
+    o.value = d;
+    o.textContent = fmtDate(d);
+    sel.appendChild(o);
+  });
+
+  if (customDates.length > 0) {
+    sel.value = customDates[customDates.length - 1];
+    loadCustomDate(cat.id, customDates[customDates.length - 1]);
+  }
+
+  sel.addEventListener('change', () => loadCustomDate(cat.id, sel.value));
+
+  const prevBtn = document.querySelector('button.date-prev[data-cat="' + cat.id + '"]');
+  const nextBtn = document.querySelector('button.date-next[data-cat="' + cat.id + '"]');
+
+  function updateCustomNav() {
+    const idx = customDates.indexOf(sel.value);
+    if (prevBtn) prevBtn.disabled = idx <= 0;
+    if (nextBtn) nextBtn.disabled = idx >= customDates.length - 1;
+  }
+
+  if (prevBtn) prevBtn.addEventListener('click', () => {
+    const idx = customDates.indexOf(sel.value);
+    if (idx > 0) { sel.value = customDates[idx - 1]; loadCustomDate(cat.id, sel.value); updateCustomNav(); }
+  });
+  if (nextBtn) nextBtn.addEventListener('click', () => {
+    const idx = customDates.indexOf(sel.value);
+    if (idx < customDates.length - 1) { sel.value = customDates[idx + 1]; loadCustomDate(cat.id, sel.value); updateCustomNav(); }
+  });
+
+  updateCustomNav();
+});
+
+// ════════════════════════════════
+// 删除栏目
+// ════════════════════════════════
+document.querySelectorAll('.delete-cat-btn').forEach(btn => {
+  btn.addEventListener('click', async () => {
+    const catId = btn.dataset.catId;
+    const catName = btn.dataset.catName;
+    if (!confirm('确定删除「' + catName + '」栏目？删除后数据不可恢复。')) return;
+
+    btn.disabled = true;
+    btn.textContent = '删除中…';
+    try {
+      const resp = await fetch('/api/delete-category', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id: catId })
+      });
+      let data = {};
+      try { data = await resp.json(); } catch {}
+      if (resp.ok) {
+        location.reload();
+      } else {
+        alert('删除失败: ' + (data.error || '请重试'));
+        btn.disabled = false;
+        btn.textContent = '删除栏目';
+      }
+    } catch (e) {
+      alert('删除失败: ' + e.message);
+      btn.disabled = false;
+      btn.textContent = '删除栏目';
+    }
+  });
+});
+
+// ════════════════════════════════
+// Modal
+// ════════════════════════════════
+const modalOverlay = document.getElementById('modalOverlay');
+const addCategoryBtn = document.getElementById('addCategoryBtn');
+const cancelBtn = document.getElementById('cancelBtn');
+const submitBtn = document.getElementById('submitBtn');
+const collectLoadingOverlay = document.getElementById('collectLoadingOverlay');
+
+let collectInProgress = false;
+function setCollectLoading(show) {
+  collectInProgress = show;
+  if (!collectLoadingOverlay) return;
+  collectLoadingOverlay.classList.toggle('show', show);
+  collectLoadingOverlay.setAttribute('aria-busy', show ? 'true' : 'false');
+}
+
+addCategoryBtn?.addEventListener('click', () => { if (!collectInProgress) modalOverlay.classList.add('active'); });
+cancelBtn?.addEventListener('click', () => { if (!collectInProgress) modalOverlay.classList.remove('active'); });
+modalOverlay?.addEventListener('click', e => { if (e.target === modalOverlay && !collectInProgress) modalOverlay.classList.remove('active'); });
+
+submitBtn?.addEventListener('click', async () => {
+  const name = document.getElementById('categoryName').value.trim();
+  const keywords = document.getElementById('categoryKeywords').value.split(',').map(k => k.trim()).filter(k => k);
+  if (!name || keywords.length === 0) { alert('请填写分类名称和关键词'); return; }
+
+  submitBtn.disabled = true;
+  if (cancelBtn) cancelBtn.disabled = true;
+  setCollectLoading(true);
+
+  try {
+    const response = await fetch('/api/add-category', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, keywords })
+    });
+    let data = {};
+    try { data = await response.json(); } catch {}
+    if (response.ok) {
+      document.getElementById('categoryName').value = '';
+      document.getElementById('categoryKeywords').value = '';
+      modalOverlay.classList.remove('active');
+      const hint = collectLoadingOverlay?.querySelector('.collect-loading-hint');
+      if (hint) hint.textContent = '采集完成，正在刷新页面…';
+      location.reload();
+    } else {
+      setCollectLoading(false);
+      alert('添加失败: ' + (data.error || response.statusText || '请重试'));
+    }
+  } catch (e) {
+    setCollectLoading(false);
+    alert('无法连接服务。若在本机开发，请先运行 npm start。\n详情: ' + e.message);
+  }
+
+  submitBtn.disabled = false;
+  if (cancelBtn) cancelBtn.disabled = false;
+});
+</script>
+</body>
+</html>

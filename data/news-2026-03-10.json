@@ -1,0 +1,38 @@
+{
+  "date": "2026-03-10",
+  "count": 4,
+  "news": [
+    {
+      "title": "Meta亚历山大王走人？小扎回应了",
+      "link": "https://www.qbitai.com/2026/03/385127.html",
+      "source": "量子位",
+      "date": "Tue, 10 Mar 2026 05:23:30 +0000",
+      "summary": "刚满29岁的Meta AI一号位...",
+      "category": "AI综合"
+    },
+    {
+      "title": "首个物理AI数据基座平台“无垠”落户浙江，专治机器人数据荒，家庭工业商业场景全覆盖",
+      "link": "https://www.qbitai.com/2026/03/385066.html",
+      "source": "量子位",
+      "date": "Mon, 09 Mar 2026 10:46:27 +0000",
+      "summary": "打通训练到商业化落地...",
+      "category": "AI综合"
+    },
+    {
+      "title": "打败GPT-5.2，嵌入真实工业生产，这个大模型什么来头？",
+      "link": "https://www.qbitai.com/2026/03/385010.html",
+      "source": "量子位",
+      "date": "Mon, 09 Mar 2026 08:14:22 +0000",
+      "summary": "...",
+      "category": "OpenAI"
+    },
+    {
+      "title": "“最美PM”宋紫薇获红杉蚂蚁投资，创业方向略有调整，转向AI护肤",
+      "link": "https://www.qbitai.com/2026/03/384926.html",
+      "source": "量子位",
+      "date": "Mon, 09 Mar 2026 06:21:16 +0000",
+      "summary": "暂避大厂锋芒...",
+      "category": "AI综合"
+    }
+  ]
+}

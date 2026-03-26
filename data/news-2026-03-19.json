@@ -1,0 +1,479 @@
+{
+  "date": "2026-03-19",
+  "count": 59,
+  "sourceCount": 15,
+  "news": [
+    {
+      "title": "年度征文｜效率杂谈：告别纸笔拓荒，怎么用 AI 来辅助学习？",
+      "link": "https://sspai.com/post/106878",
+      "source": "少数派",
+      "date": "2026-03-19T03:27:42.699Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "打造我的「智能家」：使用 Claude Code 轻松使用 Home Assistant",
+      "link": "https://sspai.com/post/106992",
+      "source": "少数派",
+      "date": "2026-03-19T03:27:42.699Z",
+      "summary": "",
+      "category": "Anthropic"
+    },
+    {
+      "title": "腾讯「龙虾」QClaw体验：AI能连微信干活了，但整体还很粗糙",
+      "link": "https://www.leikeji.com/article/75505",
+      "source": "雷科技",
+      "date": "2026-03-19T03:27:41.823Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "驯服“龙虾”，Agent也要服从基本法",
+      "link": "https://www.huxiu.com/article/4837843.html",
+      "source": "虎嗅",
+      "date": "2026-03-19T03:27:40.351Z",
+      "summary": "",
+      "category": "AI Agent"
+    },
+    {
+      "title": "别再做时间的朋友了，AI时代“空间”才是你致富的朋友",
+      "link": "https://www.huxiu.com/article/4843371.html",
+      "source": "虎嗅",
+      "date": "2026-03-19T03:27:40.351Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "AI时代个体的竞争优势，根本不在于拥有什么能力",
+      "link": "https://www.huxiu.com/article/4842644.html",
+      "source": "虎嗅",
+      "date": "2026-03-19T03:27:40.351Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "终局循环：AI越繁荣，普通人的价值越廉价",
+      "link": "https://www.huxiu.com/article/4842633.html",
+      "source": "虎嗅",
+      "date": "2026-03-19T03:27:40.351Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "AI正在替代研究员",
+      "link": "https://www.huxiu.com/article/4842845.html",
+      "source": "虎嗅",
+      "date": "2026-03-19T03:27:40.351Z",
+      "summary": "",
+      "category": "研究"
+    },
+    {
+      "title": "AI，正在吞噬所有软件",
+      "link": "https://www.huxiu.com/article/4842738.html",
+      "source": "虎嗅",
+      "date": "2026-03-19T03:27:40.351Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "过去因为相信所以看见的那个 token，现在不用相信就能看见",
+      "link": "https://www.huxiu.com/article/4843388.html",
+      "source": "虎嗅",
+      "date": "2026-03-19T03:27:40.350Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "AI助手现在认路了：谷歌地图直接「长」进大脑",
+      "link": "https://www.36kr.com/p/3729245647879555",
+      "source": "36Kr-AI",
+      "date": "2026-03-19T03:27:39.849Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "华人学生立大功，新王Mamba-3直击Transformer死穴，推理效率碾压7倍",
+      "link": "https://www.36kr.com/p/3729245598514561",
+      "source": "36Kr-AI",
+      "date": "2026-03-19T03:27:39.849Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "Transformer不保？今天，CMU普林斯顿原班人马杀回，新一代开源架构Mamba-3震撼降临。15亿参数战力爆表，性能比Transformer飙升4%。",
+      "link": "https://www.36kr.com/p/3729245598514561",
+      "source": "36Kr-AI",
+      "date": "2026-03-19T03:27:39.849Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "AI大厂疯抢，文科生时代红利来了?",
+      "link": "https://www.36kr.com/p/3729104083254918",
+      "source": "36Kr-AI",
+      "date": "2026-03-19T03:27:39.849Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "在AI高速迭代的当今，人文社科所培养的人的特质被反复提起——它们关于好奇心、关于批判力，也关于独属于人的情感。",
+      "link": "https://www.36kr.com/p/3729104083254918",
+      "source": "36Kr-AI",
+      "date": "2026-03-19T03:27:39.849Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "成为全球AI工厂，中国的又一张国运王牌",
+      "link": "https://www.36kr.com/p/3728422952287620",
+      "source": "36Kr-AI",
+      "date": "2026-03-19T03:27:39.849Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "Agent热潮背后的产业逻辑与机会",
+      "link": "https://www.36kr.com/p/3729087096044930",
+      "source": "36Kr-AI",
+      "date": "2026-03-19T03:27:39.849Z",
+      "summary": "",
+      "category": "AI Agent"
+    },
+    {
+      "title": "Kimi“打破Transformer架构”真相",
+      "link": "https://www.36kr.com/p/3729098195893897",
+      "source": "36Kr-AI",
+      "date": "2026-03-19T03:27:39.849Z",
+      "summary": "",
+      "category": "国产大模型"
+    },
+    {
+      "title": "它并非推翻Transformer的神话，而是为这座大厦添上了一块关键的砖石。",
+      "link": "https://www.36kr.com/p/3729098195893897",
+      "source": "36Kr-AI",
+      "date": "2026-03-19T03:27:39.849Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "AI大爆炸加剧普通人焦虑，凯文·凯利回应时代情绪",
+      "link": "https://www.36kr.com/p/3729106911690375",
+      "source": "36Kr-AI",
+      "date": "2026-03-19T03:27:39.849Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "小米神操作！认领榜一神秘模型Hunter Alpha，龙虾之父都忍不住打听",
+      "link": "https://www.qbitai.com/2026/03/389038.html",
+      "source": "量子位",
+      "date": "Thu, 19 Mar 2026 01:18:29 +0000",
+      "summary": "万亿参数、百万上下文",
+      "category": "AI综合"
+    },
+    {
+      "title": "Anthropic's Claude claws its way towards the top of the AI market",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/19/anthropic_claude_market_share/",
+      "source": "The Register",
+      "date": "2026-03-19T00:28:08.000Z",
+      "summary": "",
+      "category": "Anthropic"
+    },
+    {
+      "title": "Meta is having trouble with rogue AI agents",
+      "link": "https://techcrunch.com/2026/03/18/meta-is-having-trouble-with-rogue-ai-agents/",
+      "source": "TechCrunch",
+      "date": "Wed, 18 Mar 2026 23:42:46 +0000",
+      "summary": "A rogue AI agent inadvertently exposed Meta company and user data to engineers who didn't have permission to see it.",
+      "category": "AI Agent"
+    },
+    {
+      "title": "Okta made a nightmare micromanager for your AI agents",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/18/okta_agent_micromanager/",
+      "source": "The Register",
+      "date": "2026-03-18T23:05:31.000Z",
+      "summary": "",
+      "category": "AI Agent"
+    },
+    {
+      "title": "Kagi Translate's AI answers the question \"What would horny Margaret Thatcher say?\"",
+      "link": "https://arstechnica.com/ai/2026/03/kagi-translates-ai-answers-the-question-what-would-horny-margaret-thatcher-say/",
+      "source": "Ars Technica",
+      "date": "Wed, 18 Mar 2026 22:06:32 +0000",
+      "summary": "Remember when it was fun to play around with LLMs?",
+      "category": "大模型"
+    },
+    {
+      "title": "The FBI is buying Americans’ location data",
+      "link": "https://www.theverge.com/news/897145/kash-patel-ron-wyden-fbi-location-data-no-warrant",
+      "source": "The Verge",
+      "date": "2026-03-18T21:52:30.000Z",
+      "summary": "WASHINGTON, DC - MARCH 18: Federal Bureau of Investigation Director Kash Patel testifies during a Senate Intelligence Committee hearing on worldwide threats in the Hart Senate Office Building on March",
+      "category": "AI综合"
+    },
+    {
+      "title": "Amazon doesn’t want the blame for the Post Office going under",
+      "link": "https://www.theverge.com/tech/897114/amazon-usps-contract-money-running-out",
+      "source": "The Verge",
+      "date": "2026-03-18T20:55:40.000Z",
+      "summary": "Amazon is going on the defensive after a report from The Wall Street Journal revealed that the ecommerce giant plans to slash shipments with the United States Postal Service, which said this week that",
+      "category": "AI综合"
+    },
+    {
+      "title": "Congress considers blowing up internet law",
+      "link": "https://www.theverge.com/policy/897106/section-230-reform-hearing-jawboning-social-media",
+      "source": "The Verge",
+      "date": "2026-03-18T20:54:16.000Z",
+      "summary": "Internet platforms' liability shield Section 230 faced another round of attack at a Senate Commerce Committee hearing on Wednesday, this time with two distinct undercurrents complicating the conversat",
+      "category": "AI综合"
+    },
+    {
+      "title": "Never mind Band-Aids, Neanderthals had antiseptic birch tar",
+      "link": "https://arstechnica.com/science/2026/03/never-mind-band-aids-neanderthals-had-antiseptic-birch-tar/",
+      "source": "Ars Technica",
+      "date": "Wed, 18 Mar 2026 20:46:32 +0000",
+      "summary": "Our view of Neanderthal life keeps getting more complex and vibrant.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Nothing CEO Carl Pei says smartphone apps will disappear as AI agents take their place",
+      "link": "https://techcrunch.com/2026/03/18/nothing-ceo-carl-pei-says-smartphone-apps-will-disappear-as-ai-agents-take-their-place/",
+      "source": "TechCrunch",
+      "date": "Wed, 18 Mar 2026 20:30:52 +0000",
+      "summary": "Nothing CEO Carl Pei says AI agents will eventually replace apps, shifting smartphones toward systems that understand intent and act on a user's behalf.",
+      "category": "AI Agent"
+    },
+    {
+      "title": "ChatGPT advised exec on how to fire Subnautica founders to avoid payout, court ruling says",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/18/chatgpt_helped_exec_bilk_founders/",
+      "source": "The Register",
+      "date": "2026-03-18T19:43:11.000Z",
+      "summary": "",
+      "category": "OpenAI"
+    },
+    {
+      "title": "The best deals on MacBooks right now",
+      "link": "https://www.theverge.com/22399419/apple-macbook-air-pro-mac-mini-imac-deals",
+      "source": "The Verge",
+      "date": "2026-03-18T19:35:00.000Z",
+      "summary": "It’s 2026, and that means Apple sells MacBooks equipped with not just its capable M-series processors but A-series chips that were previously exclusive to the iPhone. With the MacBook Neo starting at ",
+      "category": "AI视频"
+    },
+    {
+      "title": "The Best Outdoor Deals From the REI Member Days Sale (2026)",
+      "link": "https://www.wired.com/story/rei-member-days-sale-2026/",
+      "source": "Wired",
+      "date": "Wed, 18 Mar 2026 19:34:39 +0000",
+      "summary": "REI’s Member Days sale has deals on our favorite tents, backpacks, rain jackets, and more gear to outfit you for summer.",
+      "category": "AI综合"
+    },
+    {
+      "title": "David Sacks’ big Iran warning gets big time ignored",
+      "link": "https://www.theverge.com/column/896949/regulator-david-sacks-iran-polymarket",
+      "source": "The Verge",
+      "date": "2026-03-18T18:44:21.000Z",
+      "summary": "Sec. Scott Bessent, President Donald Trump, and David Sacks during The White House Digital Assets Summit in Washington, DC, on Friday, March 7, 2025. | Chris Kleponis/CNP/Bloomberg via Getty Images\t\n\n",
+      "category": "AI综合"
+    },
+    {
+      "title": "FBI is buying location data to track US citizens, director confirms",
+      "link": "https://techcrunch.com/2026/03/18/fbi-is-buying-location-data-to-track-us-citizens-kash-patel-wyden/",
+      "source": "TechCrunch",
+      "date": "Wed, 18 Mar 2026 18:32:32 +0000",
+      "summary": "FBI director Kash Patel told lawmakers that the agency is actively purchasing commercially available location data, which can track Americans without needing a warrant.",
+      "category": "AI综合"
+    },
+    {
+      "title": "ChatGPT did not cure a dog’s cancer",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/896878/ai-did-not-cure-this-dogs-cancer",
+      "source": "The Verge",
+      "date": "2026-03-18T18:14:39.000Z",
+      "summary": "When an Australian tech entrepreneur with no background in biology or medicine said ChatGPT helped save his dog from cancer, the story spread with the kind of validation Big Tech has long craved: proo",
+      "category": "OpenAI"
+    },
+    {
+      "title": "Storage vendors orbit the Nvidia sun at GTC",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/18/gtc_storage_hitatchi_ibm_seagate/",
+      "source": "The Register",
+      "date": "2026-03-18T18:14:06.000Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "Why Walmart and OpenAI Are Shaking Up Their Agentic Shopping Deal",
+      "link": "https://www.wired.com/story/ai-lab-walmart-openai-shaking-up-agentic-shopping-deal/",
+      "source": "Wired",
+      "date": "Wed, 18 Mar 2026 18:01:18 +0000",
+      "summary": "After OpenAI’s Instant Checkout feature fell short, Walmart is instead embedding its Sparky chatbot directly into ChatGPT and Google Gemini.",
+      "category": "OpenAI"
+    },
+    {
+      "title": "Pardoned Nikola founder Trevor Milton is trying to raise $1B for AI-powered planes",
+      "link": "https://techcrunch.com/2026/03/18/pardoned-nikola-founder-trevor-milton-is-trying-to-raise-1b-for-ai-powered-planes/",
+      "source": "TechCrunch",
+      "date": "Wed, 18 Mar 2026 17:58:28 +0000",
+      "summary": "He told the Wall Street Journal he thinks autonomous planes will be \"10 times harder than Nikola ever was.\"",
+      "category": "AI综合"
+    },
+    {
+      "title": "Patreon CEO calls AI companies’ fair use argument ‘bogus,’ says creators should be paid",
+      "link": "https://techcrunch.com/2026/03/18/patreon-ceo-calls-ai-companies-fair-use-argument-bogus-says-creators-should-be-paid/",
+      "source": "TechCrunch",
+      "date": "Wed, 18 Mar 2026 17:54:31 +0000",
+      "summary": "Patreon CEO Jack Conte says AI companies should pay creators for training data, arguing their fair use defense falls apart when they license content from major publishers.",
+      "category": "AI综合"
+    },
+    {
+      "title": "langchain-core==1.2.20",
+      "link": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.2.20",
+      "source": "LangChain",
+      "date": "2026-03-18T17:34:58Z",
+      "summary": "Changes since langchain-core==1.2.19\n\nrelease(core): 1.2.20 (#36085)\nfix(core): trace invocation params in metadata (#36080)\nfeat: Add LangSmith integration metadata to create_agent and init_chat_mode",
+      "category": "AI Agent"
+    },
+    {
+      "title": "Rebel Audio is a new AI podcasting tool aimed at first-time creators",
+      "link": "https://techcrunch.com/2026/03/18/rebel-audio-is-a-new-ai-podcasting-tool-aimed-at-first-time-creators/",
+      "source": "TechCrunch",
+      "date": "Wed, 18 Mar 2026 17:15:00 +0000",
+      "summary": "Rebel Audio is a new all-in-one podcasting tool that allows creators to record podcasts, edit, clip content for social, and publish episodes, all without ever leaving the platform.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Meatbags vs machines: DeepMind plans hackathon to draw line between human and AI brains",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/18/google_deepmind_agi_hackathon/",
+      "source": "The Register",
+      "date": "2026-03-18T16:51:16.000Z",
+      "summary": "",
+      "category": "Google"
+    },
+    {
+      "title": "The Gemini-powered features in Google Workspace that are worth using",
+      "link": "https://techcrunch.com/2026/03/18/the-gemini-powered-features-in-google-workspace-that-are-worth-using/",
+      "source": "TechCrunch",
+      "date": "Wed, 18 Mar 2026 16:43:18 +0000",
+      "summary": "From summarizing emails, drafting content, organizing data, and tracking meetings, here are all the best Gemini features in Google Workspace.",
+      "category": "Google"
+    },
+    {
+      "title": "The leaderboard “you can’t game,” funded by the companies it ranks",
+      "link": "https://techcrunch.com/video/the-leaderboard-you-cant-game-funded-by-the-companies-it-ranks/",
+      "source": "TechCrunch",
+      "date": "Wed, 18 Mar 2026 16:30:00 +0000",
+      "summary": "Artificial intelligence models are multiplying fast, and competition is stiff. With so many players crowding the space, which one will be the best — and who decides that? Arena, formerly LM Arena, has",
+      "category": "大模型"
+    },
+    {
+      "title": "This startup wants to make enterprise software look more like a prompt",
+      "link": "https://techcrunch.com/2026/03/18/this-startup-wants-to-make-enterprise-software-look-more-like-a-prompt/",
+      "source": "TechCrunch",
+      "date": "Wed, 18 Mar 2026 16:00:00 +0000",
+      "summary": "The company has raised $12 million in seed funding to build an AI operating system for enterprise.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Facebook launches a new monetization program to attract popular creators from TikTok, YouTube",
+      "link": "https://techcrunch.com/2026/03/18/facebook-launches-a-new-monetization-program-to-attract-popular-creators-from-tiktok-youtube/",
+      "source": "TechCrunch",
+      "date": "Wed, 18 Mar 2026 16:00:00 +0000",
+      "summary": "Facebook says it paid creators nearly $3 billion through its monetization programs in 2025, a 35% increase from the previous year and its highest annual total to date.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Sequen snags $16M to bring TikTok-style personalization tech to any consumer company",
+      "link": "https://techcrunch.com/2026/03/18/sequen-snags-16m-to-bring-tiktok-style-personalization-tech-to-any-consumer-company/",
+      "source": "TechCrunch",
+      "date": "Wed, 18 Mar 2026 15:58:50 +0000",
+      "summary": "With its Series A, Sequen is bringing its proprietary AI ranking and personalization technology to large consumer business.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Peter faces a new life cycle in Spider-Man: Brand New Day trailer",
+      "link": "https://arstechnica.com/culture/2026/03/peter-faces-a-new-life-cycle-in-spider-man-brand-new-day-trailer/",
+      "source": "Ars Technica",
+      "date": "Wed, 18 Mar 2026 15:41:24 +0000",
+      "summary": "“Sometimes Spider-Man has to do the hard thing, even if it breaks Peter Parker’s heart.”",
+      "category": "AI综合"
+    },
+    {
+      "title": "Microsoft hires the team of Sequoia-backed AI collaboration platform, Cove",
+      "link": "https://techcrunch.com/2026/03/18/microsoft-hires-the-team-of-sequioa-backed-ai-collaboration-platform-cove/",
+      "source": "TechCrunch",
+      "date": "Wed, 18 Mar 2026 15:33:49 +0000",
+      "summary": "AI collaboration startup Cove is shutting down after its team joined Microsoft, with service ending April 1 and customer data set for deletion.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Systemd 260 kills SysV, tells AI not to misbehave",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/18/systemd_260/",
+      "source": "The Register",
+      "date": "2026-03-18T15:15:10.000Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "Confessions of the ICE Agent Whisperer",
+      "link": "https://www.wired.com/story/confessions-of-the-ice-agent-whisperer/",
+      "source": "Wired",
+      "date": "Wed, 18 Mar 2026 15:00:00 +0000",
+      "summary": "Federal immigration enforcement agents usually won't talk to the media—but they will talk to independent journalist Karl Loftus.",
+      "category": "AI Agent"
+    },
+    {
+      "title": "全行业都在忙着“吃虾”，MiniMax M2.7已经让虾自己拿起筷子了",
+      "link": "https://www.qbitai.com/2026/03/389024.html",
+      "source": "量子位",
+      "date": "Wed, 18 Mar 2026 13:25:01 +0000",
+      "summary": "大模型自我进化时代来了",
+      "category": "大模型"
+    },
+    {
+      "title": "Humanscale’s New $15K Lounge Chair Is the Ultimate Home Office Workstation",
+      "link": "https://www.wired.com/story/humanscale-diffrient-lounge/",
+      "source": "Wired",
+      "date": "Wed, 18 Mar 2026 12:30:00 +0000",
+      "summary": "The final project from famed designer Niels Diffrient, the Diffrient Lounge is made for work and play in high-budget homes.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Boroux Versus Rorra Countertop Water Filters, Tested Head to Head",
+      "link": "https://www.wired.com/story/steel-water-filters-head-to-head/",
+      "source": "Wired",
+      "date": "Wed, 18 Mar 2026 11:06:00 +0000",
+      "summary": "In a world of plasticky water filter pitchers, I tested two of the new generation of stainless-steel filter systems.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Samsung Galaxy Buds4 Pro Review: AirPods Pro for Android",
+      "link": "https://www.wired.com/review/samsung-galaxy-buds-4-pro/",
+      "source": "Wired",
+      "date": "Wed, 18 Mar 2026 11:00:00 +0000",
+      "summary": "The latest Galaxy Buds Pro get as close to the AirPods Pro as I’ve seen, in all the best ways.",
+      "category": "AI综合"
+    },
+    {
+      "title": "BMW i3 2026: Specs, Price, Availability, Range",
+      "link": "https://www.wired.com/story/bmw-i3-2026/",
+      "source": "Wired",
+      "date": "Wed, 18 Mar 2026 10:00:00 +0000",
+      "summary": "No longer a cute urban runabout, BMW's latest electrified 3 Series is packed with tech and can go further than the iX3.",
+      "category": "AI综合"
+    },
+    {
+      "title": "淘天开启2027届实习生招聘：岗位全面拥抱AI，新增3类AI岗位",
+      "link": "https://www.qbitai.com/2026/03/388972.html",
+      "source": "量子位",
+      "date": "Wed, 18 Mar 2026 08:55:43 +0000",
+      "summary": "延续淘天集团全面拥抱AI的态势。",
+      "category": "AI综合"
+    },
+    {
+      "title": "小牛电动举办2026科技新品发布会，开启“造AI好车”新十年",
+      "link": "https://www.qbitai.com/2026/03/388959.html",
+      "source": "量子位",
+      "date": "Wed, 18 Mar 2026 02:45:10 +0000",
+      "summary": "",
+      "category": "AI综合"
+    }
+  ]
+}

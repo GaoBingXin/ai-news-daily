@@ -1,0 +1,455 @@
+{
+  "date": "2026-03-21",
+  "count": 56,
+  "sourceCount": 15,
+  "news": [
+    {
+      "title": "派早报：小米发布多款新品、稀宇科技发布 MiniMax-M2.7 模型等",
+      "link": "https://sspai.com/post/107563",
+      "source": "少数派",
+      "date": "2026-03-21T00:10:20.186Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "科技媒体要标配悟空？做专题、找热点、写大稿，AI专干大活儿！",
+      "link": "https://www.leikeji.com/article/75553",
+      "source": "雷科技",
+      "date": "2026-03-21T00:10:19.378Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "AI剧本时代，长剧编剧脱不下“长衫”",
+      "link": "https://www.huxiu.com/article/4841758.html",
+      "source": "虎嗅",
+      "date": "2026-03-21T00:10:18.109Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "Cursor自研新模型反超Opus 4.6，价格还“打一折”，网友实测：只有它写完应用能一次跑通",
+      "link": "https://www.36kr.com/p/3731223131176960",
+      "source": "36Kr-AI",
+      "date": "2026-03-21T00:10:17.529Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "「男二以下全换AI」吵翻全网，但真正该慌的人一声没吭",
+      "link": "https://www.36kr.com/p/3731154000052225",
+      "source": "36Kr-AI",
+      "date": "2026-03-21T00:10:17.529Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "「男二以下的演员以后都不用真人了，全用 AI 做。",
+      "link": "https://www.36kr.com/p/3731154000052225",
+      "source": "36Kr-AI",
+      "date": "2026-03-21T00:10:17.529Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "配角AI化上热搜后，我们问了十余位影视公司老板",
+      "link": "https://www.36kr.com/p/3731081868227333",
+      "source": "36Kr-AI",
+      "date": "2026-03-21T00:10:17.529Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "“token粉碎机”提出五大挑战，AI Infra如何接得住OpenClaw",
+      "link": "https://www.36kr.com/p/3731068180086785",
+      "source": "36Kr-AI",
+      "date": "2026-03-21T00:10:17.528Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "AI Infra的又一场硬仗。",
+      "link": "https://www.36kr.com/p/3731068180086785",
+      "source": "36Kr-AI",
+      "date": "2026-03-21T00:10:17.528Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "黄仁勋的物理AI野望：将5G网络转变为分布式AI计算机",
+      "link": "https://www.36kr.com/p/3731061726445574",
+      "source": "36Kr-AI",
+      "date": "2026-03-21T00:10:17.528Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "通信网络正在被AI吞噬？从“传输比特”到“提供智能”，从“被动管道”到“主动计算平台”，一个新范式正在形成。",
+      "link": "https://www.36kr.com/p/3731061726445574",
+      "source": "36Kr-AI",
+      "date": "2026-03-21T00:10:17.528Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "Anthropic Denies It Could Sabotage AI Tools During War",
+      "link": "https://www.wired.com/story/anthropic-denies-sabotage-ai-tools-war-claude/",
+      "source": "Wired",
+      "date": "Sat, 21 Mar 2026 00:03:20 +0000",
+      "summary": "The Department of Defense alleges the AI developer could manipulate models in the middle of war. Company executives argue that’s impossible.",
+      "category": "Anthropic"
+    },
+    {
+      "title": "Jury finds Elon Musk&#8217;s &#8216;stupid tweets&#8217; caused Twitter investors&#8217; losses",
+      "link": "https://www.theverge.com/tech/898511/elon-musk-twitter-lawsuit",
+      "source": "The Verge",
+      "date": "2026-03-20T23:46:30.000Z",
+      "summary": "A California jury determined that Elon Musk misled Twitter investors before making a $44 billion deal to buy the company in 2022, reports CNBC. The New York Times reports that Musk had testified this ",
+      "category": "AI综合"
+    },
+    {
+      "title": "You're likely already infected with a brain-eating virus you've never heard of",
+      "link": "https://arstechnica.com/health/2026/03/youre-likely-already-infected-with-a-brain-eating-virus-youve-never-heard-of/",
+      "source": "Ars Technica",
+      "date": "Fri, 20 Mar 2026 22:11:24 +0000",
+      "summary": "Fatal brain infection was thought to be from profound immune suppression. Not anymore.",
+      "category": "AI综合"
+    },
+    {
+      "title": "There Aren’t a Lot of Reasons to Get Excited About a New Amazon Smartphone",
+      "link": "https://www.wired.com/story/amazon-smartphone-rumor-2026/",
+      "source": "Wired",
+      "date": "Fri, 20 Mar 2026 22:03:09 +0000",
+      "summary": "The company is reportedly building a new AI-powered mobile device. If Amazon follows through on the plan, experts warn it would be next to impossible to break into a crowded market.",
+      "category": "AI综合"
+    },
+    {
+      "title": "An automated moderation error left Tumblr users panicked",
+      "link": "https://www.theverge.com/tech/898402/tumblr-automated-account-bans-march-2026",
+      "source": "The Verge",
+      "date": "2026-03-20T22:00:34.000Z",
+      "summary": "Tumblr users were left scrambling on Wednesday after dozens of accounts were banned in the same afternoon by an automated system. Numerous users contacted The Verge about the incident, claiming that t",
+      "category": "AI综合"
+    },
+    {
+      "title": "Once again, ULA can't deliver when the US military needs a satellite in orbit",
+      "link": "https://arstechnica.com/space/2026/03/spacex-swipes-yet-another-military-contract-from-united-launch-alliance/",
+      "source": "Ars Technica",
+      "date": "Fri, 20 Mar 2026 21:35:56 +0000",
+      "summary": "ULA's Vulcan launch vehicle is grounded after a solid rocket booster anomaly last month.",
+      "category": "AI综合"
+    },
+    {
+      "title": "‘A Rigged and Dangerous Product’: The Wildest Week for Prediction Markets Yet",
+      "link": "https://www.wired.com/story/why-this-was-the-wildest-week-for-prediction-markets-yet/",
+      "source": "Wired",
+      "date": "Fri, 20 Mar 2026 21:07:04 +0000",
+      "summary": "As the prediction market boom continues, backlash is growing, too, with Arizona filing criminal charges against Kalshi and public outcry after Polymarket traders threatened a journalist.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Writer denies it, but publisher pulls horror novel after multiple allegations of AI use",
+      "link": "https://arstechnica.com/ai/2026/03/hachette-pulls-shy-girl-horror-novel-after-concerns-about-ai-use/",
+      "source": "Ars Technica",
+      "date": "Fri, 20 Mar 2026 21:03:10 +0000",
+      "summary": "One of the first controversies of its kind.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Microsoft rolls back some of its Copilot AI bloat on Windows",
+      "link": "https://techcrunch.com/2026/03/20/microsoft-rolls-back-some-of-its-copilot-ai-bloat-on-windows/",
+      "source": "TechCrunch",
+      "date": "Fri, 20 Mar 2026 20:53:09 +0000",
+      "summary": "The company is reducing Copilot entry points on Windows, starting with Photos, Widgets, Notepad, and other apps.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Widely used Trivy scanner compromised in ongoing supply-chain attack",
+      "link": "https://arstechnica.com/security/2026/03/widely-used-trivy-scanner-compromised-in-ongoing-supply-chain-attack/",
+      "source": "Ars Technica",
+      "date": "Fri, 20 Mar 2026 20:50:46 +0000",
+      "summary": "Admins: Sorry to say, but it's likely a rotate-your-secrets kind of weekend.",
+      "category": "AI综合"
+    },
+    {
+      "title": "A Top Democrat Is Urging Colleagues to Support Trump’s Spy Machine",
+      "link": "https://www.wired.com/story/a-top-democrat-is-urging-colleagues-to-support-trumps-spy-machine/",
+      "source": "Wired",
+      "date": "Fri, 20 Mar 2026 20:46:45 +0000",
+      "summary": "Congressman Jim Himes claims a sweeping surveillance authority should stay intact because he hasn't seen abuses by Kash Patel's FBI, according to internal messaging obtained by WIRED.",
+      "category": "AI综合"
+    },
+    {
+      "title": "What happened at Nvidia GTC: NemoClaw, Robot Olaf, and a $1 trillion bet",
+      "link": "https://techcrunch.com/video/what-happened-at-nvidia-gtc-nemoclaw-robot-olaf-and-a-1-trillion-bet/",
+      "source": "TechCrunch",
+      "date": "Fri, 20 Mar 2026 20:02:35 +0000",
+      "summary": "CEO Jensen Huang took the stage at Nvidia’s GTC conference this week in his signature leather jacket to deliver a two-and-a-half-hour keynote, projecting $1 trillion in AI chip sales through 2027, dec",
+      "category": "AI综合"
+    },
+    {
+      "title": "A new Nintendo Switch 2 could be the poster child for replaceable batteries",
+      "link": "https://www.theverge.com/games/898313/nintendo-switch-2-eu-replaceable-battery",
+      "source": "The Verge",
+      "date": "2026-03-20T19:59:05.000Z",
+      "summary": "Nintendo plans to release a Switch 2 revision in the European Union that will let users replace their own batteries, Nikkei reports. The current version of the Switch 2 has a glued-in battery. But Nin",
+      "category": "AI综合"
+    },
+    {
+      "title": "Future Sony PlayStation games will use AI to imagine new frames",
+      "link": "https://www.theverge.com/news/898283/future-sony-playstation-games-will-use-ai-to-imagine-new-frames",
+      "source": "The Verge",
+      "date": "2026-03-20T19:46:23.000Z",
+      "summary": "Mark Cerny, the lead architect of the PlayStation 5 and PS5 Pro, told Digital Foundry that ML-based frame generation tech is coming to \"PlayStation platforms\" in the future, letting the game console u",
+      "category": "AI综合"
+    },
+    {
+      "title": "Gamers Hate Nvidia's DLSS 5. Developers Aren’t Crazy About It, Either",
+      "link": "https://www.wired.com/story/gamers-hate-nvidia-dlss-5-developers-arent-crazy-about-it-either/",
+      "source": "Wired",
+      "date": "Fri, 20 Mar 2026 19:13:19 +0000",
+      "summary": "Nvidia’s new AI upscaling gaming technology struck gamers as uncanny and off-putting. Developers don't seem to like it, either, but it could be “the default” in a few years.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Windows 11 is finally getting a movable taskbar",
+      "link": "https://www.theverge.com/tech/897849/microsoft-windows-11-taskbar-vertical-top-movable",
+      "source": "The Verge",
+      "date": "2026-03-20T19:00:00.000Z",
+      "summary": "It's taken almost five years, but Microsoft is finally bringing back the ability to move the Windows taskbar to the top or sides of your screen. The movable taskbar is part of some much bigger changes",
+      "category": "AI综合"
+    },
+    {
+      "title": "Microsoft is ending the Windows Update nightmare — and letting you pause them indefinitely",
+      "link": "https://www.theverge.com/tech/898082/microsoft-promises-to-end-forced-windows-updates-still-automatic",
+      "source": "The Verge",
+      "date": "2026-03-20T19:00:00.000Z",
+      "summary": "In 2015, Microsoft decided that you shouldn't be in control of updating your PC anymore. At first, it seemed like a good idea  to keep malware at bay - but soon, users discovered their computers were ",
+      "category": "AI综合"
+    },
+    {
+      "title": "This is Microsoft&#8217;s plan to fix Windows 11",
+      "link": "https://www.theverge.com/news/897834/microsoft-windows-11-quality-performance-commitments-changes",
+      "source": "The Verge",
+      "date": "2026-03-20T18:56:15.000Z",
+      "summary": "Microsoft has faced a breakdown of trust in Windows 11 and a backlash over AI additions to its operating system in recent months. After promising to rebuild trust in Windows earlier this year, Microso",
+      "category": "AI综合"
+    },
+    {
+      "title": "Trump takes another shot at dismantling state AI regulation",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/898055/trump-new-ai-policy-framework",
+      "source": "The Verge",
+      "date": "2026-03-20T18:17:02.000Z",
+      "summary": "The Trump administration on Friday unveiled its new legislative blueprint for AI regulation, and the seven-point plan includes a clear message: The federal government should avoid many AI regulations ",
+      "category": "AI综合"
+    },
+    {
+      "title": "Salesforce snaps up the team who built calendar app Clockwise to work on Agentforce",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/20/salesforce_clockwise_team/",
+      "source": "The Register",
+      "date": "2026-03-20T18:15:34.000Z",
+      "summary": "",
+      "category": "AI Agent"
+    },
+    {
+      "title": "These electronic Polaroids are powered by your phone’s NFC chip",
+      "link": "https://www.theverge.com/tech/898162/vidabay-classic-plus-nfc-e-ink-fridge-magnet",
+      "source": "The Verge",
+      "date": "2026-03-20T18:05:07.000Z",
+      "summary": "E Ink displays have expanded beyond e-readers. They're now used in digital photo frames, smartphones, and even the price tags found on grocery store shelves. VidaBay's Classic Plus NFC E-Ink Fridge Ma",
+      "category": "AI综合"
+    },
+    {
+      "title": "Nine months later, the Trump phone still doesn’t exist",
+      "link": "https://www.theverge.com/tech/898110/trump-phone-t1-release-certification",
+      "source": "The Verge",
+      "date": "2026-03-20T17:46:49.000Z",
+      "summary": "Where's the Trump phone? We're going to keep talking about it every week. We've reached out, as usual, to ask about the Trump phone's whereabouts. Once again, we're waiting for a response.\nIt's been m",
+      "category": "AI综合"
+    },
+    {
+      "title": "RFK may replace entire panel of CDC vaccine advisors again, ally lets slip",
+      "link": "https://arstechnica.com/health/2026/03/rfk-may-replace-entire-panel-of-cdc-vaccine-advisors-again-ally-lets-slip/",
+      "source": "Ars Technica",
+      "date": "Fri, 20 Mar 2026 17:36:09 +0000",
+      "summary": "Robert Malone made the claim, then retracted it, as HHS denied it.",
+      "category": "AI综合"
+    },
+    {
+      "title": "A French Navy officer accidentally leaked the location of an aircraft carrier by logging his run on Strava",
+      "link": "https://techcrunch.com/2026/03/20/a-french-navy-officer-accidentally-leaked-the-location-of-an-aircraft-carrier-by-logging-his-run-on-strava/",
+      "source": "TechCrunch",
+      "date": "Fri, 20 Mar 2026 17:21:18 +0000",
+      "summary": "A French naval officer went on a run around the deck of the Charles de Gaulle aircraft carrier, inadvertently leaking the warship's location when he uploaded the workout to Strava.",
+      "category": "AI综合"
+    },
+    {
+      "title": "WordPress.com now lets AI agents write and publish posts, and more",
+      "link": "https://techcrunch.com/2026/03/20/wordpress-com-now-lets-ai-agents-write-and-publish-posts-and-more/",
+      "source": "TechCrunch",
+      "date": "Fri, 20 Mar 2026 16:43:09 +0000",
+      "summary": "New AI agents on WordPress.com could lower barriers to publishing while increasing machine-generated content across the web.",
+      "category": "AI Agent"
+    },
+    {
+      "title": "Amazon is reportedly developing an AI-centric smartphone",
+      "link": "https://arstechnica.com/gadgets/2026/03/amazon-is-reportedly-developing-an-ai-centric-smartphone/",
+      "source": "Ars Technica",
+      "date": "Fri, 20 Mar 2026 16:38:06 +0000",
+      "summary": "Amazon's second smartphone could forego an app store.",
+      "category": "AI综合"
+    },
+    {
+      "title": "US accuses Iran’s government of operating hacktivist group that hacked Stryker",
+      "link": "https://techcrunch.com/2026/03/20/u-s-accuses-irans-government-of-operating-hacktivist-group-that-hacked-stryker/",
+      "source": "TechCrunch",
+      "date": "Fri, 20 Mar 2026 16:18:57 +0000",
+      "summary": "The U.S. Justice Department said an Iranian security ministry operates the fake activist persona known as Handala, which claimed responsibility for the destructive hack targeting medical tech giant St",
+      "category": "AI综合"
+    },
+    {
+      "title": "Trump’s AI framework targets state laws, shifts child safety burden to parents",
+      "link": "https://techcrunch.com/2026/03/20/trumps-ai-framework-targets-state-laws-shifts-child-safety-burden-to-parents/",
+      "source": "TechCrunch",
+      "date": "Fri, 20 Mar 2026 16:14:04 +0000",
+      "summary": "Trump’s AI framework pushes federal preemption of state laws, emphasizes innovation, and shifts responsibility for child safety toward parents while laying out lighter-touch rules for tech companies.",
+      "category": "AI综合"
+    },
+    {
+      "title": "AI startups are eating the venture industry and the returns, so far, are good",
+      "link": "https://techcrunch.com/2026/03/20/ai-startups-are-eating-the-venture-industry-and-the-returns-so-far-are-good/",
+      "source": "TechCrunch",
+      "date": "Fri, 20 Mar 2026 15:41:21 +0000",
+      "summary": "AI startups accounted for 41% of the $128 billion in venture dollars raised by companies on Carta last year — a record-high annual share.",
+      "category": "AI综合"
+    },
+    {
+      "title": "At Palantir’s Developer Conference, AI Is Built to Win Wars",
+      "link": "https://www.wired.com/story/palantir-developer-conference-ai-war-alex-karp/",
+      "source": "Wired",
+      "date": "Fri, 20 Mar 2026 15:00:00 +0000",
+      "summary": "As business soars, Palantir is doubling down on a vision of AI built for battlefield advantage—and attracting customers who agree.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Amazon working on new smartphone with Alexa at its core, report says",
+      "link": "https://techcrunch.com/2026/03/20/amazon-working-on-new-smartphone-with-alexa-at-its-core-report-says/",
+      "source": "TechCrunch",
+      "date": "Fri, 20 Mar 2026 14:51:30 +0000",
+      "summary": "The device is being developed by the company's Devices and Services division, and it would feature personalized features aimed at making it easier to use Amazon's suite of apps, including Amazon shopp",
+      "category": "AI视频"
+    },
+    {
+      "title": "Jaguar Land Rover's cyber bailout sets worrying precedent, watchdog warns",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/20/jlr_bailout_cmc/",
+      "source": "The Register",
+      "date": "2026-03-20T12:42:10.000Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "The best AI investment might be in energy tech",
+      "link": "https://techcrunch.com/2026/03/20/the-best-ai-investment-might-be-in-energy-tech/",
+      "source": "TechCrunch",
+      "date": "Fri, 20 Mar 2026 12:00:00 +0000",
+      "summary": "Power has become one of the biggest bottlenecks in rolling out new AI data centers. That's creating an opening for investors.",
+      "category": "AI综合"
+    },
+    {
+      "title": "China Approves the First Brain Chips for Sale—and Has a Plan to Dominate the Industry",
+      "link": "https://www.wired.com/story/china-approves-first-brain-chips-for-sale-plan-to-dominate-industry/",
+      "source": "Wired",
+      "date": "Fri, 20 Mar 2026 11:44:12 +0000",
+      "summary": "While the United States and Europe are moving cautiously forward with clinical trials, China is racing toward the commercialization of brain implants.",
+      "category": "AI综合"
+    },
+    {
+      "title": "16 Best Camera Bags, Slings, Straps, and Backpacks (2026), Tested and Reviewed",
+      "link": "https://www.wired.com/gallery/best-camera-bags-backpacks-straps-inserts/",
+      "source": "Wired",
+      "date": "Fri, 20 Mar 2026 11:30:00 +0000",
+      "summary": "Tote your photo and video gear around in style. We tested more than 100 packs and rounded up our favorites.",
+      "category": "AI视频"
+    },
+    {
+      "title": "I Learned More Than I Thought I Would From Using Food-Tracking Apps",
+      "link": "https://www.wired.com/story/food-tracking-apps-ai-nutrition-weight-loss/",
+      "source": "Wired",
+      "date": "Fri, 20 Mar 2026 10:30:00 +0000",
+      "summary": "These apps, some of which use AI and computer vision, were helpful for meeting my caloric and nutrition intake goals. But they also gave me some anxiety.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Starmer's digital ID reboot raises same old questions as its Blair-era ancestor",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/20/digital_id_consultation/",
+      "source": "The Register",
+      "date": "2026-03-20T10:15:14.000Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "Sashiko: AI code review system for the Linux kernel spots bugs humans miss",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/20/sashiko_code_review_linux/",
+      "source": "The Register",
+      "date": "2026-03-20T09:30:07.000Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "AI屠刀下一站“Vibe设计”！谷歌一个产品把合作伙伴Figma干崩了",
+      "link": "https://www.qbitai.com/2026/03/390235.html",
+      "source": "量子位",
+      "date": "Fri, 20 Mar 2026 07:40:16 +0000",
+      "summary": "软件行业又遭一记重创",
+      "category": "AI综合"
+    },
+    {
+      "title": "前荣耀AI实验室主任带队：用“超级大脑”接管农场，24小时不打烊",
+      "link": "https://www.qbitai.com/2026/03/389609.html",
+      "source": "量子位",
+      "date": "Fri, 20 Mar 2026 05:37:12 +0000",
+      "summary": "成本直降60%",
+      "category": "AI综合"
+    },
+    {
+      "title": "Cursor自研模型反超Opus 4.6！价格脚踝斩，氛围编程沸腾了",
+      "link": "https://www.qbitai.com/2026/03/389673.html",
+      "source": "量子位",
+      "date": "Fri, 20 Mar 2026 04:09:59 +0000",
+      "summary": "背后引入了一种新的强化学习方法",
+      "category": "AI综合"
+    },
+    {
+      "title": "OpenClaw、Agent 企业级落地……2026 奇点智能技术大会硬核议题发布",
+      "link": "https://www.qbitai.com/2026/03/389666.html",
+      "source": "量子位",
+      "date": "Fri, 20 Mar 2026 03:01:41 +0000",
+      "summary": "在上海·环球港凯悦酒店正式召开",
+      "category": "AI Agent"
+    },
+    {
+      "title": "Qwen3.5-Max预览版首度亮相，阿里千问登顶中国最强模型",
+      "link": "https://www.qbitai.com/2026/03/389610.html",
+      "source": "量子位",
+      "date": "Fri, 20 Mar 2026 02:11:30 +0000",
+      "summary": "阿里千问位列全球前五",
+      "category": "AI综合"
+    },
+    {
+      "title": "Meta Agent失控泄密，小扎紧急拉响顶格警报",
+      "link": "https://www.qbitai.com/2026/03/389570.html",
+      "source": "量子位",
+      "date": "Fri, 20 Mar 2026 00:52:59 +0000",
+      "summary": "能让小扎栽跟头的，还得是“AI”。",
+      "category": "AI Agent"
+    },
+    {
+      "title": "黄仁勋：每一家工业企业都将成为机器人公司！连发物理AI全家桶",
+      "link": "https://www.qbitai.com/2026/03/389569.html",
+      "source": "量子位",
+      "date": "Fri, 20 Mar 2026 00:52:21 +0000",
+      "summary": "抛出了一整套物理AI基础设施",
+      "category": "AI综合"
+    }
+  ]
+}

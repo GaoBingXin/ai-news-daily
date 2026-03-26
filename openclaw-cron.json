@@ -1,0 +1,9 @@
+[
+  {
+    "name": "ai-news-daily",
+    "command": "cd /root/.openclaw/workspace/ai-news-daily && npm run daily && npx vercel --prod",
+    "schedule": "0 0 * * *",
+    "enabled": true,
+    "description": "每天早上8点自动采集AI资讯并部署"
+  }
+]

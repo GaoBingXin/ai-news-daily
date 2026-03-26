@@ -1,0 +1,28 @@
+{
+  "name": "ai-news-collector",
+  "version": "1.0.0",
+  "description": "AI热点资讯自动采集和展示平台",
+  "main": "index.js",
+  "scripts": {
+    "start": "node scripts/dev-server.js",
+    "dev": "node index.js",
+    "collect": "node scripts/collect-news.js",
+    "build": "node scripts/generate-html.js",
+    "deploy": "node scripts/deploy.js",
+    "github": "node scripts/collect-github.js && node scripts/generate-html.js",
+    "all": "node scripts/collect-news.js && node scripts/generate-html.js",
+    "daily": "node scripts/agent-collect.js --full",
+    "agent": "node scripts/agent-collect.js",
+    "agent:new": "node scripts/agent-collect.js --new-only"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "date-fns": "^2.30.0",
+    "marked": "^11.0.0",
+    "rss-parser": "^3.13.0"
+  },
+  "devDependencies": {
+    "vercel": "^33.7.1"
+  }
+}

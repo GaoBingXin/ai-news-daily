@@ -1,0 +1,223 @@
+{
+  "date": "2026-03-22",
+  "count": 27,
+  "sourceCount": 15,
+  "news": [
+    {
+      "title": "19999元！慕思智能床发布：接入鸿蒙生态，用AI卷翻睡眠赛道",
+      "link": "https://www.leikeji.com/article/75568",
+      "source": "雷科技",
+      "date": "2026-03-22T00:05:43.609Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "热搜第三、炸翻硅谷！马斯克成了这家中国AI的铁粉",
+      "link": "https://www.leikeji.com/article/75576",
+      "source": "雷科技",
+      "date": "2026-03-22T00:05:43.609Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "烧了18.6万美元让AI连轴肝了17天，它产出了166篇论文",
+      "link": "https://www.huxiu.com/article/4844214.html",
+      "source": "虎嗅",
+      "date": "2026-03-22T00:05:41.404Z",
+      "summary": "",
+      "category": "研究"
+    },
+    {
+      "title": "228小时狂飙100篇论文、烧光114亿Token：FARS杀疯了",
+      "link": "https://www.huxiu.com/article/4836445.html",
+      "source": "虎嗅",
+      "date": "2026-03-22T00:05:41.404Z",
+      "summary": "",
+      "category": "研究"
+    },
+    {
+      "title": "OpenAI曝光“北极星”项目，“2028大失业”可能真要来了",
+      "link": "https://www.huxiu.com/article/4844127.html",
+      "source": "虎嗅",
+      "date": "2026-03-22T00:05:41.404Z",
+      "summary": "",
+      "category": "OpenAI"
+    },
+    {
+      "title": "Halide co-founder is suing former partner for bringing source code to Apple",
+      "link": "https://www.theverge.com/business/898687/halide-lawsuit-co-founder-apple",
+      "source": "The Verge",
+      "date": "2026-03-21T21:02:56.000Z",
+      "summary": "Halide running on an iPhone. | Photo: Allison Johnson / The Verge\t\n\nLux Optics co-founder Sebastiaan de With made headlines when he joined Apple in late January. The company was behind Halide, one of ",
+      "category": "AI综合"
+    },
+    {
+      "title": "Publisher pulls horror novel ‘Shy Girl’ over AI concerns",
+      "link": "https://techcrunch.com/2026/03/21/publisher-pulls-horror-novel-shy-girl-over-ai-concerns/",
+      "source": "TechCrunch",
+      "date": "Sat, 21 Mar 2026 19:30:27 +0000",
+      "summary": "Hachette Book Group said it will not be publishing “Shy Girl” over concerns that artificial intelligence was used to generate the text.",
+      "category": "AI综合"
+    },
+    {
+      "title": "The AirPods Pro 3 are $50 off right now, nearly matching their best-ever price",
+      "link": "https://www.theverge.com/gadgets/898502/airpods-pro-3-amazon-big-spring-sale-2026-deal",
+      "source": "The Verge",
+      "date": "2026-03-21T17:00:00.000Z",
+      "summary": "Less than a week ago, Apple announced the forthcoming AirPods Max 2, a pair of over-ear headphones that leverage the company’s H2 chip for AI-powered live translation, conversation awareness, and a ho",
+      "category": "模型"
+    },
+    {
+      "title": "Why Wall Street wasn’t won over by Nvidia’s big conference",
+      "link": "https://techcrunch.com/2026/03/21/why-wall-street-wasnt-won-over-by-nvidias-big-conference/",
+      "source": "TechCrunch",
+      "date": "Sat, 21 Mar 2026 16:28:00 +0000",
+      "summary": "Despite investor fears of an AI bubble, Nvidia's latest conference shows that most in the industry aren't concerned by that possibility.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Here are 20 of our favorite outdoor deals from REI’s Member Days Sale",
+      "link": "https://www.theverge.com/gadgets/897628/best-outdoor-deals-rei-member-days-sale-2026",
+      "source": "The Verge",
+      "date": "2026-03-21T14:40:00.000Z",
+      "summary": "REI’s latest sale is in full swing. The outdoor retailer’s exclusive shopping event runs through Monday, March 23rd, bringing with it a batch of discounts on Garmin watches, tents, portable stoves, an",
+      "category": "AI视频"
+    },
+    {
+      "title": "How fusion power works and the startups pursuing it",
+      "link": "https://techcrunch.com/2026/03/21/how-fusion-power-works-and-the-startups-pursuing-it/",
+      "source": "TechCrunch",
+      "date": "Sat, 21 Mar 2026 14:00:00 +0000",
+      "summary": "Fusion power promises to generate large amounts of clean electricity from nearly limitless fuel. This article explains the main approaches and the companies that use them.",
+      "category": "AI综合"
+    },
+    {
+      "title": "The gen AI Kool-Aid tastes like eugenics",
+      "link": "https://www.theverge.com/entertainment/897923/ghost-in-the-machine-valerie-veatch-interview",
+      "source": "The Verge",
+      "date": "2026-03-21T14:00:00.000Z",
+      "summary": "Like many people, director Valerie Veatch was intrigued when OpenAI first released its Sora text-to-video generative AI model to the public in 2024. Though she didn't fully understand the technology, ",
+      "category": "OpenAI"
+    },
+    {
+      "title": "Oeuf is a punishing platformer in a cozy shell",
+      "link": "https://www.theverge.com/entertainment/895435/oeuf-review",
+      "source": "The Verge",
+      "date": "2026-03-21T13:00:00.000Z",
+      "summary": "The funny shape of eggs is the curious lifeblood of Oeuf, the new physics platformer by prolific developer Increpare Games. In a gaming landscape saturated with complex systems dropped into simple gam",
+      "category": "AI综合"
+    },
+    {
+      "title": "Dreame’s self-cleaning L10s Pro Ultra is nearly $1,000 off its original list price",
+      "link": "https://www.theverge.com/gadgets/898287/dreame-l10s-pro-ultra-robot-vacuum-mop-amazon-big-spring-sale-2026-deal",
+      "source": "The Verge",
+      "date": "2026-03-21T12:30:00.000Z",
+      "summary": "Amazon’s Big Spring Sale doesn’t kick off until next week, but the retailer is already dropping a host of good deals, especially on robot vacuums. We recently saw Ecovacs’ Deebot X8 and X9 Pro Omni dr",
+      "category": "模型"
+    },
+    {
+      "title": "Turns out your coffee addiction may be doing your brain a favor",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/21/turns_out_your_coffee_addiction/",
+      "source": "The Register",
+      "date": "2026-03-21T12:10:10.000Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "The new MacBook Pro is still fast as hell",
+      "link": "https://www.theverge.com/tech/898062/apple-macbook-pro-16-m5-max-m1-comparison-review",
+      "source": "The Verge",
+      "date": "2026-03-21T12:00:00.000Z",
+      "summary": "It just looks like, well, most other MacBook Pros. | Photo: Antonio G. Di Benedetto / The Verge\t\n\nApple's flagship 16-inch MacBook Pro has reigned supreme in the world of creator-focused laptops since",
+      "category": "模型"
+    },
+    {
+      "title": "An early contender for movie of the year",
+      "link": "https://www.theverge.com/tech/898265/project-hail-mary-airpods-max-2-installer",
+      "source": "The Verge",
+      "date": "2026-03-21T12:00:00.000Z",
+      "summary": "Hi, friends! Welcome to Installer No. 120, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, get ready for Pen Opinions, and also you can read all the old edition",
+      "category": "AI Agent"
+    },
+    {
+      "title": "Gemini task automation is slow, clunky, and super impressive",
+      "link": "https://www.theverge.com/tech/898282/gemini-task-automation-uber-doordash-hands-on",
+      "source": "The Verge",
+      "date": "2026-03-21T11:30:00.000Z",
+      "summary": "An AI assistant that can actually get things done.\t\n\nI've been testing out Gemini's new task automation on the Pixel 10 Pro and the Galaxy S26 Ultra, which for the first time lets Gemini take the whee",
+      "category": "Google"
+    },
+    {
+      "title": "Aiper Scuba V3 Pool Robot Review: Eye on the Prize",
+      "link": "https://www.wired.com/review/aiper-scuba-v3-pool-robot/",
+      "source": "Wired",
+      "date": "Sat, 21 Mar 2026 11:02:00 +0000",
+      "summary": "Now outfitted with AI computer vision, this new pool cleaner can actively search for debris.",
+      "category": "AI综合"
+    },
+    {
+      "title": "I Tried DoorDash’s Tasks App and Saw the Bleak Future of AI Gig Work",
+      "link": "https://www.wired.com/story/i-tried-doordashs-tasks-app-and-saw-the-bleak-future-of-ai-gig-work/",
+      "source": "Wired",
+      "date": "Sat, 21 Mar 2026 11:00:00 +0000",
+      "summary": "I recorded videos of myself doing laundry, scrambling eggs, and walking around the park in DoorDash’s new Tasks app, where gig workers are paid to train AI.",
+      "category": "AI视频"
+    },
+    {
+      "title": "Kodiak CEO says making trucks drive themselves is only half the battle",
+      "link": "https://www.theverge.com/transportation/897551/kodiak-ai-self-driving-truck-ceo-interview",
+      "source": "The Verge",
+      "date": "2026-03-21T11:00:00.000Z",
+      "summary": "This year is shaping up to be a big one for self-driving trucks. In addition to Aurora's plan to deploy hundreds of autonomous big rigs and Waabi expanding into robotaxis, you've also got Kodiak AI ai",
+      "category": "AI综合"
+    },
+    {
+      "title": "The 19 Best EVs Coming in 2026",
+      "link": "https://www.wired.com/story/the-16-best-evs-coming-in-2026/",
+      "source": "Wired",
+      "date": "Sat, 21 Mar 2026 10:00:00 +0000",
+      "summary": "We’re expecting fresh electrics from Rivian, Hyundai, Honda, BMW, and newcomer Slate, among others. Here are the EVs arriving this year that we’re most excited about.",
+      "category": "AI综合"
+    },
+    {
+      "title": "精准识别「界门纲目科属种」！北大彭宇新团队用细粒度树先验提升泛化，破解生物类别分层识别难题",
+      "link": "https://www.qbitai.com/2026/03/390945.html",
+      "source": "量子位",
+      "date": "Sat, 21 Mar 2026 09:48:18 +0000",
+      "summary": "让生成式模型具备完整类别树认知，迈向通用视觉理解",
+      "category": "AI综合"
+    },
+    {
+      "title": "英伟达GTC现场的隐形AI巨头：老黄机器人demo背后都是它",
+      "link": "https://www.qbitai.com/2026/03/390924.html",
+      "source": "量子位",
+      "date": "Sat, 21 Mar 2026 09:39:22 +0000",
+      "summary": "光轮智能，正在定义Physical AI的基础设施",
+      "category": "AI综合"
+    },
+    {
+      "title": "How BYD Got EV Chargers to Work Almost as Fast as Gas Pumps",
+      "link": "https://www.wired.com/story/how-byds-ev-charger-got-even-faster-and-it-might-not-matter-as-much-as-you-think/",
+      "source": "Wired",
+      "date": "Sat, 21 Mar 2026 09:30:00 +0000",
+      "summary": "The Chinese automaker is racing ahead of global competitors—but don’t expect to see those gains in the US anytime soon.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Cursor套壳Kimi败露，最强「自研」模型被锤！创始人：忘记署名了",
+      "link": "https://www.qbitai.com/2026/03/390619.html",
+      "source": "量子位",
+      "date": "Sat, 21 Mar 2026 05:27:42 +0000",
+      "summary": "Kimi直接开喷了",
+      "category": "国产大模型"
+    },
+    {
+      "title": "New court filing reveals Pentagon told Anthropic the two sides were nearly aligned — a week after Trump declared the relationship kaput",
+      "link": "https://techcrunch.com/2026/03/20/new-court-filing-reveals-pentagon-told-anthropic-the-two-sides-were-nearly-aligned-a-week-after-trump-declared-the-relationship-kaput/",
+      "source": "TechCrunch",
+      "date": "Sat, 21 Mar 2026 01:40:28 +0000",
+      "summary": "Anthropic submitted two sworn declarations to a California federal court late Friday afternoon, pushing back on the Pentagon's assertion that the AI company poses an \"unacceptable risk to national sec",
+      "category": "Anthropic"
+    }
+  ]
+}

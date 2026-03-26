@@ -1,0 +1,567 @@
+{
+  "date": "2026-03-16",
+  "count": 70,
+  "sourceCount": 15,
+  "news": [
+    {
+      "title": "今夜，大模型从世界消散",
+      "link": "https://sspai.com/post/106939",
+      "source": "少数派",
+      "date": "2026-03-16T09:31:49.852Z",
+      "summary": "",
+      "category": "大模型"
+    },
+    {
+      "title": "全村人都在等着DeepSeek上桌吃饭了",
+      "link": "https://www.huxiu.com/article/4838602.html",
+      "source": "虎嗅",
+      "date": "2026-03-16T09:31:47.887Z",
+      "summary": "",
+      "category": "国产大模型"
+    },
+    {
+      "title": "AI“投毒”曝光背后，凡事听AI的我们还“自由”吗？",
+      "link": "https://www.huxiu.com/article/4842462.html",
+      "source": "虎嗅",
+      "date": "2026-03-16T09:31:47.886Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "滴普科技发布全新升级的Deepexi企业大模型，用282个Skills打造企业AI员工",
+      "link": "https://www.36kr.com/p/3725340839819653",
+      "source": "36Kr-AI",
+      "date": "2026-03-16T09:31:47.456Z",
+      "summary": "",
+      "category": "大模型"
+    },
+    {
+      "title": "企业AI的拐点时刻。",
+      "link": "https://www.36kr.com/p/3725340839819653",
+      "source": "36Kr-AI",
+      "date": "2026-03-16T09:31:47.456Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "智谱推出首个龙虾大模型，API价格同步涨20%",
+      "link": "https://www.36kr.com/p/3725280830404997",
+      "source": "36Kr-AI",
+      "date": "2026-03-16T09:31:47.456Z",
+      "summary": "",
+      "category": "大模型"
+    },
+    {
+      "title": "MIT新研究：大模型加噪声就能替代GRPO/PPO调参",
+      "link": "https://www.36kr.com/p/3725251983260034",
+      "source": "36Kr-AI",
+      "date": "2026-03-16T09:31:47.456Z",
+      "summary": "",
+      "category": "大模型"
+    },
+    {
+      "title": "预训练模型里早就藏好一堆专家",
+      "link": "https://www.36kr.com/p/3725251983260034",
+      "source": "36Kr-AI",
+      "date": "2026-03-16T09:31:47.456Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "Agent 越流行，CPU 的总需求就越高",
+      "link": "https://www.36kr.com/p/3725251689298309",
+      "source": "36Kr-AI",
+      "date": "2026-03-16T09:31:47.456Z",
+      "summary": "",
+      "category": "AI Agent"
+    },
+    {
+      "title": "补齐AI板块核心拼图，网络基建「卖铲人」飞速创新登陆港交所",
+      "link": "https://www.36kr.com/p/3725233182062982",
+      "source": "36Kr-AI",
+      "date": "2026-03-16T09:31:47.456Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "飞速创新顺利通过港交所聆讯，为火热的AI板块补齐了至关重要的“网络基建”拼图。",
+      "link": "https://www.36kr.com/p/3725233182062982",
+      "source": "36Kr-AI",
+      "date": "2026-03-16T09:31:47.456Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "‘100 Video Calls Per Day’: Models Are Applying to Be the Face of AI Scams",
+      "link": "https://www.wired.com/story/models-are-applying-to-be-the-face-of-ai-scams/",
+      "source": "Wired",
+      "date": "Mon, 16 Mar 2026 09:00:00 +0000",
+      "summary": "Dozens of Telegram channels reviewed by WIRED include job listings for “AI face models.” The (mostly) women who land these gigs are likely being used to dupe victims out of their money.",
+      "category": "AI视频"
+    },
+    {
+      "title": "一手实测首个龙虾模型：长路径任务不失误，一人包揽全栈开发",
+      "link": "https://www.qbitai.com/2026/03/388352.html",
+      "source": "量子位",
+      "date": "Mon, 16 Mar 2026 07:39:40 +0000",
+      "summary": "还有龙虾专属套餐",
+      "category": "AI综合"
+    },
+    {
+      "title": "天下苦「调参」久矣！MIT师生推出全新RandOpt算法",
+      "link": "https://www.qbitai.com/2026/03/388054.html",
+      "source": "量子位",
+      "date": "Mon, 16 Mar 2026 07:12:20 +0000",
+      "summary": "预训练模型周围早就藏好了大量专家",
+      "category": "AI综合"
+    },
+    {
+      "title": "不卷速度卷验证，陈天桥MiroMind精准预测15天后黄金价格",
+      "link": "https://www.qbitai.com/2026/03/387990.html",
+      "source": "量子位",
+      "date": "Mon, 16 Mar 2026 06:50:10 +0000",
+      "summary": "慢交互超车Gemini-3.1-Pro、GPT-5.4-Thinking",
+      "category": "OpenAI"
+    },
+    {
+      "title": "1.4亿宝可梦玩家，都在给AI免费打工…",
+      "link": "https://www.qbitai.com/2026/03/387958.html",
+      "source": "量子位",
+      "date": "Mon, 16 Mar 2026 05:55:05 +0000",
+      "summary": "累计贡献300亿高精图像数据集，已训练成机器人厘米级导航算法",
+      "category": "AI综合"
+    },
+    {
+      "title": "The billionaires made a promise — now some want out",
+      "link": "https://techcrunch.com/2026/03/15/the-billionaires-made-a-promise-now-some-want-out/",
+      "source": "TechCrunch",
+      "date": "Mon, 16 Mar 2026 04:40:24 +0000",
+      "summary": "In 2010, Warren Buffett and Bill Gates launched a disarmingly simple campaign they called the Giving Pledge: a public commitment, open to the world’s wealthiest people, to give away more than half the",
+      "category": "AI综合"
+    },
+    {
+      "title": "Netflix’s ‘Frankenstein’ wins three Oscars, ‘KPop Demon Hunters’ wins two",
+      "link": "https://techcrunch.com/2026/03/15/netflixs-frankenstein-wins-three-oscars-kpop-demon-hunters-wins-two/",
+      "source": "TechCrunch",
+      "date": "Mon, 16 Mar 2026 02:27:18 +0000",
+      "summary": "“Frankenstein” won for Best Production Design, Best Costume Design, and Best Makeup and Hairstyling, while “KPop Demon Hunters” won for Best Animated Feature and Best Original Song.",
+      "category": "AI综合"
+    },
+    {
+      "title": "India tests whether AI can stop trains hitting elephants",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/16/asia_tech_news_roundup/",
+      "source": "The Register",
+      "date": "2026-03-16T00:57:33.000Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "Google, Accel India accelerator chooses 5 startups and none are ‘AI wrappers’",
+      "link": "https://techcrunch.com/2026/03/15/google-and-accel-cut-through-wrappers-in-4000-ai-startup-pitches-to-pick-five-tied-to-india/",
+      "source": "TechCrunch",
+      "date": "Mon, 16 Mar 2026 00:30:00 +0000",
+      "summary": "Google and Accel say about 70% of AI startup pitches tied to India were \"wrappers\" as they reviewed more than 4,000 applications for their Atoms cohort.",
+      "category": "Google"
+    },
+    {
+      "title": "ByteDance reportedly pauses global launch of its Seedance 2.0 video generator",
+      "link": "https://techcrunch.com/2026/03/15/bytedance-reportedly-pauses-global-launch-of-its-seedance-2-0-video-generator/",
+      "source": "TechCrunch",
+      "date": "Sun, 15 Mar 2026 21:01:51 +0000",
+      "summary": "The company is reportedly delaying the launch as its engineers and lawyers work to avert further legal issues.",
+      "category": "AI视频"
+    },
+    {
+      "title": "Aether OS is a computer in a browser built for the AT Protocol",
+      "link": "https://www.theverge.com/tech/895083/aether-os-browser-at-protocol",
+      "source": "The Verge",
+      "date": "2026-03-15T19:35:57.000Z",
+      "summary": "Aether OS puts a full-fledged desktop in your browser that ties directly into the AT Protocol. That means it connects to your Bluesky account and other public records. It offers a pretty full suite of",
+      "category": "AI视频"
+    },
+    {
+      "title": "Lawyer behind AI psychosis cases warns of mass casualty risks",
+      "link": "https://techcrunch.com/2026/03/15/lawyer-behind-ai-psychosis-cases-warns-of-mass-casualty-risks/",
+      "source": "TechCrunch",
+      "date": "Sun, 15 Mar 2026 18:49:32 +0000",
+      "summary": "AI chatbots have been linked to suicides for years. Now one lawyer says they are showing up in mass casualty cases too, and the technology is moving faster than the safeguards.",
+      "category": "AI综合"
+    },
+    {
+      "title": "TechCrunch Mobility: Travis Kalanick’s return proves it really is 2016 again",
+      "link": "https://techcrunch.com/2026/03/15/techcrunch-mobility-travis-kalanicks-return-proves-it-really-is-2016-again/",
+      "source": "TechCrunch",
+      "date": "Sun, 15 Mar 2026 16:05:00 +0000",
+      "summary": "Welcome back to TechCrunch Mobility — your central hub for news and insights on the future of transportation.",
+      "category": "AI综合"
+    },
+    {
+      "title": "AI Czar David Sacks wants Trump to ‘get out’ of Iran",
+      "link": "https://www.theverge.com/policy/895059/trump-ai-czar-out-of-iran",
+      "source": "The Verge",
+      "date": "2026-03-15T14:13:25.000Z",
+      "summary": "He might have realized he’s about to lose a lot of money. | Image: Cath Virginia / The Verge, Getty Images\t\n\nDavid Sacks, the White House's AI and crypto czar, has warned that a continued war in Iran ",
+      "category": "AI综合"
+    },
+    {
+      "title": "AI companies want to harvest improv actors’ skills to train AI on human emotion",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/893931/ai-companies-handshake-improv-actors-training-data",
+      "source": "The Verge",
+      "date": "2026-03-15T14:00:00.000Z",
+      "summary": "If you've got strong creative instincts, the ability to authentically portray emotion, and are capable of staying true to a character's voice throughout a scene, there's a job listing calling for your",
+      "category": "OpenAI"
+    },
+    {
+      "title": "Samsung’s Galaxy Buds 4 Pro are the choice — if you have a Galaxy phone",
+      "link": "https://www.theverge.com/tech/894501/samsung-galaxy-buds-4-pro-review",
+      "source": "The Verge",
+      "date": "2026-03-15T13:00:00.000Z",
+      "summary": "The Galaxy Buds Pro 4 are a nice improvement over the Buds 3, but still require a Galaxy device to use all their features.\t\n\nSamsung promised \"more than a design refresh\" for its new top-end Galaxy Bu",
+      "category": "模型"
+    },
+    {
+      "title": "The fast rise and epic fall of Clubhouse",
+      "link": "https://www.theverge.com/podcast/895044/clubhouse-audio-social-network-version-history",
+      "source": "The Verge",
+      "date": "2026-03-15T12:24:20.000Z",
+      "summary": "In 2020 and 2021, the social media world seemed to be on the verge of complete change. A new app called TikTok was ascendant, bringing a whole new kind of vertical video to phones everywhere. And anot",
+      "category": "AI视频"
+    },
+    {
+      "title": "Live-service games are a mess",
+      "link": "https://www.theverge.com/column/893294/live-service-games-mess",
+      "source": "The Verge",
+      "date": "2026-03-15T12:00:00.000Z",
+      "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on the slow-motion disaster of live-service games, follow Andrew Webster. The Stepback arrives",
+      "category": "AI综合"
+    },
+    {
+      "title": "This At-Home Hair Growth System Just Dropped in Price",
+      "link": "https://www.wired.com/story/irestore-deals-amazon-spring-sale-2026/",
+      "source": "Wired",
+      "date": "Sun, 15 Mar 2026 11:00:00 +0000",
+      "summary": "Our favorite red light therapy device for hair growth just dropped in price. Grab it while it lasts.",
+      "category": "AI综合"
+    },
+    {
+      "title": "The $100,000 fee for H-1Bs is causing all sorts of problems",
+      "link": "https://www.theverge.com/policy/894537/h1b-fee-increase-trump-teacher-shortage-tech-workers",
+      "source": "The Verge",
+      "date": "2026-03-15T11:00:00.000Z",
+      "summary": "Last fall, President Donald Trump's executive order raising the fee for H-1B visas to $100,000 - like many of his immigration policies - led to near-immediate chaos. Thousands of workers who had flown",
+      "category": "AI综合"
+    },
+    {
+      "title": "iGarden M1 Pro Max 100 Review: A Sports Car for Your Pool",
+      "link": "https://www.wired.com/review/igarden-m1-pro-max-100-pool-robot/",
+      "source": "Wired",
+      "date": "Sun, 15 Mar 2026 10:32:00 +0000",
+      "summary": "iGarden's new pool-cleaning robot pairs sporty design with a long runtime, though there are a few quirks.",
+      "category": "AI综合"
+    },
+    {
+      "title": "A New Study Details How Cats Almost Always Land on Their Feet",
+      "link": "https://www.wired.com/story/a-new-study-details-how-cats-almost-always-land-on-their-feet/",
+      "source": "Wired",
+      "date": "Sun, 15 Mar 2026 09:00:00 +0000",
+      "summary": "The secret to this acrobatic skill lies in an extremely flexible part of the spine that allows cats to twist in the air and land safely.",
+      "category": "AI综合"
+    },
+    {
+      "title": "科技CEO用ChatGPT+基因数据定制癌症疫苗！肿瘤缩小50%",
+      "link": "https://www.qbitai.com/2026/03/387935.html",
+      "source": "量子位",
+      "date": "Sun, 15 Mar 2026 06:06:09 +0000",
+      "summary": "AI救了我的狗！从奄奄一息到满公园追兔子",
+      "category": "OpenAI"
+    },
+    {
+      "title": "Trump administration is allegedly collecting $10 billion on the TikTok deal",
+      "link": "https://www.theverge.com/policy/895039/trump-10-billion-tiktok",
+      "source": "The Verge",
+      "date": "2026-03-14T21:57:07.000Z",
+      "summary": "In September, Donald Trump claimed that \"the United States is getting a tremendous fee\" for brokering the TikTok deal. Now sources tell the Wall Street Journal and the New York Times that fee is expec",
+      "category": "大模型"
+    },
+    {
+      "title": "The MacBook Neo is ‘the most repairable MacBook’ in years, according to iFixit",
+      "link": "https://techcrunch.com/2026/03/14/the-macbook-neo-is-the-most-repairable-macbook-in-years-according-to-ifixit/",
+      "source": "TechCrunch",
+      "date": "Sat, 14 Mar 2026 21:24:10 +0000",
+      "summary": "Apple’s new MacBook Neo isn’t just the most affordable MacBook — it’s also the company's most repairable laptop in “about fourteen years.\"",
+      "category": "AI综合"
+    },
+    {
+      "title": "Meta is reportedly laying off up to 20 percent of its staff",
+      "link": "https://www.theverge.com/business/895026/meta-laying-off-20-percent",
+      "source": "The Verge",
+      "date": "2026-03-14T18:48:56.000Z",
+      "summary": "According to Reuters, Meta is looking to offset spending on AI and data centers with a massive round of layoffs. Sources familiar with the matter say the company could lay off as much as 20 percent of",
+      "category": "AI综合"
+    },
+    {
+      "title": "Meta reportedly considering layoffs that could affect 20% of the company",
+      "link": "https://techcrunch.com/2026/03/14/meta-reportedly-considering-layoffs-that-could-affect-20-of-the-company/",
+      "source": "TechCrunch",
+      "date": "Sat, 14 Mar 2026 16:28:42 +0000",
+      "summary": "These layoffs could help Facebook's parent company offset its aggressive spending on AI infrastructure, as well as AI-related acquisitions and hiring.",
+      "category": "AI综合"
+    },
+    {
+      "title": "How to use the new ChatGPT app integrations, including DoorDash, Spotify, Uber, and others",
+      "link": "https://techcrunch.com/2026/03/14/how-to-use-the-new-chatgpt-app-integrations-including-doordash-spotify-uber-and-others/",
+      "source": "TechCrunch",
+      "date": "Sat, 14 Mar 2026 13:00:00 +0000",
+      "summary": "Learn how to use Spotify, Canva, Figma, Expedia, and other apps directly in ChatGPT.",
+      "category": "OpenAI"
+    },
+    {
+      "title": "AI 数学推理新纪元：SAIR Foundation 正式启动“数学蒸馏挑战赛”",
+      "link": "https://www.qbitai.com/2026/03/387915.html",
+      "source": "量子位",
+      "date": "Sat, 14 Mar 2026 12:45:52 +0000",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "Gemini重塑谷歌地图！一句话搞定出行攻略，网友：垂直应用全完蛋",
+      "link": "https://www.qbitai.com/2026/03/387867.html",
+      "source": "量子位",
+      "date": "Sat, 14 Mar 2026 10:48:10 +0000",
+      "summary": "以后出门有个谷歌地图就够了",
+      "category": "Google"
+    },
+    {
+      "title": "不仿真不VLA不遥操：它石智航重磅发布“能干活的通用具身大模型 ”AWE3.0",
+      "link": "https://www.qbitai.com/2026/03/387860.html",
+      "source": "量子位",
+      "date": "Sat, 14 Mar 2026 10:32:09 +0000",
+      "summary": "",
+      "category": "大模型"
+    },
+    {
+      "title": "Norda 001A G+ Trail Running Shoe Review: As Expensive as an Apple Watch",
+      "link": "https://www.wired.com/review/norda-001a-g-trail-shoe/",
+      "source": "Wired",
+      "date": "Sat, 14 Mar 2026 10:00:00 +0000",
+      "summary": "Do you really need a $300 trail running shoe? We test the treads, and the creds, of the Norda 001A G+.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Staff complain that xAI is flailing because of constant upheaval",
+      "link": "https://arstechnica.com/ai/2026/03/staff-complain-that-xai-is-flailing-because-of-constant-upheaval/",
+      "source": "Ars Technica",
+      "date": "Sat, 14 Mar 2026 07:14:53 +0000",
+      "summary": "Staff complain that the constant upheaval is destroying morale.",
+      "category": "AI综合"
+    },
+    {
+      "title": "langchain-anthropic==1.3.5",
+      "link": "https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.3.5",
+      "source": "LangChain",
+      "date": "2026-03-14T03:12:45Z",
+      "summary": "Changes since langchain-anthropic==1.3.4\n\nrelease(anthropic): 1.3.5 (#35873)\nfix(anthropic): Ignore general usage cache_creation fields if more specific fields are set (#35845)\nperf(.github): set a ti",
+      "category": "Anthropic"
+    },
+    {
+      "title": "NASA officials sidestepped questions on Artemis II risks—there's a reason why",
+      "link": "https://arstechnica.com/space/2026/03/flying-to-the-moon-for-the-first-time-in-54-years-is-risky-but-how-risky/",
+      "source": "Ars Technica",
+      "date": "Sat, 14 Mar 2026 00:17:31 +0000",
+      "summary": "\"This ought to make for some good reading,\" NASA's mission management team chair said.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Claude charts a new course with charts, of course",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/13/claude_charts_a_new_course/",
+      "source": "The Register",
+      "date": "2026-03-13T22:36:24.000Z",
+      "summary": "",
+      "category": "Anthropic"
+    },
+    {
+      "title": "Figuring out why AIs get flummoxed by some games",
+      "link": "https://arstechnica.com/ai/2026/03/figuring-out-why-ais-get-flummoxed-by-some-games/",
+      "source": "Ars Technica",
+      "date": "Fri, 13 Mar 2026 21:47:34 +0000",
+      "summary": "When winning depends on intuiting a mathematical function, AIs come up short.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Supply-chain attack using invisible code hits GitHub and other repositories",
+      "link": "https://arstechnica.com/security/2026/03/supply-chain-attack-using-invisible-code-hits-github-and-other-repositories/",
+      "source": "Ars Technica",
+      "date": "Fri, 13 Mar 2026 20:18:08 +0000",
+      "summary": "Unicode that's invisible to the human eye was largely abandoned—until attackers took notice.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Adobe settles DOJ cancellation fee lawsuit, will pay $75 million penalty",
+      "link": "https://arstechnica.com/gadgets/2026/03/adobe-settles-doj-cancellation-fee-lawsuit-will-pay-75-million-penalty/",
+      "source": "Ars Technica",
+      "date": "Fri, 13 Mar 2026 18:47:08 +0000",
+      "summary": "Adobe says it will also give customers who \"qualify\" free services but is vague on details.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Subscribers to Amazon Prime Video with ads lose 4K support on April 10",
+      "link": "https://arstechnica.com/gadgets/2026/03/amazon-will-increase-ad-free-prime-video-prices-by-2-per-month-on-april-10/",
+      "source": "Ars Technica",
+      "date": "Fri, 13 Mar 2026 17:16:58 +0000",
+      "summary": "Amazon says its service requires \"significant investment.\"",
+      "category": "AI视频"
+    },
+    {
+      "title": "M5 MacBook Air review: Still the best MacBook for almost everybody",
+      "link": "https://arstechnica.com/gadgets/2026/03/m5-macbook-air-review-still-the-best-macbook-for-almost-everybody/",
+      "source": "Ars Technica",
+      "date": "Fri, 13 Mar 2026 16:31:29 +0000",
+      "summary": "The M5 MacBook Air is a minor upgrade, but minor upgrades add up over time.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Magnetars drag spacetime to power superluminous supernovae",
+      "link": "https://arstechnica.com/science/2026/03/magnetars-drag-spacetime-to-power-superluminous-supernovae/",
+      "source": "Ars Technica",
+      "date": "Fri, 13 Mar 2026 15:59:40 +0000",
+      "summary": "Frame-dragging may explain an odd pattern seen in the brightest supernovae.",
+      "category": "AI综合"
+    },
+    {
+      "title": "langchain-mistralai==1.1.2",
+      "link": "https://github.com/langchain-ai/langchain/releases/tag/langchain-mistralai%3D%3D1.1.2",
+      "source": "LangChain",
+      "date": "2026-03-13T14:13:19Z",
+      "summary": "Changes since langchain-mistralai==1.1.1\n\nrelease(mistralai): 1.1.2 (#35835)\nfeat(model-profiles): new fields + `Makefile` target (#35788)\nfix(model-profiles): sort generated profiles by model ID for ",
+      "category": "模型"
+    },
+    {
+      "title": "langchain-classic==1.0.3",
+      "link": "https://github.com/langchain-ai/langchain/releases/tag/langchain-classic%3D%3D1.0.3",
+      "source": "LangChain",
+      "date": "2026-03-13T13:56:30Z",
+      "summary": "Changes since langchain-classic==1.0.2\n\nrelease(langchain): 1.0.3 (#35834)\nchore(core): move BaseCrossEncoder to langchain-core (#35809)\nchore: bump tornado from 6.5.2 to 6.5.5 in /libs/langchain (#35",
+      "category": "AI综合"
+    },
+    {
+      "title": "langchain-core==1.2.19",
+      "link": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.2.19",
+      "source": "LangChain",
+      "date": "2026-03-13T13:45:07Z",
+      "summary": "Changes since langchain-core==1.2.18\n\nrelease(core): 1.2.19 (#35832)\nchore(core): move BaseCrossEncoder to langchain-core (#35809)\nchore: bump tornado from 6.5.2 to 6.5.5 in /libs/core (#35775)",
+      "category": "AI综合"
+    },
+    {
+      "title": "langchain==1.2.12",
+      "link": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.2.12",
+      "source": "LangChain",
+      "date": "2026-03-11T22:21:17Z",
+      "summary": "Changes since langchain==1.2.11\n\nrelease(langchain_v1): 1.2.12 (#35770)\nfeat: tracing for wrap model + tool call (#35765)",
+      "category": "模型"
+    },
+    {
+      "title": "langchain==1.2.11",
+      "link": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.2.11",
+      "source": "LangChain",
+      "date": "2026-03-10T19:46:31Z",
+      "summary": "Changes since langchain==1.2.10\n\nrelease(langchain_v1): 1.2.11 (#35723)\nfix(langchain): normalize custom detector output to prevent KeyError in hash/mask strategies (#35651)\nchore: bump the minor-and-",
+      "category": "AI综合"
+    },
+    {
+      "title": "langchain-openai==1.1.11",
+      "link": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.1.11",
+      "source": "LangChain",
+      "date": "2026-03-09T23:02:48Z",
+      "summary": "Changes since langchain-openai==1.1.10\n\nfix(openai): bump min core version (#35705)\nrelease(openai): 1.1.11 (#35703)\nfix(openai): update responses API model detection for pro and codex models (#35594)",
+      "category": "OpenAI"
+    },
+    {
+      "title": "langchain-core==1.2.18",
+      "link": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.2.18",
+      "source": "LangChain",
+      "date": "2026-03-09T20:40:19Z",
+      "summary": "Changes since langchain-core==1.2.17\n\nrelease(core): 1.2.18 (#35704)\nfix(core): fix double backticks in deprecation docstring for alternative_import (#35658)\nfix(core): preserve default_factory when g",
+      "category": "AI综合"
+    },
+    {
+      "title": "langchain==0.3.28",
+      "link": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D0.3.28",
+      "source": "LangChain",
+      "date": "2026-03-06T22:45:45Z",
+      "summary": "Changes since langchain==0.3.27\n\nfix(langchain): bump minimum langchain-core to 0.3.73 (#35608)\nrelease(langchain): 0.3.28 (#35607)\nfix(langchain): backport patch ReDoS vulnerability in MRKL and ReAct",
+      "category": "AI综合"
+    },
+    {
+      "title": "langchain-classic==1.0.2",
+      "link": "https://github.com/langchain-ai/langchain/releases/tag/langchain-classic%3D%3D1.0.2",
+      "source": "LangChain",
+      "date": "2026-03-06T20:20:03Z",
+      "summary": "Changes since langchain-classic==1.0.1\n\nrelease(langchain): bump langchain-classic to 1.0.2 (#35601)\nfix(langchain-classic): patch ReDoS vulnerability in MRKL and ReAct action regex (CVE-2024-58340) (",
+      "category": "AI综合"
+    },
+    {
+      "title": "v5.2.0: GLM-5, Qwen3.5, Voxtral Realtime, VibeVoice Acoustic Tokenizer",
+      "link": "https://github.com/huggingface/transformers/releases/tag/v5.2.0",
+      "source": "Transformers",
+      "date": "2026-02-16T18:55:53Z",
+      "summary": "## New Model additions\r\n\r\n### VoxtralRealtime\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/80e37670-6d70-402b-8c8e-ccfb8c32df2d\" />\r\n\r\nVoxtralRealtime",
+      "category": "模型"
+    },
+    {
+      "title": "v5.1.0: EXAONE-MoE, PP-DocLayoutV3, Youtu-LLM, GLM-OCR",
+      "link": "https://github.com/huggingface/transformers/releases/tag/v5.1.0",
+      "source": "Transformers",
+      "date": "2026-02-05T15:44:54Z",
+      "summary": "## New Model additions\r\n\r\n### EXAONE-MoE\r\n\r\n<img width=\"2278\" height=\"1142\" alt=\"image\" src=\"https://github.com/user-attachments/assets/0c3d5341-0483-49c3-8467-f9784ec94b37\" />\r\n\r\nK-EXAONE is a large-",
+      "category": "大模型"
+    },
+    {
+      "title": "Transformers v5",
+      "link": "https://github.com/huggingface/transformers/releases/tag/v5.0.0",
+      "source": "Transformers",
+      "date": "2026-01-26T10:17:10Z",
+      "summary": "## Transformers v5 release notes\r\n\r\n<img width=\"1800\" height=\"1013\" alt=\"image\" src=\"https://github.com/user-attachments/assets/7b5187d7-6945-4108-a546-6d1d7bfb55e3\" />\r\n\r\n- Highlights\r\n- Significant ",
+      "category": "AI综合"
+    },
+    {
+      "title": "Release candidate v5.0.0rc3",
+      "link": "https://github.com/huggingface/transformers/releases/tag/v5.0.0rc3",
+      "source": "Transformers",
+      "date": "2026-01-26T10:02:55Z",
+      "summary": "# Release candidate v5.0.0rc3\r\n\r\n## New models:\r\n\r\n* [GLM-4.7] GLM-Lite Supoort by @zRzRzRzRzRzRzR in https://github.com/huggingface/transformers/pull/43031\r\n* [GLM-Image] AR Model Support for GLM-Ima",
+      "category": "模型"
+    },
+    {
+      "title": "Patch release v4.57.6",
+      "link": "https://github.com/huggingface/transformers/releases/tag/v4.57.6",
+      "source": "Transformers",
+      "date": "2026-01-16T10:40:02Z",
+      "summary": "## What's Changed\r\nAnother fix for qwen vl models that prevented correctly loading the associated model type - this works together with https://github.com/huggingface/transformers/pull/41808 of the pr",
+      "category": "模型"
+    },
+    {
+      "title": "Patch release v4.57.5",
+      "link": "https://github.com/huggingface/transformers/releases/tag/v4.57.5",
+      "source": "Transformers",
+      "date": "2026-01-13T13:29:13Z",
+      "summary": "## What's Changed\r\nShould not have said last patch :wink: These should be the last remaining fixes that got lost in between patches and the transition to v5. \r\n\r\n* QwenVL: add skipped keys in setattr ",
+      "category": "AI综合"
+    },
+    {
+      "title": "Patch release v4.57.4",
+      "link": "https://github.com/huggingface/transformers/releases/tag/v4.57.4",
+      "source": "Transformers",
+      "date": "2026-01-13T11:07:40Z",
+      "summary": "## What's Changed\r\nLast patch release for v4: We have a few small fixes for remote generation methods (e.g. group beam search), vLLM, and an offline tokenizer fix (if it's already been cached).\r\n\r\n* G",
+      "category": "大模型"
+    },
+    {
+      "title": "Release candidate 5.0.0rc2",
+      "link": "https://github.com/huggingface/transformers/releases/tag/v5.0.0rc2",
+      "source": "Transformers",
+      "date": "2026-01-08T10:33:33Z",
+      "summary": "## What's Changed\r\n\r\nThis release candidate is focused on fixing `AutoTokenizer`, expanding the dynamic weight loading support, and improving performances with MoEs!\r\n\r\n## MoEs and performances:\r\n<img",
+      "category": "AI综合"
+    }
+  ]
+}

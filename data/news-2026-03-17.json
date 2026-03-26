@@ -1,0 +1,607 @@
+{
+  "date": "2026-03-17",
+  "count": 75,
+  "sourceCount": 15,
+  "news": [
+    {
+      "title": "今夜，大模型从世界消散",
+      "link": "https://sspai.com/post/106939",
+      "source": "少数派",
+      "date": "2026-03-17T00:01:52.873Z",
+      "summary": "",
+      "category": "大模型"
+    },
+    {
+      "title": "一些真正实用的AI工具",
+      "link": "https://www.36kr.com/p/3700026636152706",
+      "source": "36Kr-AI",
+      "date": "2026-03-17T00:01:48.129Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "AI能为你节省大量时间。",
+      "link": "https://www.36kr.com/p/3700026636152706",
+      "source": "36Kr-AI",
+      "date": "2026-03-17T00:01:48.129Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "AWE2026收官：AI“觉醒”前夜，谁在定义未来？",
+      "link": "https://www.36kr.com/p/3725501634376195",
+      "source": "36Kr-AI",
+      "date": "2026-03-17T00:01:48.129Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "AI驱动量子精修，卡内基梅隆大学等提出AQuaRef，首次用量子力学约束精修蛋白质全原子模型",
+      "link": "https://www.36kr.com/p/3725491633191305",
+      "source": "36Kr-AI",
+      "date": "2026-03-17T00:01:48.129Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "AI两天推翻20年工作习惯，Karpathy百行代码开源项目“封神”，AI替你通宵肝研究、战绩可查",
+      "link": "https://www.36kr.com/p/3725521482578567",
+      "source": "36Kr-AI",
+      "date": "2026-03-17T00:01:48.129Z",
+      "summary": "",
+      "category": "研究"
+    },
+    {
+      "title": "近日，特斯拉前 AI 总监、OpenAI 创始成员 Andrej Karpathy 最近开源了一个叫 autoresearch 的项目",
+      "link": "https://www.36kr.com/p/3725521482578567",
+      "source": "36Kr-AI",
+      "date": "2026-03-17T00:01:48.129Z",
+      "summary": "",
+      "category": "OpenAI"
+    },
+    {
+      "title": "一款根本不存在的产品，竟然也能被AI推荐",
+      "link": "https://www.36kr.com/p/3725542475807105",
+      "source": "36Kr-AI",
+      "date": "2026-03-17T00:01:48.129Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "\"龙虾\"给AIoT的启示：机械臂有灵魂了,传感器变技能了,MES可以扔了",
+      "link": "https://www.36kr.com/p/3725473759279488",
+      "source": "36Kr-AI",
+      "date": "2026-03-17T00:01:48.129Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "在GDC，我看到AI进入“游戏时间”",
+      "link": "https://www.36kr.com/p/3725491569457544",
+      "source": "36Kr-AI",
+      "date": "2026-03-17T00:01:48.129Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "Nvidia’s version of OpenClaw could solve its biggest problem: security",
+      "link": "https://techcrunch.com/2026/03/16/nvidias-version-of-openclaw-could-solve-its-biggest-problem-security/",
+      "source": "TechCrunch",
+      "date": "Mon, 16 Mar 2026 22:45:51 +0000",
+      "summary": "Nvidia announced an open enterprise AI agent platform, called NemoClaw, that is built off of viral OpenClaw.",
+      "category": "AI Agent"
+    },
+    {
+      "title": "DLSS 5 looks like a real-time generative AI filter for video games",
+      "link": "https://www.theverge.com/news/895472/nvidia-dlss5-generative-ai-pc-graphics",
+      "source": "The Verge",
+      "date": "2026-03-16T21:56:05.000Z",
+      "summary": "Nvidia announced DLSS 5 on Monday during its GTC conference, and based on early reactions, it's going to be a divisive update, with some reactions calling it \"slop\" that unacceptably alters artistic i",
+      "category": "OpenAI"
+    },
+    {
+      "title": "Elon Musk's xAI sued for turning three girls' real photos into AI CSAM",
+      "link": "https://arstechnica.com/tech-policy/2026/03/elon-musks-xai-sued-for-turning-three-girls-real-photos-into-ai-csam/",
+      "source": "Ars Technica",
+      "date": "Mon, 16 Mar 2026 21:51:16 +0000",
+      "summary": "Discord user led cops to Grok-generated CSAM of real girls, lawsuit says.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Teens sue Elon Musk’s xAI over Grok’s AI-generated CSAM",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/895639/xai-grok-teens-lawsuit-grok-ai-elon-musk",
+      "source": "The Verge",
+      "date": "2026-03-16T21:44:11.000Z",
+      "summary": "Three Tennessee teens are suing Elon Musk's xAI over claims that the company's Grok AI chatbot generated sexualized images and videos of themselves as minors, as reported earlier by The Washington Pos",
+      "category": "AI视频"
+    },
+    {
+      "title": "Jensen Huang just put Nvidia’s Blackwell and Vera Rubin sales projections into the $1 trillion stratosphere",
+      "link": "https://techcrunch.com/2026/03/16/jensen-just-put-nvidias-blackwell-and-vera-rubin-sales-projections-into-the-1-trillion-stratosphere/",
+      "source": "TechCrunch",
+      "date": "Mon, 16 Mar 2026 21:41:37 +0000",
+      "summary": "Nvidia CEO Jensen Huang said he expects $1 trillion worth of orders for the chips.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Ecovacs’ Deebot X8 and X9 Pro Omni robovacs are nearly 50 percent off",
+      "link": "https://www.theverge.com/gadgets/895458/ecovacs-deebot-x8-x9-pro-omni-robot-vacuum-amazon-big-spring-sale-deal-2026",
+      "source": "The Verge",
+      "date": "2026-03-16T21:21:31.000Z",
+      "summary": "The Ecovacs Deebot X8 Pro Omni offer a range of smarts for a relatively affordable price. | Image: Ecovacs\t\n\nIf you like the idea of spring cleaning but not the part where you actually have to clean, ",
+      "category": "Google"
+    },
+    {
+      "title": "Warren presses Pentagon over decision to grant xAI access to classified networks",
+      "link": "https://techcrunch.com/2026/03/16/warren-presses-pentagon-over-decision-to-grant-xai-access-to-classified-networks/",
+      "source": "TechCrunch",
+      "date": "Mon, 16 Mar 2026 20:58:36 +0000",
+      "summary": "Sen. Elizabeth Warren noted that Grok, xAI's controversial chatbot, has created harmful outputs for users and poses a potential national security risk.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Benjamin Netanyahu is struggling to prove he&#8217;s not an AI clone",
+      "link": "https://www.theverge.com/tech/895453/ai-deepfake-netanyahu-claims-conspiracy",
+      "source": "The Verge",
+      "date": "2026-03-16T20:41:55.000Z",
+      "summary": "Deepfake rumors started after social media users claimed Netanyahu is depicted in this video with six fingers on his right hand (seen left). | Image: Israel Government Press Office\t\n\nSocial media plat",
+      "category": "AI视频"
+    },
+    {
+      "title": "Memories AI is building the visual memory layer for wearables and robotics",
+      "link": "https://techcrunch.com/2026/03/16/memories-ai-is-building-the-visual-memory-layer-for-wearables-and-robotics/",
+      "source": "TechCrunch",
+      "date": "Mon, 16 Mar 2026 20:30:00 +0000",
+      "summary": "Memories.ai is building a large visual memory model that can index and retrieve video-recorded memories for physical AI.",
+      "category": "AI视频"
+    },
+    {
+      "title": "I met Olaf — the Frozen robot who might be the future of Disney Parks",
+      "link": "https://www.theverge.com/tech/895369/olaf-disney-imagineering-frozen-robot-up-close",
+      "source": "The Verge",
+      "date": "2026-03-16T20:30:00.000Z",
+      "summary": "Olaf, a Disney Imagineering robot that will greet guests at Disney parks. | Photo by Sean Hollister / The Verge\t\n\nYou know Olaf. Before KPop Demon Hunters, before the Wicked movies, it was Disney's Fr",
+      "category": "AI综合"
+    },
+    {
+      "title": "What’s New in the AirPods Max 2? Breaking Down Apple’s Headphone Update",
+      "link": "https://www.wired.com/story/apple-airpods-max-2-news/",
+      "source": "Wired",
+      "date": "Mon, 16 Mar 2026 20:14:33 +0000",
+      "summary": "Apple’s premium over-ears finally have a proper successor, but after five years of waiting, it’s hard not to wonder: “Is that it?”",
+      "category": "AI综合"
+    },
+    {
+      "title": "New \"vibe coded\" AI translation tool splits the video game preservation community",
+      "link": "https://arstechnica.com/ai/2026/03/new-vibe-coded-ai-translation-tool-splits-the-video-game-preservation-community/",
+      "source": "Ars Technica",
+      "date": "Mon, 16 Mar 2026 20:06:56 +0000",
+      "summary": "Creator apologizes after using Patreon funds for Gemini-powered magazine scan processor.",
+      "category": "Google"
+    },
+    {
+      "title": "Trump and his FCC chair demand more positive news coverage of Iran war",
+      "link": "https://arstechnica.com/tech-policy/2026/03/trump-and-his-fcc-chair-demand-more-positive-news-coverage-of-iran-war/",
+      "source": "Ars Technica",
+      "date": "Mon, 16 Mar 2026 19:41:26 +0000",
+      "summary": "Carr makes evidence-free claim of \"hoaxes and news distortions.\" Trump is thrilled.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Nvidia slaps $20B Groq tech into massive new LPX racks to speed AI response time",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/16/nvidia_lpx_groq_3/",
+      "source": "The Register",
+      "date": "2026-03-16T19:30:56.000Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "Apple acquires video editing software company MotionVFX",
+      "link": "https://techcrunch.com/2026/03/16/apple-acquires-video-editing-software-company-motionvfx/",
+      "source": "TechCrunch",
+      "date": "Mon, 16 Mar 2026 19:23:44 +0000",
+      "summary": "The move could help Apple better compete with Adobe Premiere Pro and the Adobe Creative Cloud suite.",
+      "category": "AI视频"
+    },
+    {
+      "title": "Elon Musk’s xAI faces child porn lawsuit from minors Grok allegedly undressed",
+      "link": "https://techcrunch.com/2026/03/16/elon-musks-xai-faces-child-porn-lawsuit-from-minors-grok-allegedly-undressed/",
+      "source": "TechCrunch",
+      "date": "Mon, 16 Mar 2026 19:18:44 +0000",
+      "summary": "The three plaintiffs are seeking to represent anyone who had real images of them as a minor altered into sexual content by Grok.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Nvidia’s DLSS 5 uses generative AI to boost photorealism in video games, with ambitions beyond gaming",
+      "link": "https://techcrunch.com/2026/03/16/nvidias-dlss-5-uses-generative-ai-to-boost-photo-realism-in-video-games-with-ambitions-beyond-gaming/",
+      "source": "TechCrunch",
+      "date": "Mon, 16 Mar 2026 19:12:19 +0000",
+      "summary": "Nvidia’s new DLSS 5 uses generative AI and structured graphics data to make video games more realistic. CEO Jensen Huang says the approach could eventually spread to other industries.",
+      "category": "AI视频"
+    },
+    {
+      "title": "The MacBook Neo is ‘the most repairable MacBook’ in years, according to iFixit",
+      "link": "https://techcrunch.com/2026/03/16/macbook-neo-ifixit-most-repairable-macbook-in-years-battery-replacement/",
+      "source": "TechCrunch",
+      "date": "Mon, 16 Mar 2026 18:36:42 +0000",
+      "summary": "Apple’s new MacBook Neo isn’t just the most affordable MacBook — it’s also the company's most repairable laptop in “about fourteen years.\"",
+      "category": "AI综合"
+    },
+    {
+      "title": "OpenAI’s own mental health experts unanimously opposed “naughty” ChatGPT launch",
+      "link": "https://arstechnica.com/tech-policy/2026/03/chatgpt-may-soon-become-sexy-suicide-coach-openai-advisor-reportedly-warned/",
+      "source": "Ars Technica",
+      "date": "Mon, 16 Mar 2026 18:30:23 +0000",
+      "summary": "OpenAI draws a line between AI “smut” and porn. Experts fear it’s all unhealthy.",
+      "category": "OpenAI"
+    },
+    {
+      "title": "Sony&#8217;s AI graphics upscaling for PS5 Pro games is getting a big update tonight",
+      "link": "https://www.theverge.com/games/895396/playstation-pssr-upscaling-cyberpunk-2077-silent-hill",
+      "source": "The Verge",
+      "date": "2026-03-16T18:07:30.000Z",
+      "summary": "Sony's upgraded PlayStation Spectral Super Resolution (PSSR) technology is rolling out to several titles on the PS5 Pro, including Cyberpunk 2077, Final Fantasy VII Rebirth, Silent Hill 2, and more. D",
+      "category": "AI综合"
+    },
+    {
+      "title": "How to watch Jensen Huang’s Nvidia GTC 2026 keynote — and what to expect",
+      "link": "https://techcrunch.com/2026/03/16/nvidia-gtc-how-to-watch-jensen-huang-2026-keynote/",
+      "source": "TechCrunch",
+      "date": "Mon, 16 Mar 2026 17:51:46 +0000",
+      "summary": "GTC is Nvidia's flagship annual event, where the chipmaker typically announces new products, partnerships, and its vision for the future of computing. Huang's keynote will focus on Nvidia's role in th",
+      "category": "AI综合"
+    },
+    {
+      "title": "Another deep tech chip startup becomes a unicorn: Frore hits $1.64B",
+      "link": "https://techcrunch.com/2026/03/16/another-deep-tech-chip-startup-becomes-a-unicorn-frore-hits-1-64b/",
+      "source": "TechCrunch",
+      "date": "Mon, 16 Mar 2026 17:47:32 +0000",
+      "summary": "At Nvidia CEO Jensen Huang's urging, Frore developed liquid-cooling tech for chips. That shift helped it raise $143 million.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Fuse raises $25M  to disrupt aging loan origination systems used by US credit unions",
+      "link": "https://techcrunch.com/2026/03/16/fuse-raises-25m-to-disrupt-aging-loan-origination-systems-used-by-u-s-credit-unions/",
+      "source": "TechCrunch",
+      "date": "Mon, 16 Mar 2026 17:43:27 +0000",
+      "summary": "The startup also announced a $5 million \"rescue fund\" to help credit unions ditch legacy software for its AI-native platform.",
+      "category": "AI综合"
+    },
+    {
+      "title": "The dictionary sues OpenAI",
+      "link": "https://techcrunch.com/2026/03/16/merriam-webster-openai-encyclopedia-brittanica-lawsuit/",
+      "source": "TechCrunch",
+      "date": "Mon, 16 Mar 2026 17:38:34 +0000",
+      "summary": "Encyclopedia Britannica and Merriam-Webster say that OpenAI violated the copyright of almost 100,000 articles by using them for LLM training.",
+      "category": "OpenAI"
+    },
+    {
+      "title": "F1 in China: I've never seen so many people in those grandstands",
+      "link": "https://arstechnica.com/cars/2026/03/f1-in-china-ive-never-seen-so-many-people-in-those-grandstands/",
+      "source": "Ars Technica",
+      "date": "Mon, 16 Mar 2026 17:11:42 +0000",
+      "summary": "Formula 1's new style of racing puts on an entertaining sprint weekend in Shanghai.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Encyclopedia Britannica is suing OpenAI for allegedly ‘memorizing’ its content with ChatGPT",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/895372/encyclopedia-britannica-openai-lawsuit",
+      "source": "The Verge",
+      "date": "2026-03-16T17:04:06.000Z",
+      "summary": "On Friday, Encyclopedia Britannica and dictionary publisher Merriam-Webster filed a lawsuit against OpenAI alleging that it used their copyrighted content to train its AI, then generated responses tha",
+      "category": "OpenAI"
+    },
+    {
+      "title": "Amazon’s Fire TV Stick 4K Max and 4K Plus sticks are up to 50 percent off",
+      "link": "https://www.theverge.com/gadgets/895340/fire-tv-stick-4k-max-plus-amazon-early-big-spring-sale-deal-sale",
+      "source": "The Verge",
+      "date": "2026-03-16T17:00:00.000Z",
+      "summary": "Since Amazon rolled out its redesigned Fire TV OS, Amazon’s latest streaming sticks are even better than ever. And right now, both the Fire TV Stick 4K Max and Fire TV Stick 4K Plus are back at their ",
+      "category": "模型"
+    },
+    {
+      "title": "Apple’s AirPods Max 2 bring H2 chip, boosted ANC in April for $549",
+      "link": "https://arstechnica.com/gadgets/2026/03/apples-airpods-max-2-release-with-h2-chip-boosted-anc-in-april-for-549/",
+      "source": "Ars Technica",
+      "date": "Mon, 16 Mar 2026 16:51:00 +0000",
+      "summary": "Apple's over-head headphones get an update after over five years.",
+      "category": "AI综合"
+    },
+    {
+      "title": "AI takes on Robotron: 2084, the original robot uprising simulator",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/16/ai_robotron_dave_plummer/",
+      "source": "The Register",
+      "date": "2026-03-16T16:50:09.000Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "AI finally delivers those elusive productivity gains... for cybercriminals",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/16/interpol_ai_fraud/",
+      "source": "The Register",
+      "date": "2026-03-16T16:40:06.000Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "Shopify is preparing for AI shopping agents to change everything, exec says",
+      "link": "https://techcrunch.com/2026/03/16/shopify-is-preparing-for-ai-shopping-agents-to-change-everything-exec-says/",
+      "source": "TechCrunch",
+      "date": "Mon, 16 Mar 2026 15:56:39 +0000",
+      "summary": "Shopify is preparing for an e-commerce transformation via AI shopping agents, says president Harley Finkelstein.",
+      "category": "AI Agent"
+    },
+    {
+      "title": "Amazon’s best Echo speakers and screens just got their biggest discounts",
+      "link": "https://www.theverge.com/gadgets/895201/echo-show-dot-max-studio-amazon-apple-watch-ultra-deal-sale",
+      "source": "The Verge",
+      "date": "2026-03-16T15:14:08.000Z",
+      "summary": "While Amazon’s previous lineup of Echo speakers and smart displays was boring, frankly, its late 2025 hardware refresh brought better hardware, improved performance, and Alexa Plus to several models. ",
+      "category": "AI视频"
+    },
+    {
+      "title": "Boffins hook fly brain map to virtual body, which starts looking for sugar",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/16/digital_fruit_fly_brain_model/",
+      "source": "The Register",
+      "date": "2026-03-16T14:35:23.000Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "Free Software Foundation calls for free-range LLMs rather than factory-farmed AI",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/16/free_software_foundation_urges_ai/",
+      "source": "The Register",
+      "date": "2026-03-16T14:19:33.000Z",
+      "summary": "",
+      "category": "大模型"
+    },
+    {
+      "title": "Apple’s MacBook Neo turns out to be its most repairable lappy in 14 years",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/16/apples_599_macbook_neo_turns/",
+      "source": "The Register",
+      "date": "2026-03-16T13:27:46.000Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "ServiceNow boss warns AI could push grad unemployment past 30%",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/16/servicenow_grad_jobs_ai/",
+      "source": "The Register",
+      "date": "2026-03-16T12:59:34.000Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "315曝光的“AI投毒”原理：GEO这样操控大模型推荐",
+      "link": "https://www.qbitai.com/2026/03/388387.html",
+      "source": "量子位",
+      "date": "Mon, 16 Mar 2026 11:48:07 +0000",
+      "summary": "一个虚构的产品，竟然也会出现在AI推荐里？",
+      "category": "大模型"
+    },
+    {
+      "title": "Wall Street Is Already Betting on Prediction Markets",
+      "link": "https://www.wired.com/story/prediction-markets-find-a-welcome-on-wall-street/",
+      "source": "Wired",
+      "date": "Mon, 16 Mar 2026 09:30:00 +0000",
+      "summary": "As the legal war over how to regulate prediction markets rages on, financial institutions are embracing the industry anyway.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Models Are Applying to Be the Face of AI Scams",
+      "link": "https://www.wired.com/story/models-are-applying-to-be-the-face-of-ai-scams/",
+      "source": "Wired",
+      "date": "Mon, 16 Mar 2026 09:00:00 +0000",
+      "summary": "Dozens of Telegram channels reviewed by WIRED include job listings for “AI face models.” The (mostly) women who land these gigs are likely being used to dupe victims out of their money.",
+      "category": "模型"
+    },
+    {
+      "title": "一手实测首个龙虾模型：长路径任务不失误，一人包揽全栈开发",
+      "link": "https://www.qbitai.com/2026/03/388352.html",
+      "source": "量子位",
+      "date": "Mon, 16 Mar 2026 07:39:40 +0000",
+      "summary": "还有龙虾专属套餐",
+      "category": "AI综合"
+    },
+    {
+      "title": "天下苦「调参」久矣！MIT师生推出全新RandOpt算法",
+      "link": "https://www.qbitai.com/2026/03/388054.html",
+      "source": "量子位",
+      "date": "Mon, 16 Mar 2026 07:12:20 +0000",
+      "summary": "预训练模型周围早就藏好了大量专家",
+      "category": "AI综合"
+    },
+    {
+      "title": "不卷速度卷验证，陈天桥MiroMind精准预测15天后黄金价格",
+      "link": "https://www.qbitai.com/2026/03/387990.html",
+      "source": "量子位",
+      "date": "Mon, 16 Mar 2026 06:50:10 +0000",
+      "summary": "慢交互超车Gemini-3.1-Pro、GPT-5.4-Thinking",
+      "category": "OpenAI"
+    },
+    {
+      "title": "1.4亿宝可梦玩家，都在给AI免费打工…",
+      "link": "https://www.qbitai.com/2026/03/387958.html",
+      "source": "量子位",
+      "date": "Mon, 16 Mar 2026 05:55:05 +0000",
+      "summary": "累计贡献300亿高精图像数据集，已训练成机器人厘米级导航算法",
+      "category": "AI综合"
+    },
+    {
+      "title": "This At-Home Hair Growth System Just Dropped in Price",
+      "link": "https://www.wired.com/story/irestore-deals-amazon-spring-sale-2026/",
+      "source": "Wired",
+      "date": "Sun, 15 Mar 2026 11:00:00 +0000",
+      "summary": "Our favorite red light therapy device for hair growth just dropped in price. Grab it while it lasts.",
+      "category": "AI综合"
+    },
+    {
+      "title": "iGarden M1 Pro Max 100 Review: A Sports Car for Your Pool",
+      "link": "https://www.wired.com/review/igarden-m1-pro-max-100-pool-robot/",
+      "source": "Wired",
+      "date": "Sun, 15 Mar 2026 10:32:00 +0000",
+      "summary": "iGarden's new pool-cleaning robot pairs sporty design with a long runtime, though there are a few quirks.",
+      "category": "AI综合"
+    },
+    {
+      "title": "科技CEO用ChatGPT+基因数据定制癌症疫苗！肿瘤缩小50%",
+      "link": "https://www.qbitai.com/2026/03/387935.html",
+      "source": "量子位",
+      "date": "Sun, 15 Mar 2026 06:06:09 +0000",
+      "summary": "AI救了我的狗！从奄奄一息到满公园追兔子",
+      "category": "OpenAI"
+    },
+    {
+      "title": "Staff complain that xAI is flailing because of constant upheaval",
+      "link": "https://arstechnica.com/ai/2026/03/staff-complain-that-xai-is-flailing-because-of-constant-upheaval/",
+      "source": "Ars Technica",
+      "date": "Sat, 14 Mar 2026 07:14:53 +0000",
+      "summary": "Staff complain that the constant upheaval is destroying morale.",
+      "category": "AI综合"
+    },
+    {
+      "title": "langchain-anthropic==1.3.5",
+      "link": "https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.3.5",
+      "source": "LangChain",
+      "date": "2026-03-14T03:12:45Z",
+      "summary": "Changes since langchain-anthropic==1.3.4\n\nrelease(anthropic): 1.3.5 (#35873)\nfix(anthropic): Ignore general usage cache_creation fields if more specific fields are set (#35845)\nperf(.github): set a ti",
+      "category": "Anthropic"
+    },
+    {
+      "title": "langchain-mistralai==1.1.2",
+      "link": "https://github.com/langchain-ai/langchain/releases/tag/langchain-mistralai%3D%3D1.1.2",
+      "source": "LangChain",
+      "date": "2026-03-13T14:13:19Z",
+      "summary": "Changes since langchain-mistralai==1.1.1\n\nrelease(mistralai): 1.1.2 (#35835)\nfeat(model-profiles): new fields + `Makefile` target (#35788)\nfix(model-profiles): sort generated profiles by model ID for ",
+      "category": "模型"
+    },
+    {
+      "title": "langchain-classic==1.0.3",
+      "link": "https://github.com/langchain-ai/langchain/releases/tag/langchain-classic%3D%3D1.0.3",
+      "source": "LangChain",
+      "date": "2026-03-13T13:56:30Z",
+      "summary": "Changes since langchain-classic==1.0.2\n\nrelease(langchain): 1.0.3 (#35834)\nchore(core): move BaseCrossEncoder to langchain-core (#35809)\nchore: bump tornado from 6.5.2 to 6.5.5 in /libs/langchain (#35",
+      "category": "AI综合"
+    },
+    {
+      "title": "langchain-core==1.2.19",
+      "link": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.2.19",
+      "source": "LangChain",
+      "date": "2026-03-13T13:45:07Z",
+      "summary": "Changes since langchain-core==1.2.18\n\nrelease(core): 1.2.19 (#35832)\nchore(core): move BaseCrossEncoder to langchain-core (#35809)\nchore: bump tornado from 6.5.2 to 6.5.5 in /libs/core (#35775)",
+      "category": "AI综合"
+    },
+    {
+      "title": "langchain==1.2.12",
+      "link": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.2.12",
+      "source": "LangChain",
+      "date": "2026-03-11T22:21:17Z",
+      "summary": "Changes since langchain==1.2.11\n\nrelease(langchain_v1): 1.2.12 (#35770)\nfeat: tracing for wrap model + tool call (#35765)",
+      "category": "模型"
+    },
+    {
+      "title": "langchain==1.2.11",
+      "link": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.2.11",
+      "source": "LangChain",
+      "date": "2026-03-10T19:46:31Z",
+      "summary": "Changes since langchain==1.2.10\n\nrelease(langchain_v1): 1.2.11 (#35723)\nfix(langchain): normalize custom detector output to prevent KeyError in hash/mask strategies (#35651)\nchore: bump the minor-and-",
+      "category": "AI综合"
+    },
+    {
+      "title": "langchain-openai==1.1.11",
+      "link": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.1.11",
+      "source": "LangChain",
+      "date": "2026-03-09T23:02:48Z",
+      "summary": "Changes since langchain-openai==1.1.10\n\nfix(openai): bump min core version (#35705)\nrelease(openai): 1.1.11 (#35703)\nfix(openai): update responses API model detection for pro and codex models (#35594)",
+      "category": "OpenAI"
+    },
+    {
+      "title": "langchain-core==1.2.18",
+      "link": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.2.18",
+      "source": "LangChain",
+      "date": "2026-03-09T20:40:19Z",
+      "summary": "Changes since langchain-core==1.2.17\n\nrelease(core): 1.2.18 (#35704)\nfix(core): fix double backticks in deprecation docstring for alternative_import (#35658)\nfix(core): preserve default_factory when g",
+      "category": "AI综合"
+    },
+    {
+      "title": "langchain==0.3.28",
+      "link": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D0.3.28",
+      "source": "LangChain",
+      "date": "2026-03-06T22:45:45Z",
+      "summary": "Changes since langchain==0.3.27\n\nfix(langchain): bump minimum langchain-core to 0.3.73 (#35608)\nrelease(langchain): 0.3.28 (#35607)\nfix(langchain): backport patch ReDoS vulnerability in MRKL and ReAct",
+      "category": "AI综合"
+    },
+    {
+      "title": "langchain-classic==1.0.2",
+      "link": "https://github.com/langchain-ai/langchain/releases/tag/langchain-classic%3D%3D1.0.2",
+      "source": "LangChain",
+      "date": "2026-03-06T20:20:03Z",
+      "summary": "Changes since langchain-classic==1.0.1\n\nrelease(langchain): bump langchain-classic to 1.0.2 (#35601)\nfix(langchain-classic): patch ReDoS vulnerability in MRKL and ReAct action regex (CVE-2024-58340) (",
+      "category": "AI综合"
+    },
+    {
+      "title": "v5.2.0: GLM-5, Qwen3.5, Voxtral Realtime, VibeVoice Acoustic Tokenizer",
+      "link": "https://github.com/huggingface/transformers/releases/tag/v5.2.0",
+      "source": "Transformers",
+      "date": "2026-02-16T18:55:53Z",
+      "summary": "## New Model additions\r\n\r\n### VoxtralRealtime\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/80e37670-6d70-402b-8c8e-ccfb8c32df2d\" />\r\n\r\nVoxtralRealtime",
+      "category": "模型"
+    },
+    {
+      "title": "v5.1.0: EXAONE-MoE, PP-DocLayoutV3, Youtu-LLM, GLM-OCR",
+      "link": "https://github.com/huggingface/transformers/releases/tag/v5.1.0",
+      "source": "Transformers",
+      "date": "2026-02-05T15:44:54Z",
+      "summary": "## New Model additions\r\n\r\n### EXAONE-MoE\r\n\r\n<img width=\"2278\" height=\"1142\" alt=\"image\" src=\"https://github.com/user-attachments/assets/0c3d5341-0483-49c3-8467-f9784ec94b37\" />\r\n\r\nK-EXAONE is a large-",
+      "category": "大模型"
+    },
+    {
+      "title": "Transformers v5",
+      "link": "https://github.com/huggingface/transformers/releases/tag/v5.0.0",
+      "source": "Transformers",
+      "date": "2026-01-26T10:17:10Z",
+      "summary": "## Transformers v5 release notes\r\n\r\n<img width=\"1800\" height=\"1013\" alt=\"image\" src=\"https://github.com/user-attachments/assets/7b5187d7-6945-4108-a546-6d1d7bfb55e3\" />\r\n\r\n- Highlights\r\n- Significant ",
+      "category": "AI综合"
+    },
+    {
+      "title": "Release candidate v5.0.0rc3",
+      "link": "https://github.com/huggingface/transformers/releases/tag/v5.0.0rc3",
+      "source": "Transformers",
+      "date": "2026-01-26T10:02:55Z",
+      "summary": "# Release candidate v5.0.0rc3\r\n\r\n## New models:\r\n\r\n* [GLM-4.7] GLM-Lite Supoort by @zRzRzRzRzRzRzR in https://github.com/huggingface/transformers/pull/43031\r\n* [GLM-Image] AR Model Support for GLM-Ima",
+      "category": "模型"
+    },
+    {
+      "title": "Patch release v4.57.6",
+      "link": "https://github.com/huggingface/transformers/releases/tag/v4.57.6",
+      "source": "Transformers",
+      "date": "2026-01-16T10:40:02Z",
+      "summary": "## What's Changed\r\nAnother fix for qwen vl models that prevented correctly loading the associated model type - this works together with https://github.com/huggingface/transformers/pull/41808 of the pr",
+      "category": "模型"
+    },
+    {
+      "title": "Patch release v4.57.5",
+      "link": "https://github.com/huggingface/transformers/releases/tag/v4.57.5",
+      "source": "Transformers",
+      "date": "2026-01-13T13:29:13Z",
+      "summary": "## What's Changed\r\nShould not have said last patch :wink: These should be the last remaining fixes that got lost in between patches and the transition to v5. \r\n\r\n* QwenVL: add skipped keys in setattr ",
+      "category": "AI综合"
+    },
+    {
+      "title": "Patch release v4.57.4",
+      "link": "https://github.com/huggingface/transformers/releases/tag/v4.57.4",
+      "source": "Transformers",
+      "date": "2026-01-13T11:07:40Z",
+      "summary": "## What's Changed\r\nLast patch release for v4: We have a few small fixes for remote generation methods (e.g. group beam search), vLLM, and an offline tokenizer fix (if it's already been cached).\r\n\r\n* G",
+      "category": "大模型"
+    },
+    {
+      "title": "Release candidate 5.0.0rc2",
+      "link": "https://github.com/huggingface/transformers/releases/tag/v5.0.0rc2",
+      "source": "Transformers",
+      "date": "2026-01-08T10:33:33Z",
+      "summary": "## What's Changed\r\n\r\nThis release candidate is focused on fixing `AutoTokenizer`, expanding the dynamic weight loading support, and improving performances with MoEs!\r\n\r\n## MoEs and performances:\r\n<img",
+      "category": "AI综合"
+    }
+  ]
+}

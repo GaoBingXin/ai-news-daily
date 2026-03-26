@@ -1,0 +1,30 @@
+{
+  "date": "2026-03-11",
+  "count": 3,
+  "news": [
+    {
+      "title": "OpenAI为龙虾紧急收购了一家23人公司",
+      "link": "https://www.qbitai.com/2026/03/385637.html",
+      "source": "量子位",
+      "date": "Tue, 10 Mar 2026 08:13:46 +0000",
+      "summary": "23人团队两年干出8600万估值...",
+      "category": "OpenAI"
+    },
+    {
+      "title": "Meta亚历山大王走人？小扎回应了",
+      "link": "https://www.qbitai.com/2026/03/385127.html",
+      "source": "量子位",
+      "date": "Tue, 10 Mar 2026 05:23:30 +0000",
+      "summary": "刚满29岁的Meta AI一号位...",
+      "category": "AI综合"
+    },
+    {
+      "title": "首个物理AI数据基座平台“无垠”落户浙江，专治机器人数据荒，家庭工业商业场景全覆盖",
+      "link": "https://www.qbitai.com/2026/03/385066.html",
+      "source": "量子位",
+      "date": "Mon, 09 Mar 2026 10:46:27 +0000",
+      "summary": "打通训练到商业化落地...",
+      "category": "AI综合"
+    }
+  ]
+}

@@ -1,0 +1,471 @@
+{
+  "date": "2026-03-20",
+  "count": 58,
+  "sourceCount": 15,
+  "news": [
+    {
+      "title": "杀死你的不是它：聊聊我们的 AI 的焦虑",
+      "link": "https://sspai.com/post/106923",
+      "source": "少数派",
+      "date": "2026-03-20T00:01:49.277Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "带着10+人暴走AWE，我看到了AI硬科技的10大趋势 By悟空",
+      "link": "https://www.leikeji.com/article/75535",
+      "source": "雷科技",
+      "date": "2026-03-20T00:01:48.440Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "小平板结束「七年之痒」：华米OV耀集体入场，AI催熟了这个品类？",
+      "link": "https://www.leikeji.com/article/75538",
+      "source": "雷科技",
+      "date": "2026-03-20T00:01:48.440Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "AI智能体进入物理空间，美的走在了所有人前面",
+      "link": "https://www.leikeji.com/article/75540",
+      "source": "雷科技",
+      "date": "2026-03-20T00:01:48.440Z",
+      "summary": "",
+      "category": "AI Agent"
+    },
+    {
+      "title": "AI正从底层改写腾讯的增长逻辑、产品范式与商业基因",
+      "link": "https://www.huxiu.com/article/4842068.html",
+      "source": "虎嗅",
+      "date": "2026-03-20T00:01:46.231Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "AI风暴让5万亿灰飞烟灭，这一领域正迎生死大考",
+      "link": "https://www.36kr.com/p/3729806778597639",
+      "source": "36Kr-AI",
+      "date": "2026-03-20T00:01:45.778Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "AI风暴席卷SaaS，变化比想象的更快。",
+      "link": "https://www.36kr.com/p/3729806778597639",
+      "source": "36Kr-AI",
+      "date": "2026-03-20T00:01:45.778Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "所有人都在等待微信AI的王炸",
+      "link": "https://www.36kr.com/p/3729804598407945",
+      "source": "36Kr-AI",
+      "date": "2026-03-20T00:01:45.778Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "所有人都在等待微信AI的王炸。",
+      "link": "https://www.36kr.com/p/3729804598407945",
+      "source": "36Kr-AI",
+      "date": "2026-03-20T00:01:45.778Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "Token额度算入年薪，AI时代求职门槛正在改写",
+      "link": "https://www.36kr.com/p/3729799727300867",
+      "source": "36Kr-AI",
+      "date": "2026-03-20T00:01:45.778Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "AI对春招的“提纯”还在继续",
+      "link": "https://www.36kr.com/p/3729799727300867",
+      "source": "36Kr-AI",
+      "date": "2026-03-20T00:01:45.778Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "AI影视化改编，连《新概念英语》都没放过",
+      "link": "https://www.36kr.com/p/3729773804797954",
+      "source": "36Kr-AI",
+      "date": "2026-03-20T00:01:45.778Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "在大模型这件事上，雷军居然给马斯克打样了",
+      "link": "https://www.36kr.com/p/3729893796426496",
+      "source": "36Kr-AI",
+      "date": "2026-03-20T00:01:45.777Z",
+      "summary": "",
+      "category": "大模型"
+    },
+    {
+      "title": "马斯克转发Kimi论文引起硅谷大讨论，Attention下一个战场是什么？",
+      "link": "https://www.36kr.com/p/3730463373476105",
+      "source": "36Kr-AI",
+      "date": "2026-03-20T00:01:45.777Z",
+      "summary": "",
+      "category": "国产大模型"
+    },
+    {
+      "title": "Amazon acquires Rivr, maker of a stair-climbing delivery robot",
+      "link": "https://techcrunch.com/2026/03/19/amazon-acquires-rivr-maker-of-a-stair-climbing-delivery-robot/",
+      "source": "TechCrunch",
+      "date": "Thu, 19 Mar 2026 23:28:37 +0000",
+      "summary": "Amazon and Jeff Bezos had previously invested in the startup.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Jeff Bezos reportedly wants $100 billion to buy and transform old manufacturing firms with AI",
+      "link": "https://techcrunch.com/2026/03/19/jeff-bezos-reportedly-wants-100-billion-to-buy-and-transform-old-manufacturing-firms-with-ai/",
+      "source": "TechCrunch",
+      "date": "Thu, 19 Mar 2026 22:09:24 +0000",
+      "summary": "The Amazon magnate has a new project centered around acquiring industrial firms and revamping them with AI technology.",
+      "category": "AI综合"
+    },
+    {
+      "title": "‘Uncanny Valley’: Nvidia’s ‘Super Bowl of AI,’ Tesla Disappoints, and Meta’s VR Metaverse ‘Shutdown’",
+      "link": "https://www.wired.com/story/uncanny-valley-podcast-nvidia-gtc-tesla-disappointed-fans-meta-horizon-worlds/",
+      "source": "Wired",
+      "date": "Thu, 19 Mar 2026 21:43:56 +0000",
+      "summary": "In this episode, we dive into Nvidia’s annual developer conference and what CEO Jensen Huang is saying about the future of the company.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Sony’s new WF-1000XM6 earbuds are already on sale for $30 off",
+      "link": "https://www.theverge.com/gadgets/897668/sony-wf-1000xm6-wireless-earbuds-deal-sale",
+      "source": "The Verge",
+      "date": "2026-03-19T21:25:00.000Z",
+      "summary": "Sony’s WF-1000XM6 are on sale in both color options. | Photo by Amelia Holowaty Krales / The Verge\t\n\nSony’s WF-1000XM6 are the best noise-canceling wireless earbuds you can buy, but they’ve been hard ",
+      "category": "模型"
+    },
+    {
+      "title": "Employees had to restrain a dancing humanoid robot after it went wild at a California restaurant",
+      "link": "https://techcrunch.com/2026/03/19/restaurant-dancing-robot-went-wild-hot-pot-cupertino-haidilao-agibot/",
+      "source": "TechCrunch",
+      "date": "Thu, 19 Mar 2026 21:13:50 +0000",
+      "summary": "A dancing robot in a Haidilao hot pot restaurant boogied down a little too hard.",
+      "category": "AI综合"
+    },
+    {
+      "title": "OpenAI tries to build its coding cred, acquires Python toolmaker Astral",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/19/openai_aims_for_the_stars/",
+      "source": "The Register",
+      "date": "2026-03-19T21:13:00.000Z",
+      "summary": "",
+      "category": "OpenAI"
+    },
+    {
+      "title": "FBI started buying Americans' location data again, Kash Patel confirms",
+      "link": "https://arstechnica.com/tech-policy/2026/03/fbi-started-buying-americans-location-data-again-kash-patel-confirms/",
+      "source": "Ars Technica",
+      "date": "Thu, 19 Mar 2026 19:57:35 +0000",
+      "summary": "Tom Cotton supports FBI data purchasing, compares it to searching people's trash.",
+      "category": "AI综合"
+    },
+    {
+      "title": "The coolest game controller for your phone is $50 off",
+      "link": "https://www.theverge.com/gadgets/897465/ohsnap-mcon-phone-controller-deal-sale",
+      "source": "The Verge",
+      "date": "2026-03-19T19:47:45.000Z",
+      "summary": "The MCON includes an adhesive-backed ring for phones that aren’t MagSafe- or Pixelsnap-ready. | Image: OhSnap\t\n\nThe MCON is the closest to a Swiss army knife that a controller can be. No, it doesn’t c",
+      "category": "AI综合"
+    },
+    {
+      "title": "Dogfighting in space won't look like the movies, but this company wants in on it",
+      "link": "https://arstechnica.com/space/2026/03/dogfighting-in-space-this-company-builds-satellites-for-high-tempo-engagement/",
+      "source": "Ars Technica",
+      "date": "Thu, 19 Mar 2026 19:45:22 +0000",
+      "summary": "\"Where we are today in space warfare is very similar to where air superiority was in the 1930s.\"",
+      "category": "AI综合"
+    },
+    {
+      "title": "Online bot traffic will exceed human traffic by 2027, Cloudflare CEO says",
+      "link": "https://techcrunch.com/2026/03/19/online-bot-traffic-will-exceed-human-traffic-by-2027-cloudflare-ceo-says/",
+      "source": "TechCrunch",
+      "date": "Thu, 19 Mar 2026 19:09:02 +0000",
+      "summary": "AI bots may outnumber humans online by 2027, says Cloudflare CEO Matthew Prince, as generative AI agents dramatically increase web traffic and infrastructure demands.",
+      "category": "AI Agent"
+    },
+    {
+      "title": "OpenAI is acquiring open source Python tool-maker Astral",
+      "link": "https://arstechnica.com/ai/2026/03/openai-is-acquiring-open-source-python-tool-maker-astral/",
+      "source": "Ars Technica",
+      "date": "Thu, 19 Mar 2026 18:44:58 +0000",
+      "summary": "Codex maker says it will \"continue to support these open source projects\" after deal closes.",
+      "category": "OpenAI"
+    },
+    {
+      "title": "A rogue AI led to a serious security incident at Meta",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/897528/meta-rogue-ai-agent-security-incident",
+      "source": "The Verge",
+      "date": "2026-03-19T18:20:05.000Z",
+      "summary": "For almost two hours last week, Meta employees had unauthorized access to company and user data thanks to an AI agent that gave an employee inaccurate technical advice, as previously reported by The I",
+      "category": "AI Agent"
+    },
+    {
+      "title": "Microsoft’s go-to Xbox controller is selling at its best price of the year",
+      "link": "https://www.theverge.com/gadgets/897334/xbox-wireless-controller-pc-steam-deck-amazon-big-spring-sale-2026-deal",
+      "source": "The Verge",
+      "date": "2026-03-19T18:16:33.000Z",
+      "summary": "The white model is receiving the steepest discount, but the black version is less than $1 more. | Photo: Antonio G. Di Benedetto / The Verge\t\n\nMicrosoft’s Xbox console strategy needs work, but its Blu",
+      "category": "模型"
+    },
+    {
+      "title": "FCC Enforcement Chief Offered to Help Brendan Carr Target Disney, Records Show",
+      "link": "https://www.wired.com/story/fcc-enforcement-chief-offered-to-help-brendan-carr-target-disney-records-show/",
+      "source": "Wired",
+      "date": "Thu, 19 Mar 2026 18:10:54 +0000",
+      "summary": "Last year, as FCC chair Brendan Carr threatened ABC over a Jimmy Kimmel monolog, a civil servant overseeing West Coast stations privately pledged support, according to emails obtained by WIRED.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Google Shakes Up Its Browser Agent Team Amid OpenClaw Craze",
+      "link": "https://www.wired.com/story/google-shakes-up-project-mariner-team-web-browsing-agents/",
+      "source": "Wired",
+      "date": "Thu, 19 Mar 2026 18:00:00 +0000",
+      "summary": "As Silicon Valley obsesses over a new wave of AI coding agents, Google and other AI labs are shifting their bets.",
+      "category": "Google"
+    },
+    {
+      "title": "Meta decides not to kill Horizon Worlds VR after all",
+      "link": "https://arstechnica.com/gadgets/2026/03/at-the-last-minute-meta-decides-not-to-kill-horizon-worlds-vr-after-all/",
+      "source": "Ars Technica",
+      "date": "Thu, 19 Mar 2026 17:50:40 +0000",
+      "summary": "VR will be on life support while mobile remains the focus, though.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Afroman keeps trolling cops after winning “Lemon Pound Cake” defamation case",
+      "link": "https://arstechnica.com/tech-policy/2026/03/afroman-keeps-trolling-cops-after-winning-lemon-pound-cake-defamation-case/",
+      "source": "Ars Technica",
+      "date": "Thu, 19 Mar 2026 17:45:28 +0000",
+      "summary": "Cops asked the jury for millions after Afroman used raid footage in music videos.",
+      "category": "AI视频"
+    },
+    {
+      "title": "The Original AirPods Max Are $100 Off",
+      "link": "https://www.wired.com/story/airpods-max-deal-326/",
+      "source": "Wired",
+      "date": "Thu, 19 Mar 2026 17:36:55 +0000",
+      "summary": "Save big on Apple’s previous-generation premium over-ear headset.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Meta Will Keep Horizon Worlds Alive in VR ‘for the Foreseeable Future’",
+      "link": "https://www.wired.com/story/meta-will-keep-horizon-worlds-alive-in-vr-for-the-foreseeable-future/",
+      "source": "Wired",
+      "date": "Thu, 19 Mar 2026 17:33:56 +0000",
+      "summary": "A day after saying it would shut down its metaverse, Meta CTO Andrew Bosworth announced the service will remain available in VR—with limited support.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Google details new 24-hour process to sideload unverified Android apps",
+      "link": "https://arstechnica.com/gadgets/2026/03/google-details-new-24-hour-process-to-sideload-unverified-android-apps/",
+      "source": "Ars Technica",
+      "date": "Thu, 19 Mar 2026 17:28:26 +0000",
+      "summary": "The \"advanced flow\" will be available before verification enforcement begins later this year.",
+      "category": "Google"
+    },
+    {
+      "title": "Meta rolls out new AI content enforcement systems while reducing reliance on third-party vendors",
+      "link": "https://techcrunch.com/2026/03/19/meta-rolls-out-new-ai-content-enforcement-systems-while-reducing-reliance-on-third-party-vendors/",
+      "source": "TechCrunch",
+      "date": "Thu, 19 Mar 2026 17:24:13 +0000",
+      "summary": "Meta believes these AI systems can detect more violations with greater accuracy, better prevent scams, respond more quickly to real-world events, and reduce over-enforcement.",
+      "category": "AI综合"
+    },
+    {
+      "title": "langchain==1.2.13",
+      "link": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.2.13",
+      "source": "LangChain",
+      "date": "2026-03-19T17:16:22Z",
+      "summary": "Changes since langchain==1.2.12\n\nrelease(langchain): 1.2.13 (#36111)\nci: suppress pytest streaming output in CI (#36092)\nfeat: Add LangSmith integration metadata to create_agent and init_chat_model (#",
+      "category": "AI Agent"
+    },
+    {
+      "title": "Prediction markets are trying to lure journalists with partnership deals",
+      "link": "https://www.theverge.com/news/897388/kalshi-polymarket-journalists-partnership-deals",
+      "source": "The Verge",
+      "date": "2026-03-19T17:00:42.000Z",
+      "summary": "Prediction markets are working to ingratiate themselves with mainstream news and culture: The Golden Globes broadcast in January was plastered with Polymarket odds, the AP is licensing election data t",
+      "category": "AI综合"
+    },
+    {
+      "title": "Google reveals its solution for true Android sideloading: a mandatory waiting period",
+      "link": "https://www.theverge.com/tech/897420/android-sideloading-unverified-developers-process",
+      "source": "The Verge",
+      "date": "2026-03-19T17:00:33.000Z",
+      "summary": "Google has revealed the \"advanced flow\" that will be required to install certain Android apps once the company introduces mandatory developer verification later this year. The company had initially an",
+      "category": "Google"
+    },
+    {
+      "title": "Google introduces a new way for users to sideload Android apps that still protects against scams",
+      "link": "https://techcrunch.com/2026/03/19/google-introduces-a-new-way-for-users-to-sideload-android-apps-that-still-protects-against-scams/",
+      "source": "TechCrunch",
+      "date": "Thu, 19 Mar 2026 17:00:00 +0000",
+      "summary": "Google is making Android sideloading easier with a new advanced setting that lets users disable app verification after a multistep security process.",
+      "category": "Google"
+    },
+    {
+      "title": "A New Game Turns the H-1B Visa System Into a Surreal Simulation",
+      "link": "https://www.wired.com/story/made-in-china-a-new-game-turns-the-h-1b-visa-system-into-a-surreal-simulation/",
+      "source": "Wired",
+      "date": "Thu, 19 Mar 2026 16:59:50 +0000",
+      "summary": "Inspired by real immigrant stories, H1B.Life captures the uncertainty, trade-offs, and pure luck that shape the lives of people trying to build a future in the US.",
+      "category": "AI综合"
+    },
+    {
+      "title": "FBI director leaves open the possibility that it's buying location data again",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/19/fbi_patel_location_data/",
+      "source": "The Register",
+      "date": "2026-03-19T16:43:05.000Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "Meta is actually keeping its VR metaverse running, for now",
+      "link": "https://www.theverge.com/tech/897396/meta-vr-horizon-worlds-metaverse-andrew-bosworth",
+      "source": "The Verge",
+      "date": "2026-03-19T16:36:21.000Z",
+      "summary": "Meta is reversing its plans to shut down its VR metaverse - sort of.\nOn Monday, the company announced that it would be shutting down the VR version of its 3D social platform Horizon Worlds on June 15t",
+      "category": "AI综合"
+    },
+    {
+      "title": "DoorDash launches a new ‘Tasks’ app that pays couriers to submit videos to train AI",
+      "link": "https://techcrunch.com/2026/03/19/doordash-launches-a-new-tasks-app-that-pays-couriers-to-submit-videos-to-train-ai/",
+      "source": "TechCrunch",
+      "date": "Thu, 19 Mar 2026 16:14:00 +0000",
+      "summary": "Delivery couriers will be able to earn money by completing activities like filming everyday tasks or recording themselves speaking in another language.",
+      "category": "AI视频"
+    },
+    {
+      "title": "ChatGPT’s ‘Adult Mode’ Could Spark a New Era of Intimate Surveillance",
+      "link": "https://www.wired.com/story/chatgpt-adult-mode-new-era-of-intimate-surveillance/",
+      "source": "Wired",
+      "date": "Thu, 19 Mar 2026 16:06:49 +0000",
+      "summary": "OpenAI plans to allow sexting with ChatGPT. A human-AI interaction expert warns of a privacy nightmare.",
+      "category": "OpenAI"
+    },
+    {
+      "title": "Study pinpoints when bow and arrow came to North America",
+      "link": "https://arstechnica.com/science/2026/03/study-pinpoints-when-bow-and-arrow-came-to-north-america/",
+      "source": "Ars Technica",
+      "date": "Thu, 19 Mar 2026 15:45:33 +0000",
+      "summary": "Radiocarbon results suggest a single origin and rapid diffusion through cultural transition networks.",
+      "category": "AI综合"
+    },
+    {
+      "title": "PwC will say goodbye to staff who aren't convinced about AI",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/19/pwc_ai/",
+      "source": "The Register",
+      "date": "2026-03-19T14:59:30.000Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "Signal’s Creator Is Helping Encrypt Meta AI",
+      "link": "https://www.wired.com/story/signals-creator-is-helping-encrypt-meta-ai/",
+      "source": "Wired",
+      "date": "Thu, 19 Mar 2026 14:09:51 +0000",
+      "summary": "Moxie Marlinspike says the technology powering his encrypted AI chatbot, Confer, will be integrated into Meta AI. The move could help protect the AI conversations of millions of people.",
+      "category": "AI综合"
+    },
+    {
+      "title": "UK blinks on AI copyright carve-out after star-studded revolt",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/19/uk_ai_copyright/",
+      "source": "The Register",
+      "date": "2026-03-19T13:33:12.000Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "Google says it will let UK publishers opt out of AI overviews",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/19/google_opts_for_optout_on/",
+      "source": "The Register",
+      "date": "2026-03-19T13:31:24.000Z",
+      "summary": "",
+      "category": "Google"
+    },
+    {
+      "title": "Fixing Claude with Claude: Anthropic reports on AI site reliability engineering",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/19/anthropic_claude_sre/",
+      "source": "The Register",
+      "date": "2026-03-19T12:22:57.000Z",
+      "summary": "",
+      "category": "Anthropic"
+    },
+    {
+      "title": "阿里宣布AI战略商业目标：未来五年，云和AI商业化收入突破1000亿美元",
+      "link": "https://www.qbitai.com/2026/03/389559.html",
+      "source": "量子位",
+      "date": "Thu, 19 Mar 2026 12:07:52 +0000",
+      "summary": "正式突破1000亿元人民币",
+      "category": "AI综合"
+    },
+    {
+      "title": "Should You Hike in Boots or Trail Runners? (2026)",
+      "link": "https://www.wired.com/story/should-you-hike-in-boots-or-trail-runners/",
+      "source": "Wired",
+      "date": "Thu, 19 Mar 2026 12:00:00 +0000",
+      "summary": "Lightweight shoes now dominate the trails, so do you still need boots? Here’s how to choose the right footwear for your outdoor adventures.",
+      "category": "AI综合"
+    },
+    {
+      "title": "老黄怒怼玩家根本不懂AI！英伟达新AI功能遭全网抵制，游戏圈炸锅了",
+      "link": "https://www.qbitai.com/2026/03/389447.html",
+      "source": "量子位",
+      "date": "Thu, 19 Mar 2026 11:35:27 +0000",
+      "summary": "游戏角色集体“整容”了",
+      "category": "AI综合"
+    },
+    {
+      "title": "于骞出席德国慕尼黑汽车论坛：世界模型+强化学习是通向物理AI的必经之路",
+      "link": "https://www.qbitai.com/2026/03/389442.html",
+      "source": "量子位",
+      "date": "Thu, 19 Mar 2026 11:02:55 +0000",
+      "summary": "世界模型+强化学习",
+      "category": "AI综合"
+    },
+    {
+      "title": "Apple MacBook Air (M5) Review: The Goldilocks MacBook",
+      "link": "https://www.wired.com/review/macbook-air-m5/",
+      "source": "Wired",
+      "date": "Thu, 19 Mar 2026 10:30:00 +0000",
+      "summary": "Set between the MacBook Neo and MacBook Pro, the M5 MacBook Air remains the laptop that I recommend for most people.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Best Electric Mountain Bikes (2026): Specialized, Cannondale, Salsa",
+      "link": "https://www.wired.com/story/best-electric-mountain-bikes/",
+      "source": "Wired",
+      "date": "Thu, 19 Mar 2026 10:00:00 +0000",
+      "summary": "A glorious swooping downhill glide on one of these electric mountain bikes will make you feel like a kid again.",
+      "category": "AI综合"
+    },
+    {
+      "title": "飞书发布多款企业级 Agent 覆盖个人智能伙伴与业务系统",
+      "link": "https://www.qbitai.com/2026/03/389311.html",
+      "source": "量子位",
+      "date": "Thu, 19 Mar 2026 08:46:16 +0000",
+      "summary": "持续升级官方 OpenClaw 插件",
+      "category": "AI Agent"
+    },
+    {
+      "title": "钉钉发布多款AI硬件 推出AI创新工场计划",
+      "link": "https://www.qbitai.com/2026/03/389301.html",
+      "source": "量子位",
+      "date": "Thu, 19 Mar 2026 08:36:37 +0000",
+      "summary": "帮助开发者打造AI时代的创新产品",
+      "category": "AI综合"
+    }
+  ]
+}

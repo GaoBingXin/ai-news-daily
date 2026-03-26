@@ -1,0 +1,487 @@
+{
+  "date": "2026-03-25",
+  "count": 60,
+  "sourceCount": 15,
+  "news": [
+    {
+      "title": "时隔12年，亚马逊再闯手机战场，要用AI「重做」手机？",
+      "link": "https://www.leikeji.com/article/75611",
+      "source": "雷科技",
+      "date": "2026-03-25T02:12:51.951Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "人民想念DeepSeek",
+      "link": "https://www.huxiu.com/article/4845096.html",
+      "source": "虎嗅",
+      "date": "2026-03-25T02:12:48.323Z",
+      "summary": "",
+      "category": "国产大模型"
+    },
+    {
+      "title": "“烧Token”成KPI，有程序员一个月花掉15万美元",
+      "link": "https://www.huxiu.com/article/4844729.html",
+      "source": "虎嗅",
+      "date": "2026-03-25T02:12:48.323Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "Sora终究还是“死”了",
+      "link": "https://www.huxiu.com/article/4845100.html",
+      "source": "虎嗅",
+      "date": "2026-03-25T02:12:48.323Z",
+      "summary": "",
+      "category": "AI视频"
+    },
+    {
+      "title": "Sora 宣布关停，史上最贵AI 表情包生成器只撑了七个月",
+      "link": "https://www.huxiu.com/article/4845072.html",
+      "source": "虎嗅",
+      "date": "2026-03-25T02:12:48.323Z",
+      "summary": "",
+      "category": "AI视频"
+    },
+    {
+      "title": "AI漫剧：百亿风口下90%在亏损，一场内卷和突围的战争",
+      "link": "https://www.huxiu.com/article/4840291.html",
+      "source": "虎嗅",
+      "date": "2026-03-25T02:12:48.323Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "Claude 决定亲手「杀死」OpenClaw",
+      "link": "https://www.36kr.com/p/3737678401896456",
+      "source": "36Kr-AI",
+      "date": "2026-03-25T02:12:47.875Z",
+      "summary": "",
+      "category": "Anthropic"
+    },
+    {
+      "title": "GUI 不会消失，GUI 会升级。AI Agent 也不会杀死 App，App 会迭代。",
+      "link": "https://www.36kr.com/p/3737678401896456",
+      "source": "36Kr-AI",
+      "date": "2026-03-25T02:12:47.875Z",
+      "summary": "",
+      "category": "AI Agent"
+    },
+    {
+      "title": "刘强东的“龙虾天团”来了，首次开源通用基础大模型",
+      "link": "https://www.36kr.com/p/3737137603707143",
+      "source": "36Kr-AI",
+      "date": "2026-03-25T02:12:47.875Z",
+      "summary": "",
+      "category": "大模型"
+    },
+    {
+      "title": "SDK重构、模型升级、安全加固，但微信和飞书用户先别急着更新。",
+      "link": "https://www.36kr.com/p/3737137521295619",
+      "source": "36Kr-AI",
+      "date": "2026-03-25T02:12:47.875Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "4位CEO同台，4个判断看清AI",
+      "link": "https://www.36kr.com/p/3737602248831488",
+      "source": "36Kr-AI",
+      "date": "2026-03-25T02:12:47.875Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "AI产业链加速变现，算力、整合、定制、电力成关键。",
+      "link": "https://www.36kr.com/p/3737602248831488",
+      "source": "36Kr-AI",
+      "date": "2026-03-25T02:12:47.875Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "突发！Sora 宣布关停，史上最贵 AI 表情包生成器只撑了七个月",
+      "link": "https://www.36kr.com/p/3737580650823945",
+      "source": "36Kr-AI",
+      "date": "2026-03-25T02:12:47.875Z",
+      "summary": "",
+      "category": "AI视频"
+    },
+    {
+      "title": "战略收缩，Sora 或许只是开始",
+      "link": "https://www.36kr.com/p/3737580650823945",
+      "source": "36Kr-AI",
+      "date": "2026-03-25T02:12:47.875Z",
+      "summary": "",
+      "category": "AI视频"
+    },
+    {
+      "title": "With $3.5B in fresh capital, Kleiner Perkins is going all in on AI",
+      "link": "https://techcrunch.com/2026/03/24/with-3-5b-in-fresh-capital-kleiner-perkins-is-going-all-in-on-ai/",
+      "source": "TechCrunch",
+      "date": "Wed, 25 Mar 2026 00:47:20 +0000",
+      "summary": "The fundraise includes $1 billion for investing in early-stage startups, and $2.5 billion for late-stage growth businesses.",
+      "category": "AI综合"
+    },
+    {
+      "title": "New Mexico just handed Meta its first courtroom defeat over child safety, and the rest of the country is watching",
+      "link": "https://techcrunch.com/2026/03/24/new-mexico-just-handed-meta-its-first-courtroom-defeat-over-child-safety-and-the-rest-of-the-country-is-watching/",
+      "source": "TechCrunch",
+      "date": "Wed, 25 Mar 2026 00:14:12 +0000",
+      "summary": "The dollar amount isn’t as important as the fact that this is the first jury verdict of its kind against Meta over harm to young people.",
+      "category": "AI综合"
+    },
+    {
+      "title": "OpenAI关停Sora！25个月从封神到退场",
+      "link": "https://www.qbitai.com/2026/03/391799.html",
+      "source": "量子位",
+      "date": "Wed, 25 Mar 2026 00:13:11 +0000",
+      "summary": "AI视频正在进入“中国时间”",
+      "category": "OpenAI"
+    },
+    {
+      "title": "HP stuffs OpenAI LLM into new laptops to make them either more useful at work, or a bit creepy",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/25/hp_iq_laptop_ai/",
+      "source": "The Register",
+      "date": "2026-03-25T00:06:36.000Z",
+      "summary": "",
+      "category": "OpenAI"
+    },
+    {
+      "title": "OpenAI’s Sora was the creepiest app on your phone — now it’s shutting down",
+      "link": "https://techcrunch.com/2026/03/24/openais-sora-was-the-creepiest-app-on-your-phone-now-its-shutting-down/",
+      "source": "TechCrunch",
+      "date": "Tue, 24 Mar 2026 23:57:55 +0000",
+      "summary": "Though the underlying Sora 2 video- and audio-generation model is scarily impressive, there was not sustained interest in an AI-only social feed.",
+      "category": "OpenAI"
+    },
+    {
+      "title": "AI-pilled Arm CEO teases mystery products that will turn it into a money machine",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/24/arm_ceo_boasts_new_silicon/",
+      "source": "The Register",
+      "date": "2026-03-24T23:21:04.000Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "Final analysis of 2025 Iberian blackout: Policies left Spain at risk",
+      "link": "https://arstechnica.com/science/2026/03/final-analysis-of-2025-iberian-blackout-policies-left-spain-at-risk/",
+      "source": "Ars Technica",
+      "date": "Tue, 24 Mar 2026 22:43:49 +0000",
+      "summary": "Too much hardware was allowed to disconnect right at the edge of normal conditions.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Newly purchased Vizio TVs now require Walmart accounts to use smart features",
+      "link": "https://arstechnica.com/gadgets/2026/03/newly-purchased-vizio-tvs-now-require-walmart-accounts-to-use-smart-features/",
+      "source": "Ars Technica",
+      "date": "Tue, 24 Mar 2026 22:26:56 +0000",
+      "summary": "Walmart wants to connect what people stream \"directly with retail interaction.\"",
+      "category": "AI综合"
+    },
+    {
+      "title": "Pentagon’s ‘Attempt to Cripple’ Anthropic Is Troubling, Judge Says",
+      "link": "https://www.wired.com/story/pentagons-attempt-to-cripple-anthropic-is-troublesome-judge-says/",
+      "source": "Wired",
+      "date": "Tue, 24 Mar 2026 22:13:17 +0000",
+      "summary": "During a hearing Tuesday, a district court judge questioned the Department of Defense’s motivations for labeling the Claude AI developer a supply-chain risk.",
+      "category": "Anthropic"
+    },
+    {
+      "title": "Meta misled users about its products’ safety, jury decides",
+      "link": "https://www.theverge.com/policy/899910/meta-new-mexico-jury-verdict",
+      "source": "The Verge",
+      "date": "2026-03-24T21:54:29.000Z",
+      "summary": "Meta willfully violated New Mexico law by misleading users about the safety of its products and engaging in an unconscionable trade practice, a jury found. The company will face a $375 million penalty",
+      "category": "AI综合"
+    },
+    {
+      "title": "NASA wants to put a $20 billion base on the Moon",
+      "link": "https://www.theverge.com/science/899891/nasa-moon-base-mars-nuclear-power-jared-isaacman",
+      "source": "The Verge",
+      "date": "2026-03-24T21:47:24.000Z",
+      "summary": "NASA's Artemis II Space Launch System rocket and Orion spacecraft. | AFP via Getty Images\t\n\nNASA Administrator Jared Isaacman has big plans for the future of the agency, including the construction of ",
+      "category": "AI综合"
+    },
+    {
+      "title": "Mozilla dev's \"Stack Overflow for agents\" targets a key weakness in coding AI",
+      "link": "https://arstechnica.com/ai/2026/03/mozilla-dev-introduces-cq-a-stack-overflow-for-agents/",
+      "source": "Ars Technica",
+      "date": "Tue, 24 Mar 2026 21:37:07 +0000",
+      "summary": "There are major problems to be solved before it can be adopted, though.",
+      "category": "AI Agent"
+    },
+    {
+      "title": "OpenAI announces plans to shut down its Sora video generator",
+      "link": "https://arstechnica.com/ai/2026/03/openai-plans-to-shut-down-sora-just-15-months-after-its-launch/",
+      "source": "Ars Technica",
+      "date": "Tue, 24 Mar 2026 21:19:50 +0000",
+      "summary": "Move comes amid a reported plan to refocus on business and productivity use cases.",
+      "category": "OpenAI"
+    },
+    {
+      "title": "What is ICE actually doing at the airport?",
+      "link": "https://www.theverge.com/policy/899855/ice-airports-tsa-shutdown-dhs-jfk",
+      "source": "The Verge",
+      "date": "2026-03-24T21:17:28.000Z",
+      "summary": "I arrived at John F. Kennedy International Airport nearly five hours before my domestic flight. This is not my way - usually I roll up to the airport 30 minutes before boarding - but not even I have e",
+      "category": "AI综合"
+    },
+    {
+      "title": "OpenAI just gave up on Sora and its billion-dollar Disney deal",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/899850/openai-sora-ai-chatgpt",
+      "source": "The Verge",
+      "date": "2026-03-24T21:08:10.000Z",
+      "summary": "A frame from a Sora 2-generated video. | Image: OpenAI\t\n\nOn Tuesday afternoon, OpenAI announced \"We're saying goodbye to Sora,\" the video generation tool that it launched at the end of 2024, and cente",
+      "category": "OpenAI"
+    },
+    {
+      "title": "Electronic Frontier Foundation to swap leaders as AI, ICE fights escalate",
+      "link": "https://arstechnica.com/tech-policy/2026/03/trump-made-opposing-government-spying-cool-again-effs-departing-chief-says/",
+      "source": "Ars Technica",
+      "date": "Tue, 24 Mar 2026 21:00:49 +0000",
+      "summary": "Public interest in government tech abuses is peaking. EFF's new leader plans to build on that.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Anthropic hands Claude Code more control, but keeps it on a leash",
+      "link": "https://techcrunch.com/2026/03/24/anthropic-hands-claude-code-more-control-but-keeps-it-on-a-leash/",
+      "source": "TechCrunch",
+      "date": "Tue, 24 Mar 2026 21:00:30 +0000",
+      "summary": "Anthropic’s new auto mode for Claude Code lets AI execute tasks with fewer approvals, reflecting a broader shift toward more autonomous tools that balance speed with safety through built-in safeguards",
+      "category": "Anthropic"
+    },
+    {
+      "title": "EFF has a new boss to lead the fight against privacy-sucking forces of doom",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/24/eff_nicole_ozer_new_chief_interview/",
+      "source": "The Register",
+      "date": "2026-03-24T21:00:08.000Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "Spotify tests new tool to stop AI slop from being attributed to real artists",
+      "link": "https://techcrunch.com/2026/03/24/spotify-tests-new-tool-to-stop-ai-slop-from-being-attributed-to-real-artists/",
+      "source": "TechCrunch",
+      "date": "Tue, 24 Mar 2026 20:56:25 +0000",
+      "summary": "The idea behind the new tool is to give artists more control over which tracks are associated with their name on Spotify.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Arm’s first CPU ever will plug into Meta’s AI data centers later this year",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/899823/arm-agi-cpu-meta",
+      "source": "The Verge",
+      "date": "2026-03-24T20:43:14.000Z",
+      "summary": "After decades of only licensing its chip designs for others to use, UK-based Arm revealed the first chip it's producing on its own, and the first customer. Dubbed the Arm AGI CPU, it's another chip de",
+      "category": "AI Agent"
+    },
+    {
+      "title": "Apple is testing a standalone app for its overhauled Siri",
+      "link": "https://www.theverge.com/tech/899801/apple-wwdc-2026-new-siri-apple-intelligence-standalone-app",
+      "source": "The Verge",
+      "date": "2026-03-24T20:41:24.000Z",
+      "summary": "Apple's efforts to rebuild its Apple Intelligence AI platform will make its debut at its Worldwide Developers Conference on June 8th. A new version of Siri that transforms the voice assistant into a \"",
+      "category": "AI Agent"
+    },
+    {
+      "title": "Databricks bought two startups to underpin its new AI security product",
+      "link": "https://techcrunch.com/2026/03/24/databricks-buys-two-startups-lakewatch-antimatter-siftd-ai-security/",
+      "source": "TechCrunch",
+      "date": "Tue, 24 Mar 2026 20:40:56 +0000",
+      "summary": "With an overflowing war chest from its recent $5 billion raise, Databricks is buying startups and looking for more. It acquired Antimatter and SiftD.ai.",
+      "category": "AI综合"
+    },
+    {
+      "title": "1K+ cloud environments infected following Trivy supply chain attack",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/24/1k_cloud_environments_infected_following/",
+      "source": "The Register",
+      "date": "2026-03-24T20:31:09.000Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "The man who coined Metaverse now says Meta&#8217;s glasses are creepy",
+      "link": "https://www.theverge.com/tech/899797/metaverse-neal-stephenson-headsets-goggles-glasses-creepy-no-business-case",
+      "source": "The Verge",
+      "date": "2026-03-24T20:08:14.000Z",
+      "summary": "Neal Stephenson speaks onstage during the 2022 SXSW Conference and Festivals at Austin Convention Center on March 16, 2022 in Austin, Texas. | Getty Images for SXSW\t\n\nNeal Stephenson didn't invent the",
+      "category": "AI综合"
+    },
+    {
+      "title": "Chemists concoct nail polish that lets clawed humans use touch screens",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/24/chemists_concoct_nail_polish_thatll/",
+      "source": "The Register",
+      "date": "2026-03-24T20:02:12.000Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "OpenAI’s plans to make ChatGPT more like Amazon aren’t going so well",
+      "link": "https://techcrunch.com/2026/03/24/openais-plans-to-make-chatgpt-more-like-amazon-arent-going-so-well/",
+      "source": "TechCrunch",
+      "date": "Tue, 24 Mar 2026 19:27:56 +0000",
+      "summary": "OpenAI says it's moving away from Instant Checkout, which allowed users to buy items directly through the ChatGPT interface.",
+      "category": "OpenAI"
+    },
+    {
+      "title": "Apple launches iOS 26.4 with AI playlists, purchase sharing, and more",
+      "link": "https://www.theverge.com/tech/899799/apple-ios-26-4-ai-playlist-purchase-sharing-update",
+      "source": "The Verge",
+      "date": "2026-03-24T19:22:29.000Z",
+      "summary": "iOS 26.4 is here, and it comes with a bunch of small but notable updates. That includes a new Playlist Playground launching in beta in Apple Music, which uses AI to generate a song playlist - complete",
+      "category": "AI综合"
+    },
+    {
+      "title": "Google TV’s new Gemini features keep fans updated on sports teams and more",
+      "link": "https://techcrunch.com/2026/03/24/google-tv-new-gemini-features-keep-fans-updated-on-sports-teams-deep-dives-visual-answers/",
+      "source": "TechCrunch",
+      "date": "Tue, 24 Mar 2026 19:12:11 +0000",
+      "summary": "Three Gemini-powered features are coming to your Google TV. This includes visual responses, deep dives, and sports briefs.",
+      "category": "Google"
+    },
+    {
+      "title": "LiteLLM loses game of Trivy pursuit, gets compromised",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/24/trivy_compromise_litellm/",
+      "source": "The Register",
+      "date": "2026-03-24T19:11:01.000Z",
+      "summary": "",
+      "category": "大模型"
+    },
+    {
+      "title": "langchain-core==1.2.22",
+      "link": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.2.22",
+      "source": "LangChain",
+      "date": "2026-03-24T18:49:00Z",
+      "summary": "Changes since langchain-core==1.2.21\n\nrelease(core): 1.2.22 (#36201)\nfix(core): validate paths in `prompt.save` and `load_prompt`, deprecate methods (#36200)",
+      "category": "AI综合"
+    },
+    {
+      "title": "OpenAI adds open source tools to help developers build for teen safety",
+      "link": "https://techcrunch.com/2026/03/24/openai-adds-open-source-tools-to-help-developers-build-for-teen-safety/",
+      "source": "TechCrunch",
+      "date": "Tue, 24 Mar 2026 18:41:34 +0000",
+      "summary": "Rather than working from scratch to figure out how to make AI safer for teens, developers can use these policies to fortify what they build.",
+      "category": "OpenAI"
+    },
+    {
+      "title": "AI isn't killing jobs, it's 'unbundling' them into lower-paid chunks",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/24/ai_job_unbundling/",
+      "source": "The Register",
+      "date": "2026-03-24T18:32:06.000Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "Google's new version of Android Automotive will move beyond infotainment",
+      "link": "https://arstechnica.com/cars/2026/03/google-wants-android-automotive-to-control-more-of-your-car/",
+      "source": "Ars Technica",
+      "date": "Tue, 24 Mar 2026 18:27:53 +0000",
+      "summary": "Google wants Android in cars to break out of the infotainment box.",
+      "category": "Google"
+    },
+    {
+      "title": "All of DOGE’s work could be undone as lawsuit against Musk proceeds",
+      "link": "https://arstechnica.com/tech-policy/2026/03/all-of-doges-work-could-be-undone-as-lawsuit-against-musk-proceeds/",
+      "source": "Ars Technica",
+      "date": "Tue, 24 Mar 2026 17:17:34 +0000",
+      "summary": "Musk’s X posts bragging about DOGE may trigger reversals of its biggest wins.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Arm rolls its own 136-core AGI CPU to chase AI hype train",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/24/arm_agi_cpu/",
+      "source": "The Register",
+      "date": "2026-03-24T17:00:13.000Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "Arm Is Now Making Its Own Chips",
+      "link": "https://www.wired.com/story/chip-design-firm-arm-is-making-its-own-ai-cpu/",
+      "source": "Wired",
+      "date": "Tue, 24 Mar 2026 17:00:00 +0000",
+      "summary": "The chip design firm says Meta, OpenAI, Cerebras, and Cloudflare are among the first customers of its new artificial intelligence hardware.",
+      "category": "OpenAI"
+    },
+    {
+      "title": "Datadog bets DIY AI will mean it dodges the SaaSpocalypse",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/24/datadog_revising_custom_model/",
+      "source": "The Register",
+      "date": "2026-03-24T16:08:07.000Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "Claude Code can now take over your computer to complete tasks",
+      "link": "https://arstechnica.com/ai/2026/03/claude-code-can-now-take-over-your-computer-to-complete-tasks/",
+      "source": "Ars Technica",
+      "date": "Tue, 24 Mar 2026 15:45:19 +0000",
+      "summary": "But Anthropic urges caution as \"research preview\" safeguards \"aren't absolute.\"",
+      "category": "Anthropic"
+    },
+    {
+      "title": "AI全链路加持！一加15T打造全能小屏，售价4299元起",
+      "link": "https://www.qbitai.com/2026/03/391775.html",
+      "source": "量子位",
+      "date": "Tue, 24 Mar 2026 14:35:34 +0000",
+      "summary": "2025 年实现44%的销量增长",
+      "category": "AI综合"
+    },
+    {
+      "title": "龙虾爆火之后，AI初创的全球化机会来了吗？｜线下沙龙报名",
+      "link": "https://www.qbitai.com/2026/03/391760.html",
+      "source": "量子位",
+      "date": "Tue, 24 Mar 2026 13:09:56 +0000",
+      "summary": "周四14:00，欢迎来现场交流！",
+      "category": "AI综合"
+    },
+    {
+      "title": "Microslop stuffs AI photo restyling powers into OneDrive",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/03/24/onedrive_ai_restyle/",
+      "source": "The Register",
+      "date": "2026-03-24T13:05:49.000Z",
+      "summary": "",
+      "category": "AI综合"
+    },
+    {
+      "title": "How to Use Apple’s Live Translation on Your AirPods",
+      "link": "https://www.wired.com/story/apple-live-translation-airpods/",
+      "source": "Wired",
+      "date": "Tue, 24 Mar 2026 11:00:00 +0000",
+      "summary": "If you have a recent Apple device, you can translate live conversations. It’s impressive, and the new AirPods Pro Max just joined the party.",
+      "category": "AI综合"
+    },
+    {
+      "title": "Chris Hayes Has Some Advice for Keeping Up With the News",
+      "link": "https://www.wired.com/story/the-big-interview-podcast-chris-hayes/",
+      "source": "Wired",
+      "date": "Tue, 24 Mar 2026 10:30:00 +0000",
+      "summary": "The host of MS Now’s All In, knows how hard it is to stay current. But he also knows where you should focus your attention—and it starts with a sober view of AI.",
+      "category": "AI综合"
+    },
+    {
+      "title": "‘Get Down! Get Down! They’re Gonna See Us!’: Six Months of Hiding From ICE",
+      "link": "https://www.wired.com/story/get-down-get-down-six-months-of-hiding-from-ice/",
+      "source": "Wired",
+      "date": "Tue, 24 Mar 2026 10:00:00 +0000",
+      "summary": "A family in Chicago has been terrified to leave their apartment. Agents could be anywhere.",
+      "category": "AI Agent"
+    },
+    {
+      "title": "Can Modular Phone Accessories Finally Evolve Beyond MagSafe?",
+      "link": "https://www.wired.com/story/can-modular-phone-accessories-finally-evolve-beyond-magsafe/",
+      "source": "Wired",
+      "date": "Tue, 24 Mar 2026 09:30:00 +0000",
+      "summary": "True modular smartphone hardware never went mainstream. That could change as phone makers look beyond magnets.",
+      "category": "AI综合"
+    },
+    {
+      "title": "你的模型真的会”举一反三”吗？RoboChallenge Table30 V2 正式发布，泛化时代开幕",
+      "link": "https://www.qbitai.com/2026/03/391744.html",
+      "source": "量子位",
+      "date": "Tue, 24 Mar 2026 08:33:52 +0000",
+      "summary": "Table30 V2将为全球具身智能研究者打造了一个精准的“泛化标尺”与公平、开放的真机竞技场",
+      "category": "研究"
+    }
+  ]
+}
